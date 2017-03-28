@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="" id="eu.hohenegger.augs.stacks.feature" version="0.0.0">
+      <category name="eu.hohenegger.augs.stakcs"/>
+   </feature>
+   <category-def name="eu.hohenegger.augs.stacks" label="Stack Trace Editor"/>
+</site>

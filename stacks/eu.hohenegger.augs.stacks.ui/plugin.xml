@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="Stack Trace Editor"
+            extensions="log"
+            icon="icons/sample.gif"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            class="eu.hohenegger.stacks.ui.editors.LogEditor"
+            id="eu.hohenegger.augs.stacks.ui.editors.LogEditor">
+      </editor>
+   </extension>
+</plugin>
