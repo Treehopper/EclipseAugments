@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.equinox.p2.engine.actions">
+      <action
+            class="eu.hohenegger.c0ffee_tips.ui.impl.ProvisioningAction"
+            name="InstallDetailFormatters"
+            touchpointType="org.eclipse.equinox.p2.osgi"
+            version="0.0.1">
+      </action>
+   </extension>
+</plugin>

@@ -15,6 +15,13 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 * Re-attach editor to its previous stack
 * Currently can only be Trigger using the context menu of an editor
 
+## Hexadecimal Editing Augments
+### Features
+* Quick fix convert for JDT
+* Tooltip convert for JDT
+* JCT Debug variable value formatter
+
+
 Install from p2 update site
 ===================
 TBD http://treehopper.github.io/EclipseAugments/

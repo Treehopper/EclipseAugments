@@ -10,6 +10,7 @@
 		<module>releng</module>
 		<module>stacks</module>
 		<module>partdetacher</module>
+		<module>c0ffee</module>
 	</modules>
 
 	<properties>
