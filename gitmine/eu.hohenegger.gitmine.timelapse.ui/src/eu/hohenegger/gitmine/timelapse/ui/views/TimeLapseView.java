@@ -162,6 +162,9 @@ public class TimeLapseView implements IShowInTarget {
 
 		RepositoryMapping mapping = RepositoryMapping.getMapping(project
 				.getLocation());
+		if (mapping == null) {
+			return;
+		}
 		repository = mapping.getRepository();
 
 		String relativePath = createRelativePath(resource.getLocation()
