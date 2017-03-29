@@ -2,6 +2,9 @@ language: java
 jdk:
  - oraclejdk8
 
+install:
+- mvn install -N io.takari:maven:wrapper -Dmaven=3.3.9
+
 notifications:
  email:
    recipients:
