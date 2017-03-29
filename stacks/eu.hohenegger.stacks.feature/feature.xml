@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="eu.hohenegger.stacks.feature"
-      label="Stack Trace Editor (experimental)"
+      label="Stack Trace Editor"
       version="1.0.0.qualifier">
 
    <copyright url="">

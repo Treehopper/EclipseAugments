@@ -3,5 +3,5 @@
    <feature url="" id="eu.hohenegger.stacks.feature" version="0.0.0">
       <category name="eu.hohenegger.stacks"/>
    </feature>
-   <category-def name="eu.hohenegger.stacks" label="Stack Trace Editor"/>
+   <category-def name="eu.hohenegger.stacks" label="Stack Trace Editor (experimental)"/>
 </site>
