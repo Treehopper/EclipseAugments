@@ -1,0 +1,11 @@
+target "gitmine" with source configurePhase requirements
+
+location "http://download.eclipse.org/releases/mars" {
+	org.eclipse.egit.core [4.0.3,4.1.0)
+	org.eclipse.egit.ui [4.0.3,4.1.0)
+	org.eclipse.jgit.feature.group [4.0.3,4.1.0)
+}
+
+location "http://download.eclipse.org/nebula/releases/1.2.0" {
+	org.eclipse.nebula.visualization.feature.feature.group [1.0.0,1.1.0)
+}

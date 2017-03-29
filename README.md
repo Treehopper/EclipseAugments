@@ -30,6 +30,11 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 
 ![alt tag](https://cloud.githubusercontent.com/assets/498968/14920455/09825276-0e2e-11e6-8cc9-5bcb4898ebb4.png)
 
+## Git Mine
+### Features
+* Cycle through the history of the content of a file
+* Show commit statistic on a file
+
 Install from p2 update site
 ===================
 TBD http://treehopper.github.io/EclipseAugments/

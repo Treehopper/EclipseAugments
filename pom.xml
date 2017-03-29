@@ -12,6 +12,7 @@
 		<module>partdetacher</module>
 		<module>c0ffee</module>
 		<module>modulebuilder</module>
+		<module>gitmine</module>
 	</modules>
 
 	<properties>

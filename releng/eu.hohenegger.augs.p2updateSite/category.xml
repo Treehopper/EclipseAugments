@@ -16,4 +16,15 @@
       <category name="eu.hohenegger.modulebuilder"/>
    </feature>
    <category-def name="eu.hohenegger.modulebuilder" label="Module Builder (experimental)"/>
+   <feature url="" id="eu.hohenegger.gitmine.feature" version="0.0.0">
+      <category name="eu.hohenegger.gitmine"/>
+   </feature>
+   <feature url="" id="eu.hohenegger.gitmine.timelapse.feature" version="0.0.0">
+      <category name="eu.hohenegger.gitmine"/>
+   </feature>
+   <feature id="org.eclipse.nebula.visualization.feature" version="0.0.0">
+      <category name="org.eclipse.nebula.visualization"/>
+   </feature>
+   <category-def name="eu.hohenegger.gitmine" label="GitMine (experimental)"/>
+   <category-def name="org.eclipse.nebula.visualization" label="Nebula Visualization Dependency (Required)"/>
 </site>

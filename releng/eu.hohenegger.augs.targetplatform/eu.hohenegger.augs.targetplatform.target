@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
-<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1490788036">
+<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1490791147">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.eclipse.sdk.ide" version="0.0.0"/>
@@ -27,10 +27,6 @@
       <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
       <unit id="org.slf4j.impl.log4j12" version="1.7.2.v20131105-2200"/>
       <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
-    </location>
-    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
-      <unit id="org.eclipse.draw2d.feature.group" version="3.10.1.201508170204"/>
-      <repository location="http://download.eclipse.org/releases/mars"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.eclipse.xtext.sdk.feature.group" version="2.11.0.v20170201-0242"/>
@@ -66,6 +62,17 @@
       <unit id="org.eclipse.emf.ecp.e3.feature.feature.group" version="1.8.0.20160216-1319"/>
       <unit id="org.eclipse.emf.ecp.viewmodel.feature.feature.group" version="1.8.0.20160216-1319"/>
       <repository location="http://download.eclipse.org/ecp/releases/releases_18/"/>
+    </location>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+      <unit id="org.eclipse.egit.core" version="4.0.3.201509231615-r"/>
+      <unit id="org.eclipse.egit.ui" version="4.0.3.201509231615-r"/>
+      <unit id="org.eclipse.jgit.feature.group" version="4.0.3.201509231615-r"/>
+      <unit id="org.eclipse.draw2d.feature.group" version="3.10.1.201508170204"/>
+      <repository location="http://download.eclipse.org/releases/mars"/>
+    </location>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+      <unit id="org.eclipse.nebula.visualization.feature.feature.group" version="1.0.0.201703081533"/>
+      <repository location="http://download.eclipse.org/nebula/releases/1.2.0"/>
     </location>
   </locations>
 </target>
