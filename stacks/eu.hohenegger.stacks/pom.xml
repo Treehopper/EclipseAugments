@@ -4,10 +4,10 @@
 
 	<parent>
 		<groupId>eu.hohenegger</groupId>
-		<artifactId>releng</artifactId>
+		<artifactId>stacks</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>eu.hohenegger.augs.p2updateSite</artifactId>
-	<packaging>eclipse-repository</packaging>
+	<artifactId>eu.hohenegger.stacks</artifactId>
+	<packaging>eclipse-plugin</packaging>
 </project> 

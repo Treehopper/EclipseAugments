@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Stacks Trace Editor
-Bundle-SymbolicName: eu.hohenegger.augs.stacks;singleton:=true
-Bundle-Version: 1.0.0.qualifier
-Require-Bundle: org.eclipse.core.runtime
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: eu.hohenegger.augs.stacks.folding
