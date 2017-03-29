@@ -9,6 +9,11 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 ### Features
 * Folding of Java Stack Traces
 
+## Part Detacher
+### Features
+* Detach an editor (such as the Compare Editor) from its stack and maximize it over multiple screens
+* Re-attach editor to its previous stack
+* Currently can only be Trigger using the context menu of an editor
 
 Install from p2 update site
 ===================

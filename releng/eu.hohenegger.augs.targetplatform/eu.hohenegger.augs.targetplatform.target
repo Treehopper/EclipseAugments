@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
-<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1490700069">
+<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1490780566">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.eclipse.sdk.ide" version="0.0.0"/>
       <unit id="org.eclipse.emf.sdk.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.e4.tools.compat" version="4.5.0.v20160503-0947"/>
+      <unit id="org.eclipse.e4.tools.services" version="4.5.0.v20160503-0947"/>
       <repository location="http://download.eclipse.org/releases/neon/"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">

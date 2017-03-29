@@ -9,6 +9,7 @@
 	<modules>
 		<module>releng</module>
 		<module>stacks</module>
+		<module>partdetacher</module>
 	</modules>
 
 	<properties>
