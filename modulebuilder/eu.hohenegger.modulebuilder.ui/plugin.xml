@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="org.eclipse.pde.PDE"
+            class="eu.hohenegger.modulebuilder.ui.wizard.NewP2UpdateSiteWizard"
+            icon="icons/newftrprj_wiz.gif"
+            id="eu.hohenegger.modulebuilder.ui.wizard.NewP2UpdateSiteWizard"
+            name="Eclipse/Tycho Module">
+      </wizard>
+   </extension>
+
+<extension  point="org.eclipse.emf.ecp.view.model.provider.xmi.file">
+<file filePath="view-model/Module.view"/>
+</extension>
+<extension point="org.eclipse.emf.ecp.view.template">
+<viewTemplate xmi="view-model/Module.template"/>
+</extension>
+</plugin>

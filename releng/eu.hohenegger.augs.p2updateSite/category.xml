@@ -12,4 +12,8 @@
       <category name="eu.hohenegger.c0ffee_tips"/>
    </feature>
    <category-def name="eu.hohenegger.c0ffee_tips" label="Hexadecimal Augments (experimental)"/>
+	<feature url="" id="eu.hohenegger.modulebuilder.feature" version="0.0.0">
+      <category name="eu.hohenegger.modulebuilder"/>
+   </feature>
+   <category-def name="eu.hohenegger.modulebuilder" label="Module Builder (experimental)"/>
 </site>

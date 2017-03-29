@@ -1,0 +1,31 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "MyTest.java"»package «this.testsId»;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class MyTest {
+	@Before
+	public void setup() {
+		
+	}
+	
+	@Test
+	public void testStub() {
+	}
+	
+	@After
+	public void tearDown() {
+		
+	}
+}
+
+«ENDFILE»
+«ENDDEFINE»

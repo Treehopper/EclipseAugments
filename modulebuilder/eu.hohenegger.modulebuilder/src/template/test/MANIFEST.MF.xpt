@@ -1,0 +1,17 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "MANIFEST.MF"»Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: «this.testsId»
+Bundle-Version: «this.osgiVersion»
+Fragment-Host: «this.coreId»;bundle-version="«this.version»"
+Bundle-RequiredExecutionEnvironment: «this.javaVersion»
+Require-Bundle: org.junit
+«ENDFILE»
+«ENDDEFINE»

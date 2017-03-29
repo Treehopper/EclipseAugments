@@ -1,0 +1,10 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "build.properties"»bin.includes = feature.xml
+«ENDFILE»
+«ENDDEFINE»

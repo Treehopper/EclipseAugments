@@ -1,0 +1,4 @@
+import modulespecification;
+
+String targetFileName(Module m):
+	m.targetId;

@@ -11,6 +11,7 @@
 		<module>stacks</module>
 		<module>partdetacher</module>
 		<module>c0ffee</module>
+		<module>modulebuilder</module>
 	</modules>
 
 	<properties>

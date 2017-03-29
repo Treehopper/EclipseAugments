@@ -2,3 +2,4 @@ target "eu.hohenegger.augs.targetplatform" with source configurePhase requiremen
 
 include "4.6-neon.tpd"
 include "orbit-R20160520211859-Neon.tpd"
+include "projects/modulebuilder.tpd"

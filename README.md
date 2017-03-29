@@ -21,6 +21,14 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 * Tooltip convert for JDT
 * JCT Debug variable value formatter
 
+## Module Builder
+### Features
+* Wizard for configuring a set of Eclipse plug-Ins
+* Separate model, UI and core bundles
+* Set up p2 update site
+* Set up tycho build, with dedicated target platform file
+
+![alt tag](https://cloud.githubusercontent.com/assets/498968/14920455/09825276-0e2e-11e6-8cc9-5bcb4898ebb4.png)
 
 Install from p2 update site
 ===================

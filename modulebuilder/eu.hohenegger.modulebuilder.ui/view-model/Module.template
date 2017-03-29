@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.eclipse.emf.ecp.view.template.model:ViewTemplate xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.emf.ecp.view.template.model="http://org/eclipse/emf/ecp/view/template/model">
+  <controlValidationConfiguration infoOverlayURL="platform:/plugin/org.eclipse.emf.ecp.edit.swt/icons/info_decorate.gif" warningOverlayURL="platform:/plugin/org.eclipse.emf.ecp.edit.swt/icons/warning_decorate.png" errorImageURL="platform:/plugin/org.eclipse.emf.ecp.edit.swt/icons/validation_error.png" errorOverlayURL="platform:/plugin/org.eclipse.emf.ecp.edit.swt/icons/error_decorate.png"/>
+</org.eclipse.emf.ecp.view.template.model:ViewTemplate>
