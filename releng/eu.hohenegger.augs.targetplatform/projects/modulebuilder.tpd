@@ -1,4 +1,4 @@
-target "eu.hohenegger.modulebuilder.releng.targetplatform" with source configurePhase requirements
+target "modulebuilder" with source configurePhase requirements
 
 location "http://download.eclipse.org/releases/mars" {
 	org.eclipse.draw2d.feature.group [3.10.1,4.0.0)
