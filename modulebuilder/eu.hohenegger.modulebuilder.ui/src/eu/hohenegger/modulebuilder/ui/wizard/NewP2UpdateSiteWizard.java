@@ -71,10 +71,13 @@ public class NewP2UpdateSiteWizard extends Wizard implements INewWizard {
 					module = loadModel(resource);
 				}
 			}
-		} else {
+		}
+
+		if (module == null) {
 			module = createModel(intialBaseId);
 			module.setBaseLocation(getOSWorkspaceLocation());
 		}
+		
 		page = new NewP2UpdateSiteWizardPage(module);
 		addPage(page);
 	}
