@@ -13,6 +13,7 @@ import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.impl.AdapterImpl;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.util.Diagnostician;
 import org.eclipse.emf.ecp.ui.view.ECPRendererException;
 import org.eclipse.emf.ecp.ui.view.swt.ECPSWTView;
@@ -76,8 +77,8 @@ public class NewP2UpdateSiteWizardPage extends WizardPage {
 
 	private void bindFirstBaseIdSet(Module module) {
 		DataBindingContext dataBindingContext = new DataBindingContext();
-		IObservableValue observeSource = value(ModulespecificationPackage.eINSTANCE.getModule_BaseId()).observe(module);
-		IObservableValue observeTarget = value(ModulespecificationPackage.eINSTANCE.getModule_MavenGroupId()).observe(module);
+		IObservableValue<String> observeSource = createObservableValue(module, ModulespecificationPackage.eINSTANCE.getModule_BaseId());
+		IObservableValue<String> observeTarget = createObservableValue(module, ModulespecificationPackage.eINSTANCE.getModule_MavenGroupId());
 		UpdateValueStrategy sourceToTarget = new UpdateValueStrategy();
 		sourceToTarget.setBeforeSetValidator(value -> {
 			Object currentValue = observeTarget.getValue();
@@ -87,6 +88,11 @@ public class NewP2UpdateSiteWizardPage extends WizardPage {
 			return Status.OK_STATUS;
 		});
 		dataBindingContext.bindValue(observeSource, observeTarget, sourceToTarget, new UpdateValueStrategy(POLICY_NEVER));
+	}
+
+	@SuppressWarnings("unchecked")
+	private IObservableValue<String> createObservableValue(Module module, EAttribute attribute) {
+		return value(attribute).observe(module);
 	}
 
 	/**
