@@ -302,7 +302,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String TYCHO_VERSION_EDEFAULT = "0.25.0";
+	protected static final String TYCHO_VERSION_EDEFAULT = "1.0.0";
 
 	/**
 	 * The cached value of the '{@link #getTychoVersion() <em>Tycho Version</em>}' attribute.
@@ -1680,17 +1680,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * @generated
 	 */
 	public boolean isIsLicenseEmpty() {
-		boolean _or = false;
-		String _license = this.getLicense();
-		boolean _equals = Objects.equal(_license, null);
-		if (_equals) {
-			_or = true;
-		} else {
-			String _license_1 = this.getLicense();
-			boolean _isEmpty = _license_1.isEmpty();
-			_or = _isEmpty;
-		}
-		return _or;
+		return (Objects.equal(this.getLicense(), null) || this.getLicense().isEmpty());
 	}
 
 	/**
@@ -1699,17 +1689,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * @generated
 	 */
 	public boolean isIsLicenseUrlEmpty() {
-		boolean _or = false;
-		String _licenseUrl = this.getLicenseUrl();
-		boolean _equals = Objects.equal(_licenseUrl, null);
-		if (_equals) {
-			_or = true;
-		} else {
-			String _licenseUrl_1 = this.getLicenseUrl();
-			boolean _isEmpty = _licenseUrl_1.isEmpty();
-			_or = _isEmpty;
-		}
-		return _or;
+		return (Objects.equal(this.getLicenseUrl(), null) || this.getLicenseUrl().isEmpty());
 	}
 
 	/**
@@ -1718,17 +1698,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * @generated
 	 */
 	public boolean isIsUpdateSiteUrlEmpty() {
-		boolean _or = false;
-		String _updateSiteUrl = this.getUpdateSiteUrl();
-		boolean _equals = Objects.equal(_updateSiteUrl, null);
-		if (_equals) {
-			_or = true;
-		} else {
-			String _updateSiteUrl_1 = this.getUpdateSiteUrl();
-			boolean _isEmpty = _updateSiteUrl_1.isEmpty();
-			_or = _isEmpty;
-		}
-		return _or;
+		return (Objects.equal(this.getUpdateSiteUrl(), null) || this.getUpdateSiteUrl().isEmpty());
 	}
 
 	/**
@@ -1737,17 +1707,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * @generated
 	 */
 	public boolean isIsAuthorEmailEmpty() {
-		boolean _or = false;
-		String _authorEmail = this.getAuthorEmail();
-		boolean _equals = Objects.equal(_authorEmail, null);
-		if (_equals) {
-			_or = true;
-		} else {
-			String _authorEmail_1 = this.getAuthorEmail();
-			boolean _isEmpty = _authorEmail_1.isEmpty();
-			_or = _isEmpty;
-		}
-		return _or;
+		return (Objects.equal(this.getAuthorEmail(), null) || this.getAuthorEmail().isEmpty());
 	}
 
 	/**

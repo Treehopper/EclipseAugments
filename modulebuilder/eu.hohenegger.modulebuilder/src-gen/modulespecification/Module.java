@@ -364,7 +364,7 @@ public interface Module extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Tycho Version</b></em>' attribute.
-	 * The default value is <code>"0.25.0"</code>.
+	 * The default value is <code>"1.0.0"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Tycho Version</em>' attribute isn't clear,
@@ -374,7 +374,7 @@ public interface Module extends EObject {
 	 * @return the value of the '<em>Tycho Version</em>' attribute.
 	 * @see #setTychoVersion(String)
 	 * @see modulespecification.ModulespecificationPackage#getModule_TychoVersion()
-	 * @model default="0.25.0" unique="false"
+	 * @model default="1.0.0" unique="false"
 	 * @generated
 	 */
 	String getTychoVersion();
@@ -1115,7 +1115,7 @@ public interface Module extends EObject {
 	 * @return the value of the '<em>Is License Empty</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_IsLicenseEmpty()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='boolean _or = false;\n<%java.lang.String%> _license = this.getLicense();\nboolean _equals = <%com.google.common.base.Objects%>.equal(_license, null);\nif (_equals)\n{\n\t_or = true;\n} else\n{\n\t<%java.lang.String%> _license_1 = this.getLicense();\n\tboolean _isEmpty = _license_1.isEmpty();\n\t_or = _isEmpty;\n}\nreturn _or;'"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='return (<%com.google.common.base.Objects%>.equal(this.getLicense(), null) || this.getLicense().isEmpty());'"
 	 * @generated
 	 */
 	boolean isIsLicenseEmpty();
@@ -1131,7 +1131,7 @@ public interface Module extends EObject {
 	 * @return the value of the '<em>Is License Url Empty</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_IsLicenseUrlEmpty()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='boolean _or = false;\n<%java.lang.String%> _licenseUrl = this.getLicenseUrl();\nboolean _equals = <%com.google.common.base.Objects%>.equal(_licenseUrl, null);\nif (_equals)\n{\n\t_or = true;\n} else\n{\n\t<%java.lang.String%> _licenseUrl_1 = this.getLicenseUrl();\n\tboolean _isEmpty = _licenseUrl_1.isEmpty();\n\t_or = _isEmpty;\n}\nreturn _or;'"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='return (<%com.google.common.base.Objects%>.equal(this.getLicenseUrl(), null) || this.getLicenseUrl().isEmpty());'"
 	 * @generated
 	 */
 	boolean isIsLicenseUrlEmpty();
@@ -1147,7 +1147,7 @@ public interface Module extends EObject {
 	 * @return the value of the '<em>Is Update Site Url Empty</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_IsUpdateSiteUrlEmpty()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='boolean _or = false;\n<%java.lang.String%> _updateSiteUrl = this.getUpdateSiteUrl();\nboolean _equals = <%com.google.common.base.Objects%>.equal(_updateSiteUrl, null);\nif (_equals)\n{\n\t_or = true;\n} else\n{\n\t<%java.lang.String%> _updateSiteUrl_1 = this.getUpdateSiteUrl();\n\tboolean _isEmpty = _updateSiteUrl_1.isEmpty();\n\t_or = _isEmpty;\n}\nreturn _or;'"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='return (<%com.google.common.base.Objects%>.equal(this.getUpdateSiteUrl(), null) || this.getUpdateSiteUrl().isEmpty());'"
 	 * @generated
 	 */
 	boolean isIsUpdateSiteUrlEmpty();
@@ -1163,7 +1163,7 @@ public interface Module extends EObject {
 	 * @return the value of the '<em>Is Author Email Empty</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_IsAuthorEmailEmpty()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='boolean _or = false;\n<%java.lang.String%> _authorEmail = this.getAuthorEmail();\nboolean _equals = <%com.google.common.base.Objects%>.equal(_authorEmail, null);\nif (_equals)\n{\n\t_or = true;\n} else\n{\n\t<%java.lang.String%> _authorEmail_1 = this.getAuthorEmail();\n\tboolean _isEmpty = _authorEmail_1.isEmpty();\n\t_or = _isEmpty;\n}\nreturn _or;'"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='return (<%com.google.common.base.Objects%>.equal(this.getAuthorEmail(), null) || this.getAuthorEmail().isEmpty());'"
 	 * @generated
 	 */
 	boolean isIsAuthorEmailEmpty();

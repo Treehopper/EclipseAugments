@@ -34,7 +34,7 @@ class Module {
 	
 	String providerName = "http://www.example.org"
 	
-	String tychoVersion = "0.25.0"
+	String tychoVersion = "1.0.0"
 	String javaVersion = "JavaSE-1.8"
 	
 	String baseLocation = ""
