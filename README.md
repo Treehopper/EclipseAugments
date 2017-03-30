@@ -37,7 +37,7 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 
 Install from p2 update site
 ===================
-TBD http://treehopper.github.io/EclipseAugments/
+http://treehopper.github.io/EclipseAugments/
 
 
 License
