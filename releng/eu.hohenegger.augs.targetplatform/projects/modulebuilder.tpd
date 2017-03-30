@@ -1,6 +1,6 @@
 target "modulebuilder" with source configurePhase requirements
 
-location "http://download.eclipse.org/releases/mars" {
+location "http://download.eclipse.org/releases/neon" {
 	org.eclipse.draw2d.feature.group [3.10.1,4.0.0)
 }
 

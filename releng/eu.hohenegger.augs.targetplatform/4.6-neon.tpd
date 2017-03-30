@@ -3,13 +3,4 @@ target "4.6-neon" with source configurePhase
 location "http://download.eclipse.org/releases/neon/" {
 	org.eclipse.sdk.ide lazy
 	org.eclipse.emf.sdk.feature.group lazy
-
-//	org.eclipse.sdk.feature.group [4.5.0,4.6.0)
-//	org.eclipse.platform.feature.group [4.5.0,4.6.0)
-
-	//Part Detacher
-	org.eclipse.e4.tools.compat [4.5.0,4.6.0)
-	org.eclipse.e4.tools.services [4.5.0,4.6.0)
-
-//	org.junit [4.12.0,4.13.0)
 }
