@@ -7,7 +7,9 @@ import static eu.hohenegger.modulebuilder.ui.Activator.logError;
 import static org.eclipse.emf.common.util.Diagnostic.OK;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.Optional;
 
+import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectNature;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IWorkspace;
@@ -17,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.util.Diagnostician;
 import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.jface.viewers.TreeSelection;
 import org.eclipse.jface.wizard.Wizard;
 import org.eclipse.ui.INewWizard;
 import org.eclipse.ui.IWorkbench;
@@ -56,10 +59,11 @@ public class NewP2UpdateSiteWizard extends Wizard implements INewWizard {
 	public void addPages() {
 		String intialBaseId = "";
 		if (!selection.isEmpty()) {
-			if (selection.getFirstElement() instanceof IProjectNature) {
-				IProjectNature nature = (IProjectNature) selection.getFirstElement();
-				intialBaseId = nature.getProject().getName();
-
+			Optional<IProject> oProject = getProject();
+			if (oProject.isPresent()) {
+				IProject project = oProject.get();
+				intialBaseId = project.getName();
+				
 				module = createModel(intialBaseId);
 				module.setBaseLocation(getOSWorkspaceLocation());
 			} else if (selection.getFirstElement() instanceof IResource) {
@@ -74,6 +78,17 @@ public class NewP2UpdateSiteWizard extends Wizard implements INewWizard {
 		}
 		page = new NewP2UpdateSiteWizardPage(module);
 		addPage(page);
+	}
+
+	private Optional<IProject> getProject() {
+		IProject project = null;
+		if (selection.getFirstElement() instanceof IProject) {
+			project = (IProject) selection.getFirstElement();
+		} else if (selection.getFirstElement() instanceof IProjectNature) {
+			IProjectNature nature = (IProjectNature) selection.getFirstElement();
+			project = nature.getProject();
+		}
+		return Optional.ofNullable(project);
 	}
 
 	private static Module loadModel(IResource resource) {
