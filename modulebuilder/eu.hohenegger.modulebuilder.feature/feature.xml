@@ -13,6 +13,7 @@ All rights reserved.
    <requires>
       <import feature="org.eclipse.emf.ecp.emfforms.runtime.feature" version="1.8.0.20160216-1319"/>
       <import plugin="org.eclipse.emfforms.core.services.legacy"/>
+      <import plugin="org.eclipse.equinox.ds"/>
    </requires>
 
    <plugin
