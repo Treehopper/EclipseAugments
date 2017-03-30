@@ -1,0 +1,21 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "AllTests.java"»package «this.testsId»;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+@RunWith(Suite.class)
+@SuiteClasses({MyTest.class})
+public class AllTests {
+
+}
+
+«ENDFILE»
+«ENDDEFINE»

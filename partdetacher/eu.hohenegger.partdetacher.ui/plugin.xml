@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+ <extension
+       point="org.eclipse.ui.commands">
+    <command
+          id="eu.hohenegger.detacher.commands.sampleCommand"
+          name="Toggle Multiscreen">
+    </command>
+ </extension>
+ 
+	<extension
+			point="org.eclipse.ui.bindings">
+		<key
+				commandId="eu.hohenegger.detacher.commands.sampleCommand"
+				contextId="org.eclipse.ui.contexts.window"
+				sequence="M1+6"
+				schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+		</key>
+	</extension>
+
+	<extension point="org.eclipse.ui.menus">
+		<menuContribution
+				allPopups="false"
+				locationURI="popup:org.eclipse.compare.CompareEditor?after=additions">
+			<command
+					commandId="eu.hohenegger.detacher.commands.sampleCommand"
+					icon="icons/sample.gif">
+			</command>
+		</menuContribution>
+		<menuContribution
+				allPopups="false"
+				locationURI="popup:#TextEditorContext?after=additions">
+			<command
+					commandId="eu.hohenegger.detacher.commands.sampleCommand"
+					icon="icons/sample.gif">
+			</command>
+		</menuContribution>
+	</extension>
+</plugin>

@@ -1,0 +1,13 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "fragment.xml"»<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+</fragment>
+«ENDFILE»
+«ENDDEFINE»

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- requires Maven 3.3 -->
+<extensions>
+	<extension>
+		<artifactId>tycho-pomless</artifactId>
+		<groupId>org.eclipse.tycho.extras</groupId>
+		<version>1.0.0</version>
+	</extension>
+</extensions>

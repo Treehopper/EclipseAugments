@@ -1,0 +1,5 @@
+metaRequirements.0.namespace=org.eclipse.equinox.p2.iu
+metaRequirements.0.name=eu.hohenegger.c0ffee_tips.debug.ui
+metaRequirements.0.range=[0,2)
+
+instructions.configure = eu.hohenegger.c0ffee_tips.debug.ui.InstallDetailFormatters();

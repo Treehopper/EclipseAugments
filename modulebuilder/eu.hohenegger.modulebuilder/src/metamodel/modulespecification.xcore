@@ -1,0 +1,127 @@
+@GenModel(modelDirectory="/eu.hohenegger.modulebuilder/src-gen")
+@GenModel(editDirectory="/eu.hohenegger.modulebuilder.edit/src-gen")
+@GenModel(fileExtensions="modulespecification")
+package modulespecification
+
+@ExtendedMetaData(pattern="((\\d+)\\.)((\\d+)\\.)(\\d+)")
+type Version wraps String
+
+//Bundle symbolic Legal characters are A-Z a-z 0-9 . _ -
+@ExtendedMetaData(pattern="[a-zA-Z_.\\-0-9]*")
+type OSGiSegment wraps String
+
+//Bundle symbolic Legal characters are A-Z a-z 0-9 . _ -
+@ExtendedMetaData(pattern="[a-zA-Z_.\\-0-9]+", minLength="1")
+type OSGiName wraps String
+
+@ExtendedMetaData(pattern=".+", minLength="1")
+type MandatoryString wraps String
+
+class Module {
+	OSGiName baseId
+	
+	MandatoryString moduleName
+	MandatoryString categoryName
+ 	
+ 	@GenModel(propertyMultiLine="true")
+	String license = ""
+	String licenseUrl = ""
+	Version version = "1.0.0"
+	String copyRightAuthorName = ""
+	String copyRightUrl = "http://www.example.org"
+	String copyRightYear = ""
+	String authorEmail = ""
+	
+	String providerName = "http://www.example.org"
+	
+	String tychoVersion = "0.25.0"
+	String javaVersion = "JavaSE-1.8"
+	
+	String baseLocation = ""
+	
+	OSGiSegment coreSuffix = ""
+	OSGiSegment uiSuffix = ".ui"
+	
+	boolean generateParent = "true"
+	OSGiName tychoParentName = "parent"
+	MandatoryString mavenGroupId
+	
+	boolean generateTests = "true"
+	OSGiSegment testsSuffix = ".test"
+	
+	boolean generateFeature = "true"
+	OSGiSegment featureSuffix = ".feature"
+	
+	boolean generateUpdatesite = "true"
+	OSGiSegment updateSiteSuffix = ".p2updateSite"
+	String updateSiteUrl = "http://www.example.org"
+	
+	boolean generateTarget = "true"
+	OSGiSegment targetSuffix = ".releng.targetplatform"
+	
+	boolean generateUiFragment = "true"
+	OSGiSegment uie3Suffix = ".e3"
+	
+	String mavenVersionSuffix = "-SNAPSHOT"
+	String osgiVersionQualifier = ".qualifier"
+
+	derived String coreId get {
+		baseId + coreSuffix
+	}
+	
+	derived String uiId get {
+		baseId + uiSuffix
+	}
+	
+	derived String uie3Id get {
+		uiId + uie3Suffix
+	}
+
+	derived String testsId get {
+		baseId + testsSuffix
+	}
+	
+	derived String updateSiteId get {
+		baseId + updateSiteSuffix
+	}
+	
+	derived String featureId get {
+		baseId + featureSuffix
+	}
+	
+	derived String targetId get {
+		baseId + targetSuffix
+	}
+
+	derived String mavenVersion get {
+		version + mavenVersionSuffix
+	}
+	
+	derived String osgiVersion get {
+		version + osgiVersionQualifier
+	}
+	
+	derived String coreModuleName get {
+		moduleName + " Core"
+	}
+	
+	derived String uiModuleName get {
+		moduleName + " UI"
+	}
+
+	derived boolean isLicenseEmpty get {
+		license == null || license.empty
+	}
+
+	derived boolean isLicenseUrlEmpty get {
+		licenseUrl == null || licenseUrl.empty
+	}
+
+	derived boolean isUpdateSiteUrlEmpty get {
+		updateSiteUrl == null || updateSiteUrl.empty
+	}
+
+	derived boolean isAuthorEmailEmpty get {
+		authorEmail == null || authorEmail.empty
+	}
+}

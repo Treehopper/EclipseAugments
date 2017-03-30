@@ -1,0 +1,19 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE ".gitignore"»*.class
+bin
+
+# Maven
+target
+
+# Package Files #
+*.jar
+*.war
+*.ear
+«ENDFILE»
+«ENDDEFINE»

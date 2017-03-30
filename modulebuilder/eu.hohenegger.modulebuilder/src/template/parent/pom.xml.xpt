@@ -1,0 +1,89 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "pom.xml"»<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>«this.mavenGroupId»</groupId>
+	<artifactId>«this.tychoParentName»</artifactId>
+	<version>«this.mavenVersion»</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>«this.coreId»</module>
+«IF this.generateFeature»
+		<module>«this.featureId»</module>
+«ENDIF»
+«IF this.generateUpdatesite»
+		<module>«this.updateSiteId»</module>
+«ENDIF»
+		<module>«this.uiId»</module>
+«IF this.generateUiFragment»
+		<module>«this.uie3Id»</module>
+«ENDIF»
+«IF this.generateTests»
+		<module>«this.testsId»</module>
+«ENDIF»
+«IF this.generateTarget»
+		<module>«this.targetId»</module>
+«ENDIF»
+	</modules>
+
+	<properties>
+		<tycho-version>«this.tychoVersion»</tycho-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<target>
+						<artifact>
+							<groupId>«this.coreId»</groupId>
+							<artifactId>«this.targetId»</artifactId>
+							<version>«this.mavenVersion»</version>
+						</artifact>
+					</target>
+					<environments>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>archive-products</id>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project> 
+«ENDFILE»
+«ENDDEFINE»

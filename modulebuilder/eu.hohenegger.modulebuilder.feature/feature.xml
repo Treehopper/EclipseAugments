@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="eu.hohenegger.modulebuilder.feature"
+      label="Module Builder"
+      version="1.0.0.qualifier"
+      provider-name="http://max.hohenegger.eu">
+
+   <copyright url="http://www.hohenegger.eu">
+      Copyright (c) 2012 Max Hohenegger.
+All rights reserved.
+   </copyright>
+
+   <requires>
+      <import feature="org.eclipse.emf.ecp.emfforms.runtime.feature" version="1.8.0.20160216-1319"/>
+      <import plugin="org.eclipse.emfforms.core.services.legacy"/>
+      <import plugin="org.eclipse.equinox.ds"/>
+   </requires>
+
+   <plugin
+         id="eu.hohenegger.modulebuilder"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="eu.hohenegger.modulebuilder.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="eu.hohenegger.modulebuilder.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

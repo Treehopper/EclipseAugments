@@ -1,0 +1,20 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "MANIFEST.MF"»Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: «this.coreId»;singleton:=true
+Bundle-Version: «this.osgiVersion»
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Activator: «this.coreId».Activator
+Require-Bundle: org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: «this.javaVersion»
+Bundle-ActivationPolicy: lazy
+«ENDFILE»
+«ENDDEFINE»

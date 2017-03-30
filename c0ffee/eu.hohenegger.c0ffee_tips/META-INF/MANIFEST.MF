@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: c0ffe_tips
+Bundle-SymbolicName: eu.hohenegger.c0ffee_tips;singleton:=true
+Bundle-Version: 1.1.0.qualifier
+Bundle-Activator: eu.hohenegger.c0ffee_tips.impl.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.core.di.extensions,
+ org.eclipse.e4.core.contexts
+Import-Package: javax.inject;version="1.0.0",javax.annotation; version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: eu.hohenegger.c0ffee_tips

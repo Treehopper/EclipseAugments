@@ -1,0 +1,23 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "README.md"»«this.moduleName»
+===================
+
+«IF !this.isUpdateSiteUrlEmpty»
+Install from p2 update site
+===================
+«this.updateSiteUrl»
+«ENDIF»
+
+«IF !this.isLicenseUrlEmpty»
+License
+===================
+«this.licenseUrl»
+«ENDIF»
+«ENDFILE»
+«ENDDEFINE»

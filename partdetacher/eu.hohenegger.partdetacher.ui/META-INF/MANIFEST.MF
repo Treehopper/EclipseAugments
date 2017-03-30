@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: eu.hohenegger.partdetacher.ui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-Activator: eu.hohenegger.partdetacher.ui.Activator
+Require-Bundle: eu.hohenegger.partdetacher,
+ org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.core.di.extensions,
+ org.eclipse.e4.ui.di,
+ org.eclipse.e4.ui.services,
+ org.eclipse.e4.ui.model.workbench,
+ org.eclipse.e4.core.contexts,
+ org.eclipse.e4.ui.workbench,
+ org.eclipse.e4.core.services,
+ org.eclipse.core.resources,
+ org.eclipse.swt,
+ org.eclipse.core.expressions,
+ org.eclipse.e4.tools.compat
+Import-Package: javax.inject;version="1.0.0",javax.annotation; version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

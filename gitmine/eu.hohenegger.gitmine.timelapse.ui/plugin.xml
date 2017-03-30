@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+s      <e4view
+            category="org.eclipse.egit.ui.GitCategory"
+            class="eu.hohenegger.gitmine.timelapse.ui.views.TimeLapseView"
+            icon="icons/sample.gif"
+            id="eu.hohenegger.gitmine.ui.timelapse"
+            name="Time Lapse View"
+            restorable="true">
+      </e4view>
+   </extension>
+</plugin>

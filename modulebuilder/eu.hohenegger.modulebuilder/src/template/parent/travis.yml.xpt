@@ -1,0 +1,21 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE ".travis.yml"»language: java
+jdk:
+ - oraclejdk8
+«IF !this.isAuthorEmailEmpty»
+notifications:
+ email:
+   recipients:
+    - «this.authorEmail»
+   on_success: change
+   on_failure: always
+«ENDIF»
+
+«ENDFILE»
+«ENDDEFINE»

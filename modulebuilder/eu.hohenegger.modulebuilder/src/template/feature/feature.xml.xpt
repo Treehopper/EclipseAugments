@@ -1,0 +1,58 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "feature.xml"»<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="«this.featureId»"
+      label="«this.moduleName»"
+      version="«this.osgiVersion»"
+      provider-name="«this.providerName»">
+
+   <copyright url="«this.copyRightUrl»">
+      Copyright (c) «this.copyRightYear» «this.copyRightUrl».
+All rights reserved.
+   </copyright>
+
+	«IF !this.isLicenseEmpty»
+   <license «IF !this.isLicenseUrlEmpty»url="«this.licenseUrl»"«ENDIF»>«this.license»</license>
+	«ENDIF»
+
+«IF !this.isUpdateSiteUrlEmpty»
+   <url>
+      <update url="«this.updateSiteUrl»"/>
+   </url>
+«ENDIF»
+
+   <requires />
+
+   <plugin
+         id="«this.coreId»"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="«this.uiId»"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+«IF this.generateUiFragment»
+   <plugin
+         id="«this.uie3Id»"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+«ENDIF»
+</feature>
+
+«ENDFILE»
+«ENDDEFINE»

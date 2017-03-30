@@ -1,0 +1,15 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "build.properties"»source.. = src/
+output.. = bin/
+bin.includes = META-INF/,\
+               .,\
+               fragment.xml,\
+               plugin.properties
+«ENDFILE»
+«ENDDEFINE»

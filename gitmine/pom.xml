@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>eu.hohenegger</groupId>
+		<artifactId>augs</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>gitmine</artifactId>
+
+	<modules>
+		<module>eu.hohenegger.gitmine</module>
+		<module>eu.hohenegger.gitmine.feature</module>
+		<module>eu.hohenegger.gitmine.ui</module>
+		<module>eu.hohenegger.gitmine.timelapse.ui</module>
+		<module>eu.hohenegger.gitmine.timelapse.feature</module>
+		<module>eu.hohenegger.gitmine.test</module>
+	</modules>
+
+	<packaging>pom</packaging>
+</project>

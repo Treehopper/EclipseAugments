@@ -1,0 +1,22 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "pom.xml"»<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>«this.mavenGroupId»</groupId>
+		<artifactId>«this.tychoParentName»</artifactId>
+		<version>«this.mavenVersion»</version>
+	</parent>
+
+	<artifactId>«this.featureId»</artifactId>
+	<packaging>eclipse-feature</packaging>
+</project> 
+«ENDFILE»
+«ENDDEFINE»

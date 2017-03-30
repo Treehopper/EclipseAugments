@@ -1,0 +1,13 @@
+«IMPORT modulespecification»
+
+«DEFINE main FOR Module»
+«EXPAND modulespecification FOR this»
+«ENDDEFINE»
+
+«DEFINE modulespecification FOR Module»
+«FILE "plugin.properties"»#
+
+pluginName = «this.uiModuleName» Fragment
+providerName = «this.providerName»
+«ENDFILE»
+«ENDDEFINE»

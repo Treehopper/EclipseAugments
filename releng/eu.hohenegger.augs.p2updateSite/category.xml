@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="" id="eu.hohenegger.stacks.feature" version="0.0.0">
+      <category name="eu.hohenegger.stacks"/>
+   </feature>
+   <feature url="" id="eu.hohenegger.partdetacher.feature" version="0.0.0">
+      <category name="eu.hohenegger.partdetacher"/>
+   </feature>
+   <feature url="" id="eu.hohenegger.c0ffee_tips.feature" version="0.0.0">
+      <category name="eu.hohenegger.c0ffee_tips"/>
+   </feature>
+   <feature url="" id="eu.hohenegger.modulebuilder.feature" version="0.0.0">
+      <category name="eu.hohenegger.modulebuilder"/>
+   </feature>
+   <feature url="" id="eu.hohenegger.gitmine.feature" version="0.0.0">
+      <category name="eu.hohenegger.gitmine"/>
+   </feature>
+   <feature url="" id="eu.hohenegger.gitmine.timelapse.feature" version="0.0.0">
+      <category name="eu.hohenegger.gitmine"/>
+   </feature>
+   <feature id="org.eclipse.nebula.visualization.feature" version="0.0.0">
+      <category name="org.eclipse.nebula.visualization"/>
+   </feature>
+   <category-def name="eu.hohenegger.stacks" label="Stack Trace Editor (experimental)"/>
+   <category-def name="eu.hohenegger.partdetacher" label="Part Detacher (experimental)"/>
+   <category-def name="eu.hohenegger.c0ffee_tips" label="Hexadecimal Augments (experimental)"/>
+   <category-def name="eu.hohenegger.modulebuilder" label="Module Builder (experimental)"/>
+   <category-def name="eu.hohenegger.gitmine" label="GitMine (experimental)"/>
+   <category-def name="org.eclipse.nebula.visualization" label="Nebula Visualization Dependency (Required)"/>
+   <repository-reference location="http://download.eclipse.org/nebula/releases/1.2.0" enabled="true" />
+   <repository-reference location="http://download.eclipse.org/ecp/releases/releases_18/" enabled="true" />
+   <repository-reference location="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" enabled="true" />
+</site>
