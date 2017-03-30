@@ -1,0 +1,10 @@
+instructions.configure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-Xmx1024m);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-Xms512m);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-Xmx2048m);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-Xms1024m);
+instructions.unconfigure=\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-Xmx1024m);\
+org.eclipse.equinox.p2.touchpoint.eclipse.addJvmArg(jvmArg:-Xms512m);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-Xms1024m);\
+org.eclipse.equinox.p2.touchpoint.eclipse.removeJvmArg(jvmArg:-Xmx2048m);

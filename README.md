@@ -35,6 +35,10 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 * Cycle through the history of the content of a file
 * Show commit statistic on a file
 
+## Preference Augments
+### Features
+* Increase memory available to Eclipse
+
 Install from p2 update site
 ===================
 http://treehopper.github.io/EclipseAugments/

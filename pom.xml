@@ -13,6 +13,7 @@
 		<module>c0ffee</module>
 		<module>modulebuilder</module>
 		<module>gitmine</module>
+		<module>prefs</module>
 	</modules>
 
 	<properties>
