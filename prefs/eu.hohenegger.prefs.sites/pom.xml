@@ -4,18 +4,10 @@
 
 	<parent>
 		<groupId>eu.hohenegger</groupId>
-		<artifactId>augs</artifactId>
+		<artifactId>prefs</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>prefs</artifactId>
-
-	<modules>
-		<module>eu.hohenegger.prefs</module>
-		<module>eu.hohenegger.prefs.feature</module>
-		<module>eu.hohenegger.prefs.sites</module>
-		<module>eu.hohenegger.prefs.sites.feature</module>
-	</modules>
-
-	<packaging>pom</packaging>
-</project>
+	<artifactId>eu.hohenegger.prefs.sites</artifactId>
+	<packaging>eclipse-plugin</packaging>
+</project> 

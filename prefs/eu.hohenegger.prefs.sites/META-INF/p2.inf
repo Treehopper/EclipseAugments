@@ -1,0 +1,8 @@
+instructions.configure= \
+    addRepository(location:http${#58}//alfsch.github.io/eclipse-updates/workspacemechanic/,type:0,name:Workspace Mechanic,enabled:true); \
+    addRepository(location:http${#58}//update.atlassian.com/atlassian-eclipse-plugin/,type:0,name:Atlassian Mylyn Connector,enabled:true); \
+    addRepository(location:http${#58}//eclipse-cs.sf.net/update/,type:0,name:Checkstyle,enabled:true); \
+    addRepository(location:http${#58}//findbugs.cs.umd.edu/eclipse/,type:0,name:FindBugs,enabled:true); \
+    addRepository(location:http${#58}//mbarbero.github.io/fr.obeo.releng.targetplatform/p2/latest/,type:0,name:Target Editor,enabled:true);
+ instructions.configure.import= \
+    org.eclipse.equinox.p2.touchpoint.eclipse.addRepository

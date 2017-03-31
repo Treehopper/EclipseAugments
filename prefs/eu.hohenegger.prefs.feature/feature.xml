@@ -3,7 +3,7 @@
       id="eu.hohenegger.prefs.feature"
       label="eclipse.ini Augments"
       version="1.0.0.qualifier"
-      provider-name="http://www.example.org">
+      provider-name="Max Hohenegger">
 
    <copyright url="http://www.hohenegger.eu">
       Copyright (c) 2012 Max Hohenegger.

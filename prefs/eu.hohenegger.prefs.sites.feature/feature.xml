@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="eu.hohenegger.prefs.sites.feature"
+      label="Add p2 update sites"
+      version="1.0.0.qualifier"
+      provider-name="Max Hohenegger">
+
+   <copyright url="http://www.example.org">
+      Copyright (c)  http://www.example.org.
+All rights reserved.
+   </copyright>
+
+   <plugin
+         id="eu.hohenegger.prefs.sites"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

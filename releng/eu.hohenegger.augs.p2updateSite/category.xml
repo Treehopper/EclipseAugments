@@ -21,6 +21,9 @@
    <feature url="" id="eu.hohenegger.prefs.feature" version="0.0.0">
       <category name="eu.hohenegger.prefs"/>
    </feature>
+   <feature url="" id="eu.hohenegger.prefs.sites.feature" version="0.0.0">
+      <category name="eu.hohenegger.prefs"/>
+   </feature>
    <feature id="org.eclipse.nebula.visualization.feature" version="0.0.0">
       <category name="org.eclipse.nebula.visualization"/>
    </feature>
