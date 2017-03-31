@@ -74,7 +74,7 @@ public class NewP2UpdateSiteWizard extends Wizard implements INewWizard {
 				IProject project = oProject.get();
 				intialBaseId = project.getName();
 				module = createModel(intialBaseId);
-				module.setBaseLocation(getOSWorkspaceLocation());
+				module.setBaseLocation(getLocation(project));
 				
 				Optional<IBundleProjectDescription> oBundleDescription = loadBundleProjectDescription(project);
 				if (oBundleDescription.isPresent()) {
@@ -101,6 +101,10 @@ public class NewP2UpdateSiteWizard extends Wizard implements INewWizard {
 		
 		page = new NewP2UpdateSiteWizardPage(module);
 		addPage(page);
+	}
+
+	private String getLocation(IProject project) {
+		return project.getLocation().makeAbsolute().removeLastSegments(1).toOSString();
 	}
 
 	private Optional<IBundleProjectDescription> loadBundleProjectDescription(IProject project) {
