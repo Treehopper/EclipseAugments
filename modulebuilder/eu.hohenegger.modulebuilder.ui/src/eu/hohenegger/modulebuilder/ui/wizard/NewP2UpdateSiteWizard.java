@@ -2,11 +2,14 @@ package eu.hohenegger.modulebuilder.ui.wizard;
 
 
 import static eu.hohenegger.modulebuilder.Constants.EXTENSION;
+import static eu.hohenegger.modulebuilder.Constants.PDE_PLUGIN_NATURE;
 import static eu.hohenegger.modulebuilder.ModuleUtil.generateModule;
 import static eu.hohenegger.modulebuilder.ui.Activator.logError;
+import static java.lang.String.format;
 import static org.eclipse.emf.common.util.Diagnostic.OK;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
 import java.util.Optional;
 
 import org.eclipse.core.resources.IProject;
@@ -15,15 +18,23 @@ import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IWorkspace;
 import org.eclipse.core.resources.IWorkspaceRoot;
 import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IAdapterManager;
+import org.eclipse.core.runtime.Platform;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.util.Diagnostician;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.jface.wizard.Wizard;
+import org.eclipse.pde.core.project.IBundleProjectDescription;
+import org.eclipse.pde.core.project.IBundleProjectService;
 import org.eclipse.ui.INewWizard;
 import org.eclipse.ui.IWorkbench;
+import org.osgi.framework.Version;
 
+import eu.hohenegger.modulebuilder.Constants;
 import eu.hohenegger.modulebuilder.XMIPersistenceUtil;
+import eu.hohenegger.modulebuilder.ui.Activator;
 import modulespecification.Module;
 import modulespecification.ModulespecificationFactory;
 
@@ -62,9 +73,19 @@ public class NewP2UpdateSiteWizard extends Wizard implements INewWizard {
 			if (oProject.isPresent()) {
 				IProject project = oProject.get();
 				intialBaseId = project.getName();
-				
 				module = createModel(intialBaseId);
 				module.setBaseLocation(getOSWorkspaceLocation());
+				
+				Optional<IBundleProjectDescription> oBundleDescription = loadBundleProjectDescription(project);
+				if (oBundleDescription.isPresent()) {
+					module.setBaseId(oBundleDescription.get().getSymbolicName());
+					module.setModuleName(oBundleDescription.get().getBundleName());
+					Version version = oBundleDescription.get().getBundleVersion();
+					module.setVersion(format("%d.%d.%d", version.getMajor(), version.getMinor(), version.getMicro()));
+					module.setOsgiVersionQualifier("."+version.getQualifier());
+					module.setProviderName(oBundleDescription.get().getBundleVendor());
+					module.setJavaVersion(oBundleDescription.get().getHeader("Bundle-RequiredExecutionEnvironment"));
+				}
 			} else if (selection.getFirstElement() instanceof IResource) {
 				IResource resource = (IResource) selection.getFirstElement();
 				if (resource.getName().endsWith(EXTENSION)) {
@@ -80,6 +101,19 @@ public class NewP2UpdateSiteWizard extends Wizard implements INewWizard {
 		
 		page = new NewP2UpdateSiteWizardPage(module);
 		addPage(page);
+	}
+
+	private Optional<IBundleProjectDescription> loadBundleProjectDescription(IProject project) {
+		try {
+			if (Arrays.stream(project.getDescription().getNatureIds()).filter(PDE_PLUGIN_NATURE::equals).findFirst().isPresent()) {
+				IBundleProjectService bundleService = Activator.getBundleService();
+				IBundleProjectDescription bundleProjectDescription = bundleService.getDescription(project);
+				return Optional.ofNullable(bundleProjectDescription);
+			}
+		} catch (CoreException e) {
+			return Optional.empty();
+		}
+		return Optional.empty();
 	}
 
 	private Optional<IProject> getProject() {

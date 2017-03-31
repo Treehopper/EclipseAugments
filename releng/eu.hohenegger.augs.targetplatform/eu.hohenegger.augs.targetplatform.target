@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
-<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1490867521">
+<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1490885430">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.apache.commons.compress" version="1.6.0.v201310281400"/>
@@ -61,6 +61,7 @@
       <unit id="org.eclipse.egit.ui" version="4.4.1.201607150455-r"/>
       <unit id="org.eclipse.jgit.feature.group" version="4.4.1.201607150455-r"/>
       <unit id="org.eclipse.draw2d.feature.group" version="3.10.100.201606061308"/>
+      <unit id="org.eclipse.pde.feature.group" version="3.12.3.v20170301-0400"/>
       <repository location="http://download.eclipse.org/releases/neon"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">

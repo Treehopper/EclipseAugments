@@ -1,5 +1,9 @@
 package eu.hohenegger.modulebuilder.impl;
 
+import static eu.hohenegger.modulebuilder.Constants.MANIFEST_BUILDER;
+import static eu.hohenegger.modulebuilder.Constants.PDE_PLUGIN_NATURE;
+import static eu.hohenegger.modulebuilder.Constants.SCHEMA_BUILDER;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,11 +27,9 @@ import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.jdt.core.JavaModelException;
 
 public class ProjectFactory {
+	
 	private static final String BIN_FOLDER = "bin";
 	private static final String SRC_FOLDER = "src";
-	private static final String SCHEMA_BUILDER = "org.eclipse.pde.SchemaBuilder";
-	private static final String MANIFEST_BUILDER = "org.eclipse.pde.ManifestBuilder";
-	private static final String PDE_PLUGIN_NATURE = "org.eclipse.pde.PluginNature";
 
 	public static IJavaProject makeJavaProject(IProject project, IProgressMonitor monitor, String javaVersion) throws CoreException {
 		addNature(project, monitor, JavaCore.NATURE_ID, PDE_PLUGIN_NATURE);
