@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_LkcuQBcNEeeGxdPpBTHPOw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Qkgu0BcNEeeGxdPpBTHPOw" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_VA6osBcNEeeGxdPpBTHPOw" elementId="eu.hohenegger.scratchpad" label="Scratchpad" iconURI="platform:/plugin/eu.hohenegger.scratchpad.ui/icons/sample.gif" contributionURI="bundleclass://eu.hohenegger.scratchpad.ui/eu.hohenegger.scratchpad.ui.ScratchPadPart">
+      <tags>View</tags>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

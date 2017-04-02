@@ -1,0 +1,5 @@
+target "c0ffee" with source configurePhase
+
+location "http://download.eclipse.org/releases/neon" {
+	org.eclipse.jdt.feature.group [3.12.0,3.13.0)
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="eu.hohenegger.common.feature"
+      label="Common"
+      version="1.0.0.qualifier"
+      provider-name="Max Hohenegger">
+
+   <copyright url="http://www.example.org">
+      Copyright (c) 2017 http://www.example.org.
+All rights reserved.
+   </copyright>
+
+	
+
+
+   <url>
+      <update url="http://www.example.org"/>
+   </url>
+
+
+   <requires />
+
+   <plugin
+         id="eu.hohenegger.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="eu.hohenegger.common.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+
+</feature>
+

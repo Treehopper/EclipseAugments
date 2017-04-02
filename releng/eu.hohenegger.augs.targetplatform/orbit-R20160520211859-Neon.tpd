@@ -16,4 +16,8 @@ location "http://download.eclipse.org/tools/orbit/downloads/drops/R2016052021185
 	org.objenesis [1.0.0.v201505121915,1.0.0.v201505121915]
 	org.slf4j.api [1.7.2.v20121108-1250,1.7.2.v20121108-1250]
 	org.slf4j.impl.log4j12 [1.7.2.v20131105-2200,1.7.2.v20131105-2200]
+	
+	//scratchpad
+	org.apache.commons.io [2.0.1,2.1.0)
+	org.apache.commons.lang3 [3.1.0,3.2.0)
 }

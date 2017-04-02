@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
-<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1490885430">
+<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1491159789">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.apache.commons.compress" version="1.6.0.v201310281400"/>
@@ -19,6 +19,8 @@
       <unit id="org.objenesis" version="1.0.0.v201505121915"/>
       <unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
       <unit id="org.slf4j.impl.log4j12" version="1.7.2.v20131105-2200"/>
+      <unit id="org.apache.commons.io" version="2.0.1.v201105210651"/>
+      <unit id="org.apache.commons.lang3" version="3.1.0.v201403281430"/>
       <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
@@ -57,23 +59,22 @@
       <repository location="http://download.eclipse.org/ecp/releases/releases_18/"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+      <unit id="org.eclipse.nebula.visualization.feature.feature.group" version="1.0.0.201703081533"/>
+      <repository location="http://download.eclipse.org/nebula/releases/1.2.0"/>
+    </location>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+      <unit id="org.eclipse.platform.feature.group" version="4.6.3.v20170301-0400"/>
+      <unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="2.10.1.v20161129-1925"/>
+      <unit id="org.eclipse.sdk.ide" version="0.0.0"/>
+      <unit id="org.eclipse.emf.sdk.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.e4.tools.compat" version="4.5.0.v20160503-0947"/>
+      <unit id="org.eclipse.e4.tools.services" version="4.5.0.v20160503-0947"/>
       <unit id="org.eclipse.egit.core" version="4.4.1.201607150455-r"/>
       <unit id="org.eclipse.egit.ui" version="4.4.1.201607150455-r"/>
       <unit id="org.eclipse.jgit.feature.group" version="4.4.1.201607150455-r"/>
       <unit id="org.eclipse.draw2d.feature.group" version="3.10.100.201606061308"/>
       <unit id="org.eclipse.pde.feature.group" version="3.12.3.v20170301-0400"/>
       <repository location="http://download.eclipse.org/releases/neon"/>
-    </location>
-    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
-      <unit id="org.eclipse.nebula.visualization.feature.feature.group" version="1.0.0.201703081533"/>
-      <repository location="http://download.eclipse.org/nebula/releases/1.2.0"/>
-    </location>
-    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
-      <unit id="org.eclipse.sdk.ide" version="0.0.0"/>
-      <unit id="org.eclipse.emf.sdk.feature.group" version="0.0.0"/>
-      <unit id="org.eclipse.e4.tools.compat" version="4.5.0.v20160503-0947"/>
-      <unit id="org.eclipse.e4.tools.services" version="4.5.0.v20160503-0947"/>
-      <repository location="http://download.eclipse.org/releases/neon/"/>
     </location>
   </locations>
 </target>

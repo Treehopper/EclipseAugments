@@ -43,6 +43,11 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 * Increase memory available to Eclipse
 * Make essential update sites available to the install dialog
 
+## Scratchpad
+### Features
+* Access notes from within Eclipse
+* Manage notes in files and folders
+
 Install from p2 update site
 ===================
 http://treehopper.github.io/EclipseAugments/
