@@ -10,6 +10,18 @@
             contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
             class="eu.hohenegger.stacks.ui.editors.LogEditor"
             id="eu.hohenegger.stacks.ui.editors.LogEditor">
+         <contentTypeBinding
+               contentTypeId="eu.hohenegger.stacks.ui.content-type">
+         </contentTypeBinding>
       </editor>
+   </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            file-extensions="log"
+            id="eu.hohenegger.stacks.ui.content-type"
+            name="Log File Content"
+            priority="high">
+      </content-type>
    </extension>
 </plugin>
