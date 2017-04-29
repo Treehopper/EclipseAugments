@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="ASCII"?>
-<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_LkcuQBcNEeeGxdPpBTHPOw">
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_LkcuQBcNEeeGxdPpBTHPOw">
   <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Qkgu0BcNEeeGxdPpBTHPOw" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
     <elements xsi:type="basic:PartDescriptor" xmi:id="_VA6osBcNEeeGxdPpBTHPOw" elementId="eu.hohenegger.scratchpad" label="Scratchpad" iconURI="platform:/plugin/eu.hohenegger.scratchpad.ui/icons/sample.gif" contributionURI="bundleclass://eu.hohenegger.scratchpad.ui/eu.hohenegger.scratchpad.ui.ScratchPadPart">
       <tags>View</tags>
     </elements>
   </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_bhDEcB0ZEeeCUJs5S1_kfQ" featurename="toolBarContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:ToolBarContribution" xmi:id="_kze5IB0ZEeeCUJs5S1_kfQ" elementId="eu.hohenegger.scratchpad.ui.toolbarcontribution.0">
+      <children xsi:type="menu:DirectToolItem" xmi:id="_mu2ZoB0ZEeeCUJs5S1_kfQ" elementId="eu.hohenegger.scratchpad.ui.directtoolitem.newnote" label="New Note" contributionURI="bundleclass://eu.hohenegger.scratchpad.ui/eu.hohenegger.scratchpad.ui.handler.NewFileHandler"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_27xUMB0ZEeeCUJs5S1_kfQ" parentElementId="org.eclipse.e4.legacy.ide.application"/>
 </fragment:ModelFragments>
