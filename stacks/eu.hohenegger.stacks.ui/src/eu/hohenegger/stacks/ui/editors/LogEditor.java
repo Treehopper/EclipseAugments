@@ -21,9 +21,21 @@ public class LogEditor extends TextEditor {
 	private ColorManager colorManager;
 	private ProjectionSupport projectionSupport;
 	private ProjectionAnnotationModel annotationModel;
-
+	private final LogConfiguration sourceViewerConfiguration;
 	private Annotation[] oldAnnotations;
 
+	public LogEditor() {
+		colorManager = new ColorManager();
+		sourceViewerConfiguration = new LogConfiguration(getPreferenceStore(), colorManager,
+				positions -> {
+					Display.getDefault().asyncExec(() -> {
+						updateFoldingStructure(positions);
+					});
+				});
+		setSourceViewerConfiguration(sourceViewerConfiguration);
+		setDocumentProvider(new LogDocumentProvider());
+	}
+	
 	public void updateFoldingStructure(List<Position> positions) {
 		Annotation[] annotations = new Annotation[positions.size()];
 
@@ -42,23 +54,12 @@ public class LogEditor extends TextEditor {
 		oldAnnotations = annotations;
 	}
 
-	public LogEditor() {
-		super();
-		colorManager = new ColorManager();
-		setSourceViewerConfiguration(new LogConfiguration(colorManager,
-				positions -> {
-					Display.getDefault().asyncExec(() -> {
-						updateFoldingStructure(positions);
-					});
-				}));
-		setDocumentProvider(new LogDocumentProvider());
-	}
 	@Override
 	public void dispose() {
 		colorManager.dispose();
 		super.dispose();
 	}
-
+	
 	@Override
 	public void createPartControl(Composite parent) {
 		super.createPartControl(parent);
@@ -71,7 +72,7 @@ public class LogEditor extends TextEditor {
 
 		annotationModel = viewer.getProjectionAnnotationModel();
 	}
-
+	
 	@Override
 	protected ISourceViewer createSourceViewer(Composite parent, IVerticalRuler ruler, int styles) {
 		ISourceViewer viewer = new ProjectionViewer(parent, ruler, getOverviewRuler(), isOverviewRulerVisible(),

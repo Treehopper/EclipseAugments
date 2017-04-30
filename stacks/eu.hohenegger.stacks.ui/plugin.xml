@@ -24,4 +24,14 @@
             priority="high">
       </content-type>
    </extension>
+   <extension
+         point="org.eclipse.ui.workbench.texteditor.hyperlinkDetectors">
+      <hyperlinkDetector
+            activate="true"
+            class="eu.hohenegger.stacks.ui.editors.links.HyperlinkDetector"
+            id="eu.hohenegger.stacks.ui.hyperlinkDetector"
+            name="Stack Trace JavaElement Link Detector"
+            targetId="org.eclipse.ui.DefaultTextEditor">
+      </hyperlinkDetector>
+   </extension>
 </plugin>

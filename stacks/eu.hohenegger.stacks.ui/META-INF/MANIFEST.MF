@@ -8,5 +8,12 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.jface.text,
  org.eclipse.ui.editors,
  org.eclipse.debug.ui,
- eu.hohenegger.stacks
+ eu.hohenegger.stacks,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.jdt.core,
+ org.eclipse.jdt.ui,
+ org.eclipse.ui.ide,
+ com.google.guava,
+ org.eclipse.jdt.debug.ui,
+ org.eclipse.jdt.debug
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
