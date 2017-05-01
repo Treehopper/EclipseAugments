@@ -18,6 +18,7 @@
    <extension
          point="org.eclipse.core.contenttype.contentTypes">
       <content-type
+            base-type="org.eclipse.core.runtime.text"
             file-extensions="log"
             id="eu.hohenegger.stacks.ui.content-type"
             name="Log File Content"
@@ -33,5 +34,32 @@
             name="Stack Trace JavaElement Link Detector"
             targetId="org.eclipse.ui.DefaultTextEditor">
       </hyperlinkDetector>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:eu.hohenegger.stacks.ui.editor.ruler_context_menu?after=additions">
+         <command
+               commandId="org.eclipse.ui.edit.text.folding.collapse_all"
+               label="Collapse All"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="eu.hohenegger.stacks.ui.editors.folding.handler.CollapseAllHandler"
+            commandId="org.eclipse.ui.edit.text.folding.collapse_all">
+
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="org.eclipse.ui.edit.text.folding.collapse_all"
+            name="Collapse All">
+      </command>
    </extension>
 </plugin>

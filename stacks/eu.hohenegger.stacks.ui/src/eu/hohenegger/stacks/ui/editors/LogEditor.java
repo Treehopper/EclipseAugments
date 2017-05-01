@@ -18,6 +18,8 @@ import org.eclipse.ui.editors.text.TextEditor;
 
 public class LogEditor extends TextEditor {
 
+	private static final String RULER_CONTEXT_MENU_ID = "eu.hohenegger.stacks.ui.editor.ruler_context_menu";
+	
 	private ColorManager colorManager;
 	private ProjectionSupport projectionSupport;
 	private ProjectionAnnotationModel annotationModel;
@@ -82,5 +84,11 @@ public class LogEditor extends TextEditor {
 		getSourceViewerDecorationSupport(viewer);
 
 		return viewer;
+	}
+	
+	@Override
+	protected void initializeEditor() {
+		super.initializeEditor(); // ORDER DEPENDENCY
+		setRulerContextMenuId(RULER_CONTEXT_MENU_ID);
 	}
 }
