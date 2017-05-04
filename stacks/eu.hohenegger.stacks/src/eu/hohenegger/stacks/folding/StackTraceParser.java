@@ -34,6 +34,16 @@ public class StackTraceParser {
 			case '\t':
 				indent = true;
 				break;
+			case 'a':
+				if (lookAhead(3).equals("at ")) {
+					indent = true;
+					break;	
+				}
+			case '.':
+				if (lookAhead(4).equals("... ")) {
+					indent = true;
+					break;	
+				}
 			default:
 				if (indent) {
 					positionConsumer.consume(startOffset, cNextPos - startOffset);
@@ -53,6 +63,13 @@ public class StackTraceParser {
 		char ch = text.charAt(cNextPos++);
 		monitor.worked(1);
 		return ch;
+	}
+	
+	private String lookAhead(int length) {
+		if (text.length() < cNextPos + length) {
+			length = text.length() - cNextPos;
+		}
+		return text.substring(cNextPos -1, cNextPos+length -1);
 	}
 
 	private void eatLine() {

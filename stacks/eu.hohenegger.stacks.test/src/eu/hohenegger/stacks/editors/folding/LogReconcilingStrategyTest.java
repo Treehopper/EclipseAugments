@@ -77,4 +77,28 @@ public class LogReconcilingStrategyTest {
 		assertEquals(2, consumerCalled);
 	}
 
+	@Test
+	public void testNoIndentation() throws Exception {
+		String firstStack = "java.lang.NullPointerException foo\n"
+				+ "at foo.bar.com 1\n"
+				+ "at foo.bar.com 2\n"
+				+ "at foo.bar.com 3\n";
+		String secondStack = "java.lang.IllegalArgumentException bar\n"
+				+"at foo.bar.com 1\n";
+
+		logReconcilingStrategy = new StackTraceParser(firstStack + secondStack);
+
+		logReconcilingStrategy.findStacks((offset, length) -> {
+			consumerCalled++;
+			if (consumerCalled == 1) {
+				assertEquals(0, offset);
+				assertEquals(firstStack.length() + 1, length);
+			} else if (consumerCalled == 2) {
+				assertEquals(firstStack.length(), offset);
+				assertEquals(secondStack.length(), length);
+			}
+		});
+		assertEquals(2, consumerCalled);
+	}
+
 }
