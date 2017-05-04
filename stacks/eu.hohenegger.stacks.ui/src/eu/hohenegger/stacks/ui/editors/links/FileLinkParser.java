@@ -12,7 +12,7 @@ import org.eclipse.jface.text.Region;
 public class FileLinkParser {
 
 	private final List<IRegion> links = new ArrayList<>();
-	private Pattern p = Pattern.compile("\\([^.]+\\.[^:]+:\\d+\\)");
+	private Pattern p = Pattern.compile("\\([^.)]+\\.[^:)]+:\\d+\\)");
 
 
 	public void parse(String markupContent) {
