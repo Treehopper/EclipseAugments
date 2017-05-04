@@ -82,7 +82,7 @@ public class LogReconcilingStrategyTest {
 		String firstStack = "java.lang.NullPointerException foo\n"
 				+ "at foo.bar.com 1\n"
 				+ "at foo.bar.com 2\n"
-				+ "at foo.bar.com 3\n";
+				+ "... 3 more\n";
 		String secondStack = "java.lang.IllegalArgumentException bar\n"
 				+"at foo.bar.com 1\n";
 
