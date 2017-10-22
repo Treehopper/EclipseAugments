@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/eu.hohenegger.e4.appmodel.extensions.wizard/src-gen"
+    editDirectory="/eu.hohenegger.e4.appmodel.extensions.wizard.edit/src-gen" editorDirectory="/eu.hohenegger.e4.appmodel.extensions.wizard.editor/src-gen"
+    modelPluginID="eu.hohenegger.e4.appmodel.extensions.wizard" modelName="_UiWizardExtensions"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" usedGenPackages="../../org.eclipse.e4.ui.model.workbench/model/UIElements.genmodel#//application"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>_UiWizardExtensions.ecore</foreignModel>
+  <genPackages prefix="Extensions" disposableProviderFactory="true" ecorePackage="_UiWizardExtensions.ecore#/">
+    <genClasses ecoreClass="_UiWizardExtensions.ecore#//Wizard">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference _UiWizardExtensions.ecore#//Wizard/pages"/>
+    </genClasses>
+    <genClasses ecoreClass="_UiWizardExtensions.ecore#//WizardPage">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference _UiWizardExtensions.ecore#//WizardPage/wizard"/>
+    </genClasses>
+    <genClasses ecoreClass="_UiWizardExtensions.ecore#//StaticWizardPage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference _UiWizardExtensions.ecore#//StaticWizardPage/nextPage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference _UiWizardExtensions.ecore#//StaticWizardPage/previousPage"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

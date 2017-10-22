@@ -16,6 +16,7 @@
 		<module>gitmine</module>
 		<module>prefs</module>
 		<module>scratchpad</module>
+		<module>wizard</module>
 	</modules>
 
 	<properties>

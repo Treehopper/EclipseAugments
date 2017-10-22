@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="wizard" nsURI="http://hohenegger.eu/eclipse/e4/wizard" nsPrefix="wizard">
+  <eClassifiers xsi:type="ecore:EClass" name="Wizard" eSuperTypes="platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//ui/UIElement platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//Contribution platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//ui/basic/Window">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pages" upperBound="-1"
+        eType="#//WizardPage" containment="true" eOpposite="#//WizardPage/wizard"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="finisher" eType="#//WizardFinisher"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="currentPage" eType="#//WizardPage"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="blockOnOpen" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="WizardPage" eSuperTypes="platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//ui/UIElement platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//Contribution">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="wizard" eType="#//Wizard"
+        eOpposite="#//Wizard/pages"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DynamicWizardPage" eSuperTypes="#//WizardPage">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nextPage" eType="#//DynamicWizardPage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="previousPage" eType="#//DynamicWizardPage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="WizardFinisher" eSuperTypes="platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.ecore#//Contribution">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="needsProgress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fork" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cancellable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
+        defaultValueLiteral="false"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Wizard Test
+Bundle-SymbolicName: eu.hohenegger.scratchpad.wizard.test
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: eu.hohenegger.scratchpad.wizard;bundle-version="1.0.0.qualifier"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit

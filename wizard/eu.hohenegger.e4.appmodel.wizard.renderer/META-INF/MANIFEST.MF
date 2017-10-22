@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: e4 Wizard Renderer
+Bundle-SymbolicName: eu.hohenegger.e4.appmodel.wizard.renderer
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.jface,
+ org.eclipse.e4.ui.model.workbench,
+ org.eclipse.e4.ui.workbench.swt,
+ org.eclipse.e4.core.contexts,
+ eu.hohenegger.e4.appmodel.extensions.wizard,
+ eu.hohenegger.e4.appmodel.wizard.renderer,
+ javax.inject,
+ org.eclipse.e4.core.di,
+ org.eclipse.core.runtime,
+ org.eclipse.e4.core.services,
+ org.eclipse.e4.ui.workbench.renderers.swt,
+ org.eclipse.core.databinding,
+ org.eclipse.jface.databinding
+Export-Package: eu.hohenegger.e4.appmodel.wizard.renderer,
+ eu.hohenegger.e4.appmodel.wizard.renderer.builder
+Bundle-ActivationPolicy: lazy

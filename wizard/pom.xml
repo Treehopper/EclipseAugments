@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>eu.hohenegger</groupId>
+		<artifactId>augs</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>wizard</artifactId>
+
+	<modules>
+		<module>eu.hohenegger.e4.appmodel.extensions.wizard</module>
+		<module>eu.hohenegger.e4.appmodel.extensions.wizard.test</module>
+		<module>eu.hohenegger.e4.appmodel.wizard.renderer</module>
+		<module>eu.hohenegger.wizard</module>
+		<module>eu.hohenegger.wizard.feature</module>
+		<module>eu.hohenegger.wizard.test</module>
+	</modules>
+
+	<packaging>pom</packaging>
+</project> 
