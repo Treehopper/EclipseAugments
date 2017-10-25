@@ -4,11 +4,12 @@ import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.Path;
 
 public class NewFolderHandler extends AbstractHandler {
 
-	protected void create(IContainer container, String name) throws CoreException {
+	protected void create(IContainer container, String name, IProgressMonitor monitor) throws CoreException {
 		IFolder folder = container.getFolder(Path.fromOSString(name));
 		folder.create(IResource.NONE, true, null);
 	}

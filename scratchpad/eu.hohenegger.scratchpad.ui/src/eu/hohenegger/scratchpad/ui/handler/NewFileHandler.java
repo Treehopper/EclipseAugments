@@ -9,6 +9,7 @@ import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.ui.IWorkbench;
 
@@ -19,10 +20,10 @@ public class NewFileHandler extends AbstractHandler {
 	@Inject
 	private IWorkbench workbench;
 
-	protected void create(IContainer container, String name) throws CoreException {
+	protected void create(IContainer container, String name, IProgressMonitor monitor) throws CoreException {
 		InputStream source = new ByteArrayInputStream(new byte[] {});
 		IFile file = container.getFile(Path.fromOSString(name));
-		file.create(source, IResource.NONE, null);
+		file.create(source, IResource.NONE, monitor);
 
 		EditorUtil.openEditor(workbench.getActiveWorkbenchWindow().getActivePage(), file);
 	}

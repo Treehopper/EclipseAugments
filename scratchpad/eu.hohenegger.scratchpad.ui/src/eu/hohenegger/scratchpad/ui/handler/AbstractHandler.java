@@ -4,6 +4,7 @@ import static org.eclipse.e4.ui.services.IServiceConstants.ACTIVE_SELECTION;
 import static org.eclipse.e4.ui.services.IServiceConstants.ACTIVE_SHELL;
 
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -13,6 +14,7 @@ import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IWorkspace;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IPath;
+import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.core.runtime.jobs.Job;
 import org.eclipse.e4.core.di.annotations.CanExecute;
@@ -28,7 +30,8 @@ import eu.hohenegger.scratchpad.ui.validator.ResourceNameValidator;
 
 
 public abstract class AbstractHandler {
-
+	private static final AtomicBoolean busy = new AtomicBoolean(false);
+	
 	@Inject
 	private IWorkspace workspace;
 
@@ -49,7 +52,11 @@ public abstract class AbstractHandler {
 
 		Job newJob = JobUiUtil.create(shell.getDisplay(), getJobName(), monitor -> {
 			try {
-				AbstractHandler.this.create(container, oName.get());
+				synchronized (busy) {
+					busy.set(true);
+					AbstractHandler.this.create(container, oName.get(), monitor);
+					busy.set(false);
+				}
 			} catch (CoreException e) {
 				throw new RuntimeException(e);
 //				return Activator.error(e); //FIXME
@@ -62,7 +69,7 @@ public abstract class AbstractHandler {
 
 	abstract protected String getJobName();
 
-	abstract protected void create(IContainer container, String name) throws CoreException;
+	abstract protected void create(IContainer container, String name, IProgressMonitor monitor) throws CoreException;
 
 	protected String getDescription() {
 		return "Name:";
@@ -92,5 +99,9 @@ public abstract class AbstractHandler {
 		}
 		Object firstElement = selection.getFirstElement();
 		return (firstElement instanceof IResource);
+	}
+	
+	public static boolean isBusy() {
+		return busy.get();
 	}
 }

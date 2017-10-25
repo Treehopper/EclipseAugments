@@ -14,6 +14,7 @@ import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.core.runtime.jobs.Job;
@@ -32,7 +33,7 @@ public class NewNoteHandler extends AbstractHandler {
 	@Inject
 	private IWorkbench workbench;
 
-	protected void create(IContainer container, String name) throws CoreException {
+	protected void create(IContainer container, String name, IProgressMonitor monitor) throws CoreException {
 		InputStream source = new ByteArrayInputStream(new byte[] {});
 		IFile file = container.getFile(Path.fromOSString(name));
 		file.create(source, IResource.NONE, null);
@@ -76,7 +77,7 @@ public class NewNoteHandler extends AbstractHandler {
 
 		Job newJob = JobUiUtil.create(shell.getDisplay(), getJobName(), monitor -> {
 			try {
-				create(container, oName.get());
+				create(container, oName.get(), monitor);
 			} catch (CoreException e) {
 				throw new RuntimeException(e);
 //				return Activator.error(e); //FIXME
