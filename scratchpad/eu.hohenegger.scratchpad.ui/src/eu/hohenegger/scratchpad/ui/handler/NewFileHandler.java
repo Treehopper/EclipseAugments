@@ -15,7 +15,7 @@ import org.eclipse.ui.IWorkbench;
 
 import eu.hohenegger.scratchpad.ui.widgets.EditorUtil;
 
-public class NewFileHandler extends AbstractHandler {
+public class NewFileHandler extends AbstractChangeResourceHandler {
 
 	@Inject
 	private IWorkbench workbench;

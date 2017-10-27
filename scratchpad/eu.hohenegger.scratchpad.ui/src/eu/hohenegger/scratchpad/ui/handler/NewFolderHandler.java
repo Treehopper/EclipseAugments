@@ -7,7 +7,7 @@ import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.Path;
 
-public class NewFolderHandler extends AbstractHandler {
+public class NewFolderHandler extends AbstractChangeResourceHandler {
 
 	protected void create(IContainer container, String name, IProgressMonitor monitor) throws CoreException {
 		IFolder folder = container.getFolder(Path.fromOSString(name));

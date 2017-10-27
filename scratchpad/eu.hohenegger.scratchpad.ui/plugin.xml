@@ -93,6 +93,15 @@
                label="Rename..."
                style="push">
          </command>
+         <separator
+               name="eu.hohenegger.scratchpad.ui.separator1"
+               visible="true">
+         </separator>
+         <command
+               commandId="eu.hohenegger.scratchpad.ui.notification"
+               label="Toggle Change Notification"
+               style="push">
+         </command>
       </menuContribution>
    </extension>
    <extension
@@ -121,6 +130,11 @@
             defaultHandler="eu.hohenegger.scratchpad.ui.handler.e3wrapper.NewNoteHandlerWrapper"
             id="eu.hohenegger.scratchpad.newNote"
             name="New Note">
+      </command>
+      <command
+            defaultHandler="eu.hohenegger.scratchpad.ui.handler.e3wrapper.ToggleNotificationHandlerWrapper"
+            id="eu.hohenegger.scratchpad.ui.notification"
+            name="Toggle Change Notification">
       </command>
    </extension>
    <extension

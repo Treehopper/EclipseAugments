@@ -29,7 +29,7 @@ import eu.hohenegger.common.ui.JobUiUtil;
 import eu.hohenegger.scratchpad.ui.validator.ResourceNameValidator;
 
 
-public abstract class AbstractHandler {
+public abstract class AbstractChangeResourceHandler extends AbstractResourceHandler {
 	private static final AtomicBoolean busy = new AtomicBoolean(false);
 	
 	@Inject
@@ -37,13 +37,7 @@ public abstract class AbstractHandler {
 
 	@Execute
 	private void execute(@Named(ACTIVE_SHELL) Shell shell, @Named(ACTIVE_SELECTION) IStructuredSelection selection) {
-		IResource resource = (IResource) selection.getFirstElement();
-		IContainer container;
-		if (resource instanceof IContainer) {
-			container = (IContainer) resource;
-		} else {
-			container = (IContainer) resource.getParent();
-		}
+		IContainer container = getContainer(selection);
 
 		Optional<String> oName = queryNewResourceName(container);
 		if (!oName.isPresent()) {
@@ -54,7 +48,7 @@ public abstract class AbstractHandler {
 			try {
 				synchronized (busy) {
 					busy.set(true);
-					AbstractHandler.this.create(container, oName.get(), monitor);
+					AbstractChangeResourceHandler.this.create(container, oName.get(), monitor);
 					busy.set(false);
 				}
 			} catch (CoreException e) {
@@ -92,15 +86,6 @@ public abstract class AbstractHandler {
 
 	abstract protected int getType();
 
-	@CanExecute
-	protected boolean isEnabled(@Named(ACTIVE_SELECTION) IStructuredSelection selection) {
-		if (selection.size() != 1) {
-			return false;
-		}
-		Object firstElement = selection.getFirstElement();
-		return (firstElement instanceof IResource);
-	}
-	
 	public static boolean isBusy() {
 		return busy.get();
 	}

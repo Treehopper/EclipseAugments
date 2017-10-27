@@ -1,8 +1,14 @@
 package eu.hohenegger.scratchpad.ui.notification;
 
 import org.eclipse.core.resources.IFile;
+import org.eclipse.core.resources.IMarker;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IResourceDelta;
+import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.Status;
+import org.eclipse.core.runtime.jobs.IJobFunction;
+import org.eclipse.core.runtime.jobs.Job;
 import org.eclipse.jface.layout.RowLayoutFactory;
 import org.eclipse.jface.viewers.StructuredSelection;
 import org.eclipse.swt.SWT;
@@ -17,7 +23,7 @@ import org.eclipse.ui.navigator.CommonViewer;
 import org.eclipse.ui.views.tasklist.TaskPropertiesDialog;
 
 import eu.hohenegger.scratchpad.notifier.IResourceChangeHandler;
-import eu.hohenegger.scratchpad.ui.handler.AbstractHandler;
+import eu.hohenegger.scratchpad.ui.handler.AbstractChangeResourceHandler;
 import eu.hohenegger.scratchpad.ui.widgets.EditorUtil;
 
 public class ResourceChangeNotifier implements IResourceChangeHandler {
@@ -30,12 +36,14 @@ public class ResourceChangeNotifier implements IResourceChangeHandler {
 
 	@Override
 	public void handle(IResourceDelta delta) {
-		if (AbstractHandler.isBusy()) {
+		if (AbstractChangeResourceHandler.isBusy()) {
 			return;
 		}
+		IResource resource = delta.getResource();
 
 		switch (delta.getKind()) {
 		case IResourceDelta.ADDED:
+			addMarker(resource, "Resource added");
 			Display.getDefault().asyncExec(() -> {
 				showToolTip(delta.getResource(), viewer, "Resource added");
 			});
@@ -46,11 +54,28 @@ public class ResourceChangeNotifier implements IResourceChangeHandler {
 			});
 			break;
 		case IResourceDelta.CHANGED:
+			addMarker(resource, "Resource changed");
 			Display.getDefault().asyncExec(() -> {
 				showToolTip(delta.getResource(), viewer, "Resource changed");
 			});
 			break;
 		}
+	}
+
+	private void addMarker(IResource resource, String message) {
+		Job job = Job.create("Adding task", (IJobFunction) monitor -> {
+			try {
+				IMarker marker = resource.createMarker("org.eclipse.core.resources.taskmarker");
+				marker.setAttribute(IMarker.PRIORITY, IMarker.PRIORITY_HIGH);
+				marker.setAttribute(IMarker.DONE, Boolean.FALSE);
+				marker.setAttribute(IMarker.MESSAGE, message);
+			} catch (CoreException e) {
+				throw new IllegalStateException(e);
+			}
+			return Status.OK_STATUS;
+		});
+		job.setRule(ResourcesPlugin.getWorkspace().getRuleFactory().markerRule(resource));
+		job.schedule();
 	}
 	
 	private void showToolTip(IResource resource, CommonViewer viewer, String message) {

@@ -28,7 +28,7 @@ import eu.hohenegger.scratchpad.Constants;
 import eu.hohenegger.scratchpad.ResourceUtil;
 import eu.hohenegger.scratchpad.ui.widgets.EditorUtil;
 
-public class NewNoteHandler extends AbstractHandler {
+public class NewNoteHandler extends AbstractChangeResourceHandler {
 
 	@Inject
 	private IWorkbench workbench;
