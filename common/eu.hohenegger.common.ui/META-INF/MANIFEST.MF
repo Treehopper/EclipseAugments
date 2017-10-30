@@ -27,4 +27,5 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Export-Package: eu.hohenegger.common.ui,
  eu.hohenegger.common.ui.control,
- eu.hohenegger.common.ui.e3compat
+ eu.hohenegger.common.ui.e3compat,
+ eu.hohenegger.common.ui.notification

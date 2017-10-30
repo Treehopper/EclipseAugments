@@ -131,11 +131,6 @@
             id="eu.hohenegger.scratchpad.newNote"
             name="New Note">
       </command>
-      <command
-            defaultHandler="eu.hohenegger.scratchpad.ui.handler.e3wrapper.ToggleNotificationHandlerWrapper"
-            id="eu.hohenegger.scratchpad.ui.notification"
-            name="Toggle Change Notification">
-      </command>
    </extension>
    <extension
          point="org.eclipse.ui.menus">

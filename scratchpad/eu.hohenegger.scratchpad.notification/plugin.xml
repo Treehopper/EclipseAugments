@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="eu.hohenegger.scratchpad.ui.handler.e3wrapper.ToggleNotificationHandlerWrapper"
+            id="eu.hohenegger.scratchpad.ui.notification"
+            name="Toggle Change Notification">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:eu.hohenegger.scratchpad">
+         <command
+               commandId="eu.hohenegger.scratchpad.ui.notification"
+               label="Toggle Change Notification"
+               style="push">
+         </command>
+      </menuContribution>
+   </extension>
+</plugin>

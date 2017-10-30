@@ -4,18 +4,10 @@
 
 	<parent>
 		<groupId>eu.hohenegger</groupId>
-		<artifactId>augs</artifactId>
+		<artifactId>scratchpad</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>scratchpad</artifactId>
-
-	<modules>
-		<module>eu.hohenegger.scratchpad</module>
-		<module>eu.hohenegger.scratchpad.feature</module>
-		<module>eu.hohenegger.scratchpad.ui</module>
-		<module>eu.hohenegger.scratchpad.notification</module>
-	</modules>
-
-	<packaging>pom</packaging>
-</project>
+	<artifactId>eu.hohenegger.scratchpad.notification</artifactId>
+	<packaging>eclipse-plugin</packaging>
+</project> 

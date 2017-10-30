@@ -1,15 +1,21 @@
-package eu.hohenegger.scratchpad.ui.notification;
+package eu.hohenegger.common.ui.notification;
 
 import org.eclipse.jface.viewers.Viewer;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Link;
+import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
 
 public abstract class ViewerNotification {
 
+	private static final String DATA_EXTENSION = ".notification";
 	private static final int LOCATION_X_OFFSET = 0;
 	private static final int LOCATION_Y_OFFSET = -5;
 	private static final int TOOLTIP_MARGIN = 5;
@@ -32,11 +38,11 @@ public abstract class ViewerNotification {
 	}
 
 	private void setActiveNotificationsCount(int activeNotifications) {
-		getViewer().setData(getClass().getName() + ".notification", activeNotifications);
+		getViewer().setData(getClass().getName() + DATA_EXTENSION, activeNotifications);
 	}
 
 	private Integer getActiveNotificationsCount() {
-		Integer result = (Integer) getViewer().getData(getClass().getName() + ".notification");
+		Integer result = (Integer) getViewer().getData(getClass().getName() + DATA_EXTENSION);
 		if (result == null) {
 			setActiveNotificationsCount(0);
 			return 0;
@@ -83,4 +89,23 @@ public abstract class ViewerNotification {
 	}
 
 	abstract protected Composite createContentArea(Composite parent);
+	
+	protected Label createLabel(String message, Composite container) {
+		Label label = new Label(container, SWT.NONE);
+		label.setText(message);
+		label.setBackground(getBackgroundColor(container.getDisplay()));
+		return label;
+	}
+
+	protected Link createLink(Composite container, String text, Listener listener) {
+		Link link = new Link(container, SWT.NONE);
+		link.setText(String.format("<a>%s</a>", text));
+		link.setBackground(getBackgroundColor(container.getDisplay()));
+		link.addListener(SWT.Selection, listener);
+		return link;
+	}
+
+	protected Color getBackgroundColor(Display display) {
+		return display.getSystemColor(SWT.COLOR_INFO_BACKGROUND);
+	}
 }

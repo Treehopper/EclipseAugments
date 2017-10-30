@@ -2,12 +2,13 @@ package eu.hohenegger.scratchpad.ui;
 
 import static eu.hohenegger.scratchpad.Constants.SCRATCHPAD_PROJECT_NAME;
 
+import java.util.Set;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 
 import org.eclipse.core.resources.IProject;
-import org.eclipse.core.resources.IResourceChangeListener;
 import org.eclipse.core.resources.IWorkspace;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.NullProgressMonitor;
@@ -20,8 +21,8 @@ import org.eclipse.ui.menus.IMenuService;
 
 import eu.hohenegger.common.ui.control.DIControlFactory;
 import eu.hohenegger.scratchpad.ResourceUtil;
-import eu.hohenegger.scratchpad.notifier.LinkedFoldersUpdateScanner;
-import eu.hohenegger.scratchpad.ui.notification.ResourceChangeNotifier;
+import eu.hohenegger.scratchpad.ui.whiteboard.ScratchPadExtension;
+import eu.hohenegger.scratchpad.ui.whiteboard.ScratchPadExtensionService;
 import eu.hohenegger.scratchpad.ui.widgets.ScratchpadViewer;
 
 public class ScratchPadPart {
@@ -39,9 +40,9 @@ public class ScratchPadPart {
 
 	@Inject
 	private ResourceUtil resourceUtil;
-
+	
 	@Inject
-	private IWorkspace workspace;
+	private ScratchPadExtensionService whiteboard;
 
 	private ScratchpadViewer projetViewerWidget;
 
@@ -54,9 +55,14 @@ public class ScratchPadPart {
 		projetViewerWidget.initContextMenu(menuService, e3menuService);
 		
 		IProject scratchPadProject = initProject();
-		
-		IResourceChangeListener changeListener = new LinkedFoldersUpdateScanner(scratchPadProject, new ResourceChangeNotifier(projetViewerWidget.getViewer()));
-		workspace.addResourceChangeListener(changeListener);
+		processExtensions(scratchPadProject);
+	}
+
+	private void processExtensions(IProject scratchPadProject) {
+		Set<ScratchPadExtension> members = whiteboard.getExtensions();
+		for (ScratchPadExtension member : members) {
+			member.extend(projetViewerWidget.getViewer(), scratchPadProject);
+		}
 	}
 
 	private IProject initProject() {
