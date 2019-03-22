@@ -17,7 +17,7 @@
 		<module>prefs</module>
 		<module>scratchpad</module>
 		<module>wizard</module>
-		<module>m2-connectors</module>
+		<module>m2e-connectors</module>
 	</modules>
 
 	<properties>

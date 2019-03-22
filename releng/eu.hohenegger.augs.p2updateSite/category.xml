@@ -33,6 +33,9 @@
    <feature id="org.eclipse.nebula.visualization.feature" version="0.0.0">
       <category name="org.eclipse.nebula.visualization"/>
    </feature>
+   <feature id="eu.hohenegger.m2e.jandexconnector.feature" version="0.0.0">
+      <category name="eu.hohenegger.m2e.connectors"/>
+   </feature>
    <category-def name="eu.hohenegger.common" label="Common (Required by the other features)"/>
    <category-def name="eu.hohenegger.stacks" label="Stack Trace Editor (experimental)"/>
    <category-def name="eu.hohenegger.partdetacher" label="Part Detacher (experimental)"/>
@@ -42,6 +45,7 @@
    <category-def name="eu.hohenegger.prefs" label="Preference Augments (experimental)"/>
    <category-def name="eu.hohenegger.scratchpad" label="Scratchpad"/>
    <category-def name="org.eclipse.nebula.visualization" label="Nebula Visualization Dependency (Required)"/>
+   <category-def name="eu.hohenegger.m2e.connectors" label="m2e Connectors"/>
    <repository-reference location="http://download.eclipse.org/nebula/releases/1.2.0" enabled="true" />
    <repository-reference location="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" enabled="true" />
 </site>

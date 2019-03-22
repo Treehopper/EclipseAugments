@@ -48,6 +48,11 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 * Access notes from within Eclipse
 * Manage notes in files and folders
 
+## m2-connectors
+### jandex-maven-plugin m2e connector
+m2e connector for the jandex maven plugin. Currently only handles the _jandex_ goal of the [jandex-maven-plugin](https://github.com/wildfly/jandex-maven-plugin).
+
+
 Install from p2 update site
 ===================
 http://treehopper.github.io/EclipseAugments/

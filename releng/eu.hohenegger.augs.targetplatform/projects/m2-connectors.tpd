@@ -1,0 +1,9 @@
+target "m2-connectors" with source configurePhase
+
+location "http://download.eclipse.org/releases/2019-03/" {
+	// Eclipse platform
+	org.eclipse.sdk.ide lazy
+
+	org.eclipse.m2e.sdk.feature.feature.group lazy
+	org.eclipse.m2e.feature.feature.group lazy
+}
