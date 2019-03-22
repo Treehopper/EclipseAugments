@@ -29,3 +29,4 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.databinding,
  org.eclipse.e4.ui.workbench.renderers.swt
 Bundle-ActivationPolicy: lazy
+Import-Package: javax.annotation;version="1.2.0"

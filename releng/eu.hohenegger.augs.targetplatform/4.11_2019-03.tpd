@@ -1,9 +1,8 @@
-target "partdetacher" with source configurePhase
+target "4.6_2019-03" with source configurePhase
 
 location "http://download.eclipse.org/releases/2019-03" {
 	org.eclipse.sdk.ide lazy
 	org.eclipse.emf.sdk.feature.group lazy
-
-	org.eclipse.e4.tools.compat lazy
-	org.eclipse.e4.tools.services lazy
+	
+	com.google.guava lazy
 }

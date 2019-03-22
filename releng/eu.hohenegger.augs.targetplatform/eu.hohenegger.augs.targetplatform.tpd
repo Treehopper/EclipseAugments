@@ -1,8 +1,9 @@
 target "eu.hohenegger.augs.targetplatform" with source configurePhase requirements
 
-include "4.6-neon.tpd"
-include "orbit-R20160520211859-Neon.tpd"
+include "4.11_2019-03.tpd"
+include "orbit-R20190226160451-2019-03.tpd"
 include "projects/modulebuilder.tpd"
 include "projects/gitmine.tpd"
 include "projects/partdetacher.tpd"
+include "projects/scratchpad.tpd"
 include "projects/scratchpad.tpd"
