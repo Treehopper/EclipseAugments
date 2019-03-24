@@ -2,20 +2,18 @@
  */
 package modulespecification.impl;
 
-import modulespecification.Module;
-import modulespecification.ModulespecificationFactory;
-import modulespecification.ModulespecificationPackage;
-
-import modulespecification.util.ModulespecificationValidator;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.EcorePackage;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+import modulespecification.Module;
+import modulespecification.ModulespecificationFactory;
+import modulespecification.ModulespecificationPackage;
+import modulespecification.util.ModulespecificationValidator;
 
 /**
  * <!-- begin-user-doc -->

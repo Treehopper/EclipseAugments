@@ -2,12 +2,12 @@
  */
 package modulespecification.util;
 
-import modulespecification.*;
-
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.Switch;
+
+import modulespecification.Module;
+import modulespecification.ModulespecificationPackage;
 
 /**
  * <!-- begin-user-doc -->

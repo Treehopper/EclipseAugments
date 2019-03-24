@@ -4,16 +4,14 @@ package modulespecification.util;
 
 import java.util.Map;
 
-import modulespecification.*;
-
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.EObjectValidator;
-
 import org.eclipse.emf.ecore.xml.type.util.XMLTypeUtil;
+
+import modulespecification.Module;
+import modulespecification.ModulespecificationPackage;
 
 /**
  * <!-- begin-user-doc -->
