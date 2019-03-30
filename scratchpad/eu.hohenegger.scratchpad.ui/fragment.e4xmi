@@ -10,5 +10,4 @@
       <children xsi:type="menu:DirectToolItem" xmi:id="_mu2ZoB0ZEeeCUJs5S1_kfQ" elementId="eu.hohenegger.scratchpad.ui.directtoolitem.newnote" label="New Note" contributionURI="bundleclass://eu.hohenegger.scratchpad.ui/eu.hohenegger.scratchpad.ui.handler.NewFileHandler"/>
     </elements>
   </fragments>
-  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_27xUMB0ZEeeCUJs5S1_kfQ" parentElementId="org.eclipse.e4.legacy.ide.application"/>
 </fragment:ModelFragments>

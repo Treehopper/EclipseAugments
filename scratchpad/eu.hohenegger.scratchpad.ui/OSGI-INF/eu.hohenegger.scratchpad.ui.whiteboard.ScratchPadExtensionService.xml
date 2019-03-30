@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" deactivate="deactivate" name="eu.hohenegger.scratchpad.ui.whiteboard.ScratchPadExtensionService">
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="eu.hohenegger.scratchpad.ui.whiteboard.ScratchPadExtensionService">
+   <property name="service.context.key" value="eu.hohenegger.scratchpad.ui.whiteboard.ScratchPadExtensionService"/>
+   <service>
+      <provide interface="org.eclipse.e4.core.contexts.IContextFunction"/>
+   </service>
    <reference bind="addExtension" cardinality="0..n" interface="eu.hohenegger.scratchpad.ui.whiteboard.ScratchPadExtension" name="Extension" policy="dynamic" unbind="removeExtension"/>
    <implementation class="eu.hohenegger.scratchpad.ui.whiteboard.ScratchPadExtensionService"/>
 </scr:component>
