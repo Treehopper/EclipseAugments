@@ -4,14 +4,16 @@ package modulespecification.util;
 
 import java.util.Map;
 
+import modulespecification.ModulespecificationPackage;
+
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
-import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.util.EObjectValidator;
-import org.eclipse.emf.ecore.xml.type.util.XMLTypeUtil;
 
-import modulespecification.Module;
-import modulespecification.ModulespecificationPackage;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.util.EObjectValidator;
+
+import org.eclipse.emf.ecore.xml.type.util.XMLTypeUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -86,7 +88,7 @@ public class ModulespecificationValidator extends EObjectValidator {
 	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		switch (classifierID) {
 			case ModulespecificationPackage.MODULE:
-				return validateModule((Module)value, diagnostics, context);
+				return validateModule((modulespecification.Module)value, diagnostics, context);
 			case ModulespecificationPackage.VERSION:
 				return validateVersion((String)value, diagnostics, context);
 			case ModulespecificationPackage.OS_GI_SEGMENT:
@@ -105,7 +107,7 @@ public class ModulespecificationValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateModule(Module module, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateModule(modulespecification.Module module, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(module, diagnostics, context);
 	}
 

@@ -2,15 +2,16 @@
  */
 package modulespecification.impl;
 
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import com.google.common.base.Objects;
 
-import modulespecification.Module;
 import modulespecification.ModulespecificationPackage;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -71,7 +72,7 @@ import modulespecification.ModulespecificationPackage;
  *
  * @generated
  */
-public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
+public class ModuleImpl extends MinimalEObjectImpl.Container implements modulespecification.Module {
 	/**
 	 * The default value of the '{@link #getBaseId() <em>Base Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -886,6 +887,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getBaseId() {
 		return baseId;
 	}
@@ -895,6 +897,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBaseId(String newBaseId) {
 		String oldBaseId = baseId;
 		baseId = newBaseId;
@@ -907,6 +910,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getModuleName() {
 		return moduleName;
 	}
@@ -916,6 +920,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setModuleName(String newModuleName) {
 		String oldModuleName = moduleName;
 		moduleName = newModuleName;
@@ -928,6 +933,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCategoryName() {
 		return categoryName;
 	}
@@ -937,6 +943,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCategoryName(String newCategoryName) {
 		String oldCategoryName = categoryName;
 		categoryName = newCategoryName;
@@ -949,6 +956,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getLicense() {
 		return license;
 	}
@@ -958,6 +966,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLicense(String newLicense) {
 		String oldLicense = license;
 		license = newLicense;
@@ -970,6 +979,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getLicenseUrl() {
 		return licenseUrl;
 	}
@@ -979,6 +989,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLicenseUrl(String newLicenseUrl) {
 		String oldLicenseUrl = licenseUrl;
 		licenseUrl = newLicenseUrl;
@@ -991,6 +1002,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getVersion() {
 		return version;
 	}
@@ -1000,6 +1012,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setVersion(String newVersion) {
 		String oldVersion = version;
 		version = newVersion;
@@ -1012,6 +1025,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCopyRightAuthorName() {
 		return copyRightAuthorName;
 	}
@@ -1021,6 +1035,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCopyRightAuthorName(String newCopyRightAuthorName) {
 		String oldCopyRightAuthorName = copyRightAuthorName;
 		copyRightAuthorName = newCopyRightAuthorName;
@@ -1033,6 +1048,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCopyRightUrl() {
 		return copyRightUrl;
 	}
@@ -1042,6 +1058,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCopyRightUrl(String newCopyRightUrl) {
 		String oldCopyRightUrl = copyRightUrl;
 		copyRightUrl = newCopyRightUrl;
@@ -1054,6 +1071,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCopyRightYear() {
 		return copyRightYear;
 	}
@@ -1063,6 +1081,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCopyRightYear(String newCopyRightYear) {
 		String oldCopyRightYear = copyRightYear;
 		copyRightYear = newCopyRightYear;
@@ -1075,6 +1094,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getAuthorEmail() {
 		return authorEmail;
 	}
@@ -1084,6 +1104,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAuthorEmail(String newAuthorEmail) {
 		String oldAuthorEmail = authorEmail;
 		authorEmail = newAuthorEmail;
@@ -1096,6 +1117,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getProviderName() {
 		return providerName;
 	}
@@ -1105,6 +1127,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setProviderName(String newProviderName) {
 		String oldProviderName = providerName;
 		providerName = newProviderName;
@@ -1117,6 +1140,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTychoVersion() {
 		return tychoVersion;
 	}
@@ -1126,6 +1150,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTychoVersion(String newTychoVersion) {
 		String oldTychoVersion = tychoVersion;
 		tychoVersion = newTychoVersion;
@@ -1138,6 +1163,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getJavaVersion() {
 		return javaVersion;
 	}
@@ -1147,6 +1173,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setJavaVersion(String newJavaVersion) {
 		String oldJavaVersion = javaVersion;
 		javaVersion = newJavaVersion;
@@ -1159,6 +1186,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getBaseLocation() {
 		return baseLocation;
 	}
@@ -1168,6 +1196,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBaseLocation(String newBaseLocation) {
 		String oldBaseLocation = baseLocation;
 		baseLocation = newBaseLocation;
@@ -1180,6 +1209,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCoreSuffix() {
 		return coreSuffix;
 	}
@@ -1189,6 +1219,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCoreSuffix(String newCoreSuffix) {
 		String oldCoreSuffix = coreSuffix;
 		coreSuffix = newCoreSuffix;
@@ -1201,6 +1232,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getUiSuffix() {
 		return uiSuffix;
 	}
@@ -1210,6 +1242,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUiSuffix(String newUiSuffix) {
 		String oldUiSuffix = uiSuffix;
 		uiSuffix = newUiSuffix;
@@ -1222,6 +1255,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isGenerateParent() {
 		return generateParent;
 	}
@@ -1231,6 +1265,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGenerateParent(boolean newGenerateParent) {
 		boolean oldGenerateParent = generateParent;
 		generateParent = newGenerateParent;
@@ -1243,6 +1278,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTychoParentName() {
 		return tychoParentName;
 	}
@@ -1252,6 +1288,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTychoParentName(String newTychoParentName) {
 		String oldTychoParentName = tychoParentName;
 		tychoParentName = newTychoParentName;
@@ -1264,6 +1301,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getMavenGroupId() {
 		return mavenGroupId;
 	}
@@ -1273,6 +1311,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMavenGroupId(String newMavenGroupId) {
 		String oldMavenGroupId = mavenGroupId;
 		mavenGroupId = newMavenGroupId;
@@ -1285,6 +1324,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isGenerateTests() {
 		return generateTests;
 	}
@@ -1294,6 +1334,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGenerateTests(boolean newGenerateTests) {
 		boolean oldGenerateTests = generateTests;
 		generateTests = newGenerateTests;
@@ -1306,6 +1347,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTestsSuffix() {
 		return testsSuffix;
 	}
@@ -1315,6 +1357,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTestsSuffix(String newTestsSuffix) {
 		String oldTestsSuffix = testsSuffix;
 		testsSuffix = newTestsSuffix;
@@ -1327,6 +1370,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isGenerateFeature() {
 		return generateFeature;
 	}
@@ -1336,6 +1380,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGenerateFeature(boolean newGenerateFeature) {
 		boolean oldGenerateFeature = generateFeature;
 		generateFeature = newGenerateFeature;
@@ -1348,6 +1393,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getFeatureSuffix() {
 		return featureSuffix;
 	}
@@ -1357,6 +1403,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFeatureSuffix(String newFeatureSuffix) {
 		String oldFeatureSuffix = featureSuffix;
 		featureSuffix = newFeatureSuffix;
@@ -1369,6 +1416,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isGenerateUpdatesite() {
 		return generateUpdatesite;
 	}
@@ -1378,6 +1426,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGenerateUpdatesite(boolean newGenerateUpdatesite) {
 		boolean oldGenerateUpdatesite = generateUpdatesite;
 		generateUpdatesite = newGenerateUpdatesite;
@@ -1390,6 +1439,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getUpdateSiteSuffix() {
 		return updateSiteSuffix;
 	}
@@ -1399,6 +1449,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUpdateSiteSuffix(String newUpdateSiteSuffix) {
 		String oldUpdateSiteSuffix = updateSiteSuffix;
 		updateSiteSuffix = newUpdateSiteSuffix;
@@ -1411,6 +1462,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getUpdateSiteUrl() {
 		return updateSiteUrl;
 	}
@@ -1420,6 +1472,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUpdateSiteUrl(String newUpdateSiteUrl) {
 		String oldUpdateSiteUrl = updateSiteUrl;
 		updateSiteUrl = newUpdateSiteUrl;
@@ -1432,6 +1485,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isGenerateTarget() {
 		return generateTarget;
 	}
@@ -1441,6 +1495,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGenerateTarget(boolean newGenerateTarget) {
 		boolean oldGenerateTarget = generateTarget;
 		generateTarget = newGenerateTarget;
@@ -1453,6 +1508,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTargetSuffix() {
 		return targetSuffix;
 	}
@@ -1462,6 +1518,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTargetSuffix(String newTargetSuffix) {
 		String oldTargetSuffix = targetSuffix;
 		targetSuffix = newTargetSuffix;
@@ -1474,6 +1531,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isGenerateUiFragment() {
 		return generateUiFragment;
 	}
@@ -1483,6 +1541,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGenerateUiFragment(boolean newGenerateUiFragment) {
 		boolean oldGenerateUiFragment = generateUiFragment;
 		generateUiFragment = newGenerateUiFragment;
@@ -1495,6 +1554,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getUie3Suffix() {
 		return uie3Suffix;
 	}
@@ -1504,6 +1564,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUie3Suffix(String newUie3Suffix) {
 		String oldUie3Suffix = uie3Suffix;
 		uie3Suffix = newUie3Suffix;
@@ -1516,6 +1577,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getMavenVersionSuffix() {
 		return mavenVersionSuffix;
 	}
@@ -1525,6 +1587,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMavenVersionSuffix(String newMavenVersionSuffix) {
 		String oldMavenVersionSuffix = mavenVersionSuffix;
 		mavenVersionSuffix = newMavenVersionSuffix;
@@ -1537,6 +1600,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getOsgiVersionQualifier() {
 		return osgiVersionQualifier;
 	}
@@ -1546,6 +1610,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setOsgiVersionQualifier(String newOsgiVersionQualifier) {
 		String oldOsgiVersionQualifier = osgiVersionQualifier;
 		osgiVersionQualifier = newOsgiVersionQualifier;
@@ -1558,6 +1623,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCoreId() {
 		String _baseId = this.getBaseId();
 		String _coreSuffix = this.getCoreSuffix();
@@ -1569,6 +1635,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getUiId() {
 		String _baseId = this.getBaseId();
 		String _uiSuffix = this.getUiSuffix();
@@ -1580,6 +1647,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getUie3Id() {
 		String _uiId = this.getUiId();
 		String _uie3Suffix = this.getUie3Suffix();
@@ -1591,6 +1659,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTestsId() {
 		String _baseId = this.getBaseId();
 		String _testsSuffix = this.getTestsSuffix();
@@ -1602,6 +1671,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getUpdateSiteId() {
 		String _baseId = this.getBaseId();
 		String _updateSiteSuffix = this.getUpdateSiteSuffix();
@@ -1613,6 +1683,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getFeatureId() {
 		String _baseId = this.getBaseId();
 		String _featureSuffix = this.getFeatureSuffix();
@@ -1624,6 +1695,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTargetId() {
 		String _baseId = this.getBaseId();
 		String _targetSuffix = this.getTargetSuffix();
@@ -1635,6 +1707,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getMavenVersion() {
 		String _version = this.getVersion();
 		String _mavenVersionSuffix = this.getMavenVersionSuffix();
@@ -1646,6 +1719,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getOsgiVersion() {
 		String _version = this.getVersion();
 		String _osgiVersionQualifier = this.getOsgiVersionQualifier();
@@ -1657,6 +1731,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCoreModuleName() {
 		String _moduleName = this.getModuleName();
 		return (_moduleName + " Core");
@@ -1667,6 +1742,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getUiModuleName() {
 		String _moduleName = this.getModuleName();
 		return (_moduleName + " UI");
@@ -1677,6 +1753,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isIsLicenseEmpty() {
 		return (Objects.equal(this.getLicense(), null) || this.getLicense().isEmpty());
 	}
@@ -1686,6 +1763,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isIsLicenseUrlEmpty() {
 		return (Objects.equal(this.getLicenseUrl(), null) || this.getLicenseUrl().isEmpty());
 	}
@@ -1695,6 +1773,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isIsUpdateSiteUrlEmpty() {
 		return (Objects.equal(this.getUpdateSiteUrl(), null) || this.getUpdateSiteUrl().isEmpty());
 	}
@@ -1704,6 +1783,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isIsAuthorEmailEmpty() {
 		return (Objects.equal(this.getAuthorEmail(), null) || this.getAuthorEmail().isEmpty());
 	}
@@ -2145,7 +2225,7 @@ public class ModuleImpl extends MinimalEObjectImpl.Container implements Module {
 	public String toString() {
 		if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
+		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (baseId: ");
 		result.append(baseId);
 		result.append(", moduleName: ");

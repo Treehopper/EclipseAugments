@@ -5,8 +5,6 @@ package modulespecification.provider;
 
 import java.util.Collection;
 import java.util.List;
-
-import modulespecification.Module;
 import modulespecification.ModulespecificationPackage;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
@@ -1164,7 +1162,7 @@ public class ModuleItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Module)object).getModuleName();
+		String label = ((modulespecification.Module)object).getModuleName();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Module_type") :
 			getString("_UI_Module_type") + " " + label;
@@ -1182,7 +1180,7 @@ public class ModuleItemProvider
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Module.class)) {
+		switch (notification.getFeatureID(modulespecification.Module.class)) {
 			case ModulespecificationPackage.MODULE__BASE_ID:
 			case ModulespecificationPackage.MODULE__MODULE_NAME:
 			case ModulespecificationPackage.MODULE__CATEGORY_NAME:

@@ -2,16 +2,17 @@
  */
 package modulespecification.impl;
 
+import modulespecification.ModulespecificationFactory;
+import modulespecification.ModulespecificationPackage;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.impl.EFactoryImpl;
-import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
-import modulespecification.Module;
-import modulespecification.ModulespecificationFactory;
-import modulespecification.ModulespecificationPackage;
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -110,7 +111,8 @@ public class ModulespecificationFactoryImpl extends EFactoryImpl implements Modu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Module createModule() {
+	@Override
+	public modulespecification.Module createModule() {
 		ModuleImpl module = new ModuleImpl();
 		return module;
 	}
@@ -192,6 +194,7 @@ public class ModulespecificationFactoryImpl extends EFactoryImpl implements Modu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ModulespecificationPackage getModulespecificationPackage() {
 		return (ModulespecificationPackage)getEPackage();
 	}

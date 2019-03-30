@@ -2,12 +2,12 @@
  */
 package modulespecification.util;
 
+import modulespecification.ModulespecificationPackage;
+
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.util.Switch;
 
-import modulespecification.Module;
-import modulespecification.ModulespecificationPackage;
+import org.eclipse.emf.ecore.util.Switch;
 
 /**
  * <!-- begin-user-doc -->
@@ -67,7 +67,7 @@ public class ModulespecificationSwitch<T> extends Switch<T> {
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
 			case ModulespecificationPackage.MODULE: {
-				Module module = (Module)theEObject;
+				modulespecification.Module module = (modulespecification.Module)theEObject;
 				T result = caseModule(module);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -87,7 +87,7 @@ public class ModulespecificationSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseModule(Module object) {
+	public T caseModule(modulespecification.Module object) {
 		return null;
 	}
 

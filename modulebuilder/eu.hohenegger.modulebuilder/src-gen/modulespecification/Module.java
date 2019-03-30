@@ -70,10 +70,6 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Base Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Base Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Id</em>' attribute.
 	 * @see #setBaseId(String)
@@ -96,10 +92,6 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Module Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Module Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Module Name</em>' attribute.
 	 * @see #setModuleName(String)
@@ -122,10 +114,6 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Category Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Category Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Category Name</em>' attribute.
 	 * @see #setCategoryName(String)
@@ -149,10 +137,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>License</b></em>' attribute.
 	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>License</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>License</em>' attribute.
 	 * @see #setLicense(String)
@@ -177,10 +161,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>License Url</b></em>' attribute.
 	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>License Url</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>License Url</em>' attribute.
 	 * @see #setLicenseUrl(String)
@@ -204,10 +184,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Version</b></em>' attribute.
 	 * The default value is <code>"1.0.0"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Version</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Version</em>' attribute.
 	 * @see #setVersion(String)
@@ -231,10 +207,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Copy Right Author Name</b></em>' attribute.
 	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Copy Right Author Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Copy Right Author Name</em>' attribute.
 	 * @see #setCopyRightAuthorName(String)
@@ -258,10 +230,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Copy Right Url</b></em>' attribute.
 	 * The default value is <code>"http://www.example.org"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Copy Right Url</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Copy Right Url</em>' attribute.
 	 * @see #setCopyRightUrl(String)
@@ -285,10 +253,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Copy Right Year</b></em>' attribute.
 	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Copy Right Year</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Copy Right Year</em>' attribute.
 	 * @see #setCopyRightYear(String)
@@ -312,10 +276,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Author Email</b></em>' attribute.
 	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Author Email</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Author Email</em>' attribute.
 	 * @see #setAuthorEmail(String)
@@ -339,10 +299,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Provider Name</b></em>' attribute.
 	 * The default value is <code>"http://www.example.org"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Provider Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Provider Name</em>' attribute.
 	 * @see #setProviderName(String)
@@ -366,10 +322,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Tycho Version</b></em>' attribute.
 	 * The default value is <code>"1.0.0"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tycho Version</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tycho Version</em>' attribute.
 	 * @see #setTychoVersion(String)
@@ -393,10 +345,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Java Version</b></em>' attribute.
 	 * The default value is <code>"JavaSE-1.8"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Java Version</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Java Version</em>' attribute.
 	 * @see #setJavaVersion(String)
@@ -420,10 +368,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Base Location</b></em>' attribute.
 	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Base Location</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Location</em>' attribute.
 	 * @see #setBaseLocation(String)
@@ -447,10 +391,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Core Suffix</b></em>' attribute.
 	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Core Suffix</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Core Suffix</em>' attribute.
 	 * @see #setCoreSuffix(String)
@@ -474,10 +414,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Ui Suffix</b></em>' attribute.
 	 * The default value is <code>".ui"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ui Suffix</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ui Suffix</em>' attribute.
 	 * @see #setUiSuffix(String)
@@ -501,10 +437,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Generate Parent</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Generate Parent</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generate Parent</em>' attribute.
 	 * @see #setGenerateParent(boolean)
@@ -528,10 +460,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Tycho Parent Name</b></em>' attribute.
 	 * The default value is <code>"parent"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tycho Parent Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tycho Parent Name</em>' attribute.
 	 * @see #setTychoParentName(String)
@@ -554,10 +482,6 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Maven Group Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Maven Group Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Maven Group Id</em>' attribute.
 	 * @see #setMavenGroupId(String)
@@ -581,10 +505,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Generate Tests</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Generate Tests</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generate Tests</em>' attribute.
 	 * @see #setGenerateTests(boolean)
@@ -608,10 +528,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Tests Suffix</b></em>' attribute.
 	 * The default value is <code>".test"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tests Suffix</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tests Suffix</em>' attribute.
 	 * @see #setTestsSuffix(String)
@@ -635,10 +551,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Generate Feature</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Generate Feature</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generate Feature</em>' attribute.
 	 * @see #setGenerateFeature(boolean)
@@ -662,10 +574,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Feature Suffix</b></em>' attribute.
 	 * The default value is <code>".feature"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Suffix</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Suffix</em>' attribute.
 	 * @see #setFeatureSuffix(String)
@@ -689,10 +597,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Generate Updatesite</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Generate Updatesite</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generate Updatesite</em>' attribute.
 	 * @see #setGenerateUpdatesite(boolean)
@@ -716,10 +620,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Update Site Suffix</b></em>' attribute.
 	 * The default value is <code>".p2updateSite"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Update Site Suffix</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Update Site Suffix</em>' attribute.
 	 * @see #setUpdateSiteSuffix(String)
@@ -743,10 +643,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Update Site Url</b></em>' attribute.
 	 * The default value is <code>"http://www.example.org"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Update Site Url</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Update Site Url</em>' attribute.
 	 * @see #setUpdateSiteUrl(String)
@@ -770,10 +666,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Generate Target</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Generate Target</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generate Target</em>' attribute.
 	 * @see #setGenerateTarget(boolean)
@@ -797,10 +689,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Target Suffix</b></em>' attribute.
 	 * The default value is <code>".releng.targetplatform"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Suffix</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Suffix</em>' attribute.
 	 * @see #setTargetSuffix(String)
@@ -824,10 +712,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Generate Ui Fragment</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Generate Ui Fragment</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Generate Ui Fragment</em>' attribute.
 	 * @see #setGenerateUiFragment(boolean)
@@ -851,10 +735,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Uie3 Suffix</b></em>' attribute.
 	 * The default value is <code>".e3"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uie3 Suffix</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uie3 Suffix</em>' attribute.
 	 * @see #setUie3Suffix(String)
@@ -878,10 +758,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Maven Version Suffix</b></em>' attribute.
 	 * The default value is <code>"-SNAPSHOT"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Maven Version Suffix</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Maven Version Suffix</em>' attribute.
 	 * @see #setMavenVersionSuffix(String)
@@ -905,10 +781,6 @@ public interface Module extends EObject {
 	 * Returns the value of the '<em><b>Osgi Version Qualifier</b></em>' attribute.
 	 * The default value is <code>".qualifier"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Osgi Version Qualifier</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Osgi Version Qualifier</em>' attribute.
 	 * @see #setOsgiVersionQualifier(String)
@@ -931,15 +803,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Core Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Core Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Core Id</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_CoreId()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _baseId = this.getBaseId();\n<%java.lang.String%> _coreSuffix = this.getCoreSuffix();\nreturn (_baseId + _coreSuffix);'"
 	 * @generated
 	 */
 	String getCoreId();
@@ -947,15 +814,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Ui Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ui Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ui Id</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_UiId()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _baseId = this.getBaseId();\n<%java.lang.String%> _uiSuffix = this.getUiSuffix();\nreturn (_baseId + _uiSuffix);'"
 	 * @generated
 	 */
 	String getUiId();
@@ -963,15 +825,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Uie3 Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Uie3 Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Uie3 Id</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_Uie3Id()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _uiId = this.getUiId();\n<%java.lang.String%> _uie3Suffix = this.getUie3Suffix();\nreturn (_uiId + _uie3Suffix);'"
 	 * @generated
 	 */
 	String getUie3Id();
@@ -979,15 +836,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Tests Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Tests Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Tests Id</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_TestsId()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _baseId = this.getBaseId();\n<%java.lang.String%> _testsSuffix = this.getTestsSuffix();\nreturn (_baseId + _testsSuffix);'"
 	 * @generated
 	 */
 	String getTestsId();
@@ -995,15 +847,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Update Site Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Update Site Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Update Site Id</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_UpdateSiteId()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _baseId = this.getBaseId();\n<%java.lang.String%> _updateSiteSuffix = this.getUpdateSiteSuffix();\nreturn (_baseId + _updateSiteSuffix);'"
 	 * @generated
 	 */
 	String getUpdateSiteId();
@@ -1011,15 +858,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Feature Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Feature Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Id</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_FeatureId()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _baseId = this.getBaseId();\n<%java.lang.String%> _featureSuffix = this.getFeatureSuffix();\nreturn (_baseId + _featureSuffix);'"
 	 * @generated
 	 */
 	String getFeatureId();
@@ -1027,15 +869,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Target Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Target Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Target Id</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_TargetId()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _baseId = this.getBaseId();\n<%java.lang.String%> _targetSuffix = this.getTargetSuffix();\nreturn (_baseId + _targetSuffix);'"
 	 * @generated
 	 */
 	String getTargetId();
@@ -1043,15 +880,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Maven Version</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Maven Version</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Maven Version</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_MavenVersion()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _version = this.getVersion();\n<%java.lang.String%> _mavenVersionSuffix = this.getMavenVersionSuffix();\nreturn (_version + _mavenVersionSuffix);'"
 	 * @generated
 	 */
 	String getMavenVersion();
@@ -1059,15 +891,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Osgi Version</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Osgi Version</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Osgi Version</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_OsgiVersion()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _version = this.getVersion();\n<%java.lang.String%> _osgiVersionQualifier = this.getOsgiVersionQualifier();\nreturn (_version + _osgiVersionQualifier);'"
 	 * @generated
 	 */
 	String getOsgiVersion();
@@ -1075,15 +902,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Core Module Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Core Module Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Core Module Name</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_CoreModuleName()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _moduleName = this.getModuleName();\nreturn (_moduleName + \" Core\");'"
 	 * @generated
 	 */
 	String getCoreModuleName();
@@ -1091,15 +913,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Ui Module Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Ui Module Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Ui Module Name</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_UiModuleName()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='<%java.lang.String%> _moduleName = this.getModuleName();\nreturn (_moduleName + \" UI\");'"
 	 * @generated
 	 */
 	String getUiModuleName();
@@ -1107,15 +924,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Is License Empty</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is License Empty</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is License Empty</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_IsLicenseEmpty()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='return (<%com.google.common.base.Objects%>.equal(this.getLicense(), null) || this.getLicense().isEmpty());'"
 	 * @generated
 	 */
 	boolean isIsLicenseEmpty();
@@ -1123,15 +935,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Is License Url Empty</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is License Url Empty</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is License Url Empty</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_IsLicenseUrlEmpty()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='return (<%com.google.common.base.Objects%>.equal(this.getLicenseUrl(), null) || this.getLicenseUrl().isEmpty());'"
 	 * @generated
 	 */
 	boolean isIsLicenseUrlEmpty();
@@ -1139,15 +946,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Is Update Site Url Empty</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Update Site Url Empty</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Update Site Url Empty</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_IsUpdateSiteUrlEmpty()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='return (<%com.google.common.base.Objects%>.equal(this.getUpdateSiteUrl(), null) || this.getUpdateSiteUrl().isEmpty());'"
 	 * @generated
 	 */
 	boolean isIsUpdateSiteUrlEmpty();
@@ -1155,15 +957,10 @@ public interface Module extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Is Author Email Empty</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Author Email Empty</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Author Email Empty</em>' attribute.
 	 * @see modulespecification.ModulespecificationPackage#getModule_IsAuthorEmailEmpty()
 	 * @model unique="false" transient="true" changeable="false" volatile="true" derived="true"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel get='return (<%com.google.common.base.Objects%>.equal(this.getAuthorEmail(), null) || this.getAuthorEmail().isEmpty());'"
 	 * @generated
 	 */
 	boolean isIsAuthorEmailEmpty();

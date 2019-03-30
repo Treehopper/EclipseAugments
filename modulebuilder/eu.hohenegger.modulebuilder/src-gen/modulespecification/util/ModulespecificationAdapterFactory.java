@@ -2,13 +2,14 @@
  */
 package modulespecification.util;
 
+import modulespecification.ModulespecificationPackage;
+
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
-import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
-import org.eclipse.emf.ecore.EObject;
 
-import modulespecification.Module;
-import modulespecification.ModulespecificationPackage;
+import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
+
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -67,7 +68,7 @@ public class ModulespecificationAdapterFactory extends AdapterFactoryImpl {
 	protected ModulespecificationSwitch<Adapter> modelSwitch =
 		new ModulespecificationSwitch<Adapter>() {
 			@Override
-			public Adapter caseModule(Module object) {
+			public Adapter caseModule(modulespecification.Module object) {
 				return createModuleAdapter();
 			}
 			@Override
