@@ -32,7 +32,7 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Import-Package: javax.annotation;version="1.2.0",
  javax.inject;version="1.0.0"
-Service-Component: OSGI-INF/eu.hohenegger.scratchpad.ui.whiteboard.ScratchPadExtensionService.xml
 Export-Package: eu.hohenegger.scratchpad.ui.handler,
  eu.hohenegger.scratchpad.ui.whiteboard,
  eu.hohenegger.scratchpad.ui.widgets
+Service-Component: OSGI-INF/eu.hohenegger.scratchpad.ui.whiteboard.ScratchPadExtensionService.xml

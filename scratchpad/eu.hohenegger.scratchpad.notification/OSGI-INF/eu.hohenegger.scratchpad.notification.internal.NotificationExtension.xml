@@ -3,6 +3,6 @@
    <service>
       <provide interface="eu.hohenegger.scratchpad.ui.whiteboard.ScratchPadExtension"/>
    </service>
-   <reference bind="setLogService" cardinality="1..1" interface="org.osgi.service.log.LogService" name="LogService" policy="static" unbind="unsetLogService"/>
+   <reference bind="setLogService" interface="org.osgi.service.log.LogService" name="LogService" unbind="unsetLogService"/>
    <implementation class="eu.hohenegger.scratchpad.notification.internal.NotificationExtension"/>
 </scr:component>
