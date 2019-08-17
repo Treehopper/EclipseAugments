@@ -210,11 +210,11 @@ litigation.
    </license>
 
    <requires>
-      <import feature="org.eclipse.emf.ecp.emfforms.runtime.feature" version="1.8.0.20160216-1319"/>
+      <import feature="org.eclipse.emf.ecp.emfforms.runtime.feature"/>
       <import plugin="org.eclipse.emfforms.core.services.legacy"/>
       <import plugin="org.eclipse.equinox.ds"/>
-      <import feature="org.eclipse.emf.ecp.emfforms.sdk.feature" version="1.8.0.20160216-1319"/>
-      <import feature="org.eclipse.emf.ecp.viewmodel.feature" version="1.8.0.20160216-1319"/>
+      <import feature="org.eclipse.emf.ecp.emfforms.sdk.feature"/>
+      <import feature="org.eclipse.emf.ecp.viewmodel.feature"/>
    </requires>
 
    <plugin

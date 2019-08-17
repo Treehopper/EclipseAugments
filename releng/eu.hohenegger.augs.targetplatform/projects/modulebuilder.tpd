@@ -11,6 +11,11 @@ location "http://download.eclipse.org/modeling/tmf/xtext/updates/composite/relea
 	org.eclipse.emf.ecore.xcore.lib.feature.group lazy
 }
 
+location "https://download.eclipse.org/eclipse/updates/4.12/" {
+	org.eclipse.equinox.ds lazy
+}
+
+
 location "http://download.eclipse.org/ecp/releases/releases_122/" {
 	org.eclipse.emf.ecp.emfforms.runtime.feature.feature.group lazy
 	org.eclipse.emf.ecp.emfforms.sdk.feature.feature.group lazy
