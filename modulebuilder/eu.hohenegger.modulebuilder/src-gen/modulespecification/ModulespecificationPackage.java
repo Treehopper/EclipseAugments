@@ -21,7 +21,6 @@ import org.eclipse.emf.ecore.EPackage;
  * <!-- end-user-doc -->
  * @see modulespecification.ModulespecificationFactory
  * @model kind="package"
- *        annotation="http://www.eclipse.org/emf/2002/GenModel cleanup='true' modelDirectory='/eu.hohenegger.modulebuilder/src-gen' editDirectory='/eu.hohenegger.modulebuilder.edit/src-gen' fileExtensions='modulespecification'"
  * @generated
  */
 public interface ModulespecificationPackage extends EPackage {

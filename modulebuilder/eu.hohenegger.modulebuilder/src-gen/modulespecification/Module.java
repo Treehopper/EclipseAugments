@@ -142,7 +142,6 @@ public interface Module extends EObject {
 	 * @see #setLicense(String)
 	 * @see modulespecification.ModulespecificationPackage#getModule_License()
 	 * @model default="" unique="false"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel propertyMultiLine='true'"
 	 * @generated
 	 */
 	String getLicense();

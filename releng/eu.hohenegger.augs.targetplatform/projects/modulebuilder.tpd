@@ -3,6 +3,7 @@ target "modulebuilder" with source configurePhase requirements
 location "http://download.eclipse.org/releases/2019-09" {
 	org.eclipse.draw2d.feature.group lazy
 	org.eclipse.pde.feature.group lazy
+	javax.xml.stream lazy
 }
 
 location "http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" {
