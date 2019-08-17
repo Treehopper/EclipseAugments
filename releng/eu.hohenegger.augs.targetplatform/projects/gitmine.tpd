@@ -1,11 +1,11 @@
 target "gitmine" with source configurePhase requirements
 
-location "http://download.eclipse.org/releases/2019-03" {
+location "http://download.eclipse.org/releases/2019-09" {
 	org.eclipse.egit.core lazy
 	org.eclipse.egit.ui lazy
 	org.eclipse.jgit.feature.group lazy
 }
 
-location "http://download.eclipse.org/nebula/releases/2.1.0" {
+location "http://download.eclipse.org/nebula/releases/2.2.0" {
 	org.eclipse.nebula.visualization.feature.feature.group lazy
 }

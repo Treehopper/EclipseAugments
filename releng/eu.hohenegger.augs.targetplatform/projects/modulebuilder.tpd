@@ -1,6 +1,6 @@
 target "modulebuilder" with source configurePhase requirements
 
-location "http://download.eclipse.org/releases/2019-03" {
+location "http://download.eclipse.org/releases/2019-09" {
 	org.eclipse.draw2d.feature.group lazy
 	org.eclipse.pde.feature.group lazy
 }
@@ -10,7 +10,7 @@ location "http://download.eclipse.org/modeling/tmf/xtext/updates/composite/relea
 	org.eclipse.emf.ecore.xcore.lib.feature.group lazy
 }
 
-location "http://download.eclipse.org/ecp/releases/releases_120/" {
+location "http://download.eclipse.org/ecp/releases/releases_122/" {
 	org.eclipse.emf.ecp.emfforms.runtime.feature.feature.group lazy
 	org.eclipse.emf.ecp.emfforms.sdk.feature.feature.group lazy
 	org.eclipse.emf.ecp.view.categorization.feature.feature.group lazy

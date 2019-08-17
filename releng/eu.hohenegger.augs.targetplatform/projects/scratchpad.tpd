@@ -1,6 +1,6 @@
 target "scratchpad" with source configurePhase
 
-location "http://download.eclipse.org/releases/2019-03" {
+location "http://download.eclipse.org/releases/2019-09" {
 	org.eclipse.platform.feature.group lazy
 
 	org.eclipse.mylyn.wikitext_feature.feature.group lazy

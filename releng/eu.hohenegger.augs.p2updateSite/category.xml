@@ -49,6 +49,6 @@
    <category-def name="eu.hohenegger.scratchpad" label="Scratchpad"/>
    <category-def name="org.eclipse.nebula.visualization" label="Nebula Visualization Dependency (Required)"/>
    <category-def name="eu.hohenegger.m2e.connectors" label="m2e Connectors"/>
-   <repository-reference location="http://download.eclipse.org/nebula/releases/1.2.0" enabled="true" />
    <repository-reference location="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" enabled="true" />
+   <repository-reference location="http://download.eclipse.org/nebula/releases/2.2.0" enabled="true" />
 </site>
