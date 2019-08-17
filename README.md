@@ -48,6 +48,11 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 * Access notes from within Eclipse
 * Manage notes in files and folders
 
+## Gister
+### Features
+* Create GitHub Gist from selected file (right-click menu)
+* Configure personal GitHub token in preferences
+
 ## m2-connectors
 ### jandex-maven-plugin m2e connector
 m2e connector for the jandex maven plugin. Currently only handles the _jandex_ goal of the [jandex-maven-plugin](https://github.com/wildfly/jandex-maven-plugin).
