@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Wizard Renderer Test
 Bundle-SymbolicName: eu.hohenegger.e4.appmodel.extensions.wizard.test
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.2.0
 Fragment-Host: eu.hohenegger.e4.appmodel.extensions.wizard
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.junit
