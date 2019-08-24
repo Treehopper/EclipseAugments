@@ -50,7 +50,9 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 
 ## Gister
 ### Features
-* Create GitHub Gist from selected file (right-click menu)
+* Create GitHub Gist from (right-click menu)
+    - file selection, e.g in project explorer
+    - text selection in editors
 * Configure personal GitHub token in preferences
 
 ## m2-connectors

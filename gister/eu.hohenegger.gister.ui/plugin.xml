@@ -22,6 +22,21 @@
                label="Gist Snippet"
                style="push">
             <visibleWhen checkEnabled="true">
+               <iterate
+                     ifEmpty="false"
+                     operator="and">
+                  <or>
+	                  <adapt
+	                        type="org.eclipse.core.resources.IResource">
+	                     <instanceof
+	                           value="org.eclipse.core.resources.IFile">
+	                     </instanceof>
+	                  </adapt>
+	                  <instanceof
+	                       value="org.eclipse.jface.text.ITextSelection">
+	                  </instanceof>
+                  </or>
+               </iterate>
             </visibleWhen>
          </command>
       </menuContribution>
