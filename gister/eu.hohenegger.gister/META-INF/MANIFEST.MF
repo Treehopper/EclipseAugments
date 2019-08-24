@@ -5,14 +5,10 @@ Bundle-SymbolicName: eu.hohenegger.gister;singleton:=true
 Bundle-Version: 1.3.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
-Require-Bundle: org.eclipse.core.runtime,
- io.swagger.core.v3.swagger-annotations,
+Require-Bundle: io.swagger.core.v3.swagger-annotations,
  com.fasterxml.jackson.core.jackson-annotations,
  com.fasterxml.jackson.core.jackson-core,
  com.fasterxml.jackson.core.jackson-databind,
- com.fasterxml.jackson.jaxrs.jackson-jaxrs-base,
- com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider,
- org.glassfish.jersey.bundles.repackaged.jersey-guava,
  org.glassfish.jersey.core.jersey-common,
  org.glassfish.jersey.core.jersey-client,
  org.glassfish.jersey.media.jersey-media-json-jackson,
