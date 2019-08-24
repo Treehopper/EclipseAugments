@@ -2,7 +2,7 @@
 <feature
       id="eu.hohenegger.common.feature"
       label="Common"
-      version="1.0.0.qualifier"
+      version="1.2.0"
       provider-name="Max Hohenegger">
 
    <copyright url="http://www.example.org">

@@ -2,7 +2,7 @@
 <feature
       id="eu.hohenegger.m2e.jandexconnector.feature"
       label="m2e connector for jandex-maven-plugin"
-      version="1.0.0.qualifier"
+      version="1.2.0"
       plugin="eu.hohenegger.m2e.jandexconnector.core">
 
    <description>
