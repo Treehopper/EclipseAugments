@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>eu.hohenegger</groupId>
 		<artifactId>partdetacher</artifactId>
-		<version>1.2.0</version>
+		<version>1.3.0-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>eu.hohenegger.partdetacher.ui.e3</artifactId>

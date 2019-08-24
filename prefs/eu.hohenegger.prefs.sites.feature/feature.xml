@@ -2,7 +2,7 @@
 <feature
       id="eu.hohenegger.prefs.sites.feature"
       label="Add p2 update sites"
-      version="1.2.0"
+      version="1.3.0.qualifier"
       provider-name="Max Hohenegger">
 
    <copyright url="http://www.hohenegger.eu">

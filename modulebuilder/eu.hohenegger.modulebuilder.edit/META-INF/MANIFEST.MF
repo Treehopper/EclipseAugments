@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: eu.hohenegger.modulebuilder.edit;singleton:=true
 Automatic-Module-Name: eu.hohenegger.modulebuilder.edit
-Bundle-Version: 1.2.0
+Bundle-Version: 1.3.0.qualifier
 Bundle-ClassPath: eu.hohenegger.modulebuilder.edit.jar
 Bundle-Activator: modulespecification.provider.ModulespecificationEditPlugin$Implementation
 Bundle-Vendor: %providerName

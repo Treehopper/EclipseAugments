@@ -2,7 +2,7 @@
 <feature
       id="eu.hohenegger.modulebuilder.feature"
       label="Module Builder"
-      version="1.2.0"
+      version="1.3.0.qualifier"
       provider-name="http://max.hohenegger.eu">
 
    <copyright url="http://www.hohenegger.eu">

@@ -2,7 +2,7 @@
 <feature
       id="eu.hohenegger.gister.feature"
       label="Gister"
-      version="1.2.0"
+      version="1.3.0.qualifier"
       provider-name="http://www.hohenegger.eu">
 
    <copyright url="http://www.hohenegger.eu">

@@ -2,7 +2,7 @@
 <feature
       id="eu.hohenegger.scratchpad.feature"
       label="Scratchpad"
-      version="1.2.0"
+      version="1.3.0.qualifier"
       provider-name="Max Hohenegger">
 
    <copyright url="http://www.hohenegger.eu">

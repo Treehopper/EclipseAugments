@@ -2,7 +2,7 @@
 <feature
       id="eu.hohenegger.m2e.gencodefolder.feature"
       label="m2e connector for adding generated code folders"
-      version="1.2.0">
+      version="1.3.0.qualifier">
 
    <description>
       m2e connector for jandex-maven-plugin
