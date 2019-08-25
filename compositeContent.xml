@@ -2,12 +2,13 @@
 <repository name='EclipseAugments Composite p2 Repository' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='true'/>
-    <property name='p2.timestamp' value='1566670201637'/>
+    <property name='p2.timestamp' value='1567059247487'/>
   </properties>
-  <children size='3'>
+  <children size='4'>
     <child location='1.0.0'/>
     <child location='1.1.0'/>
     <child location='1.2.0'/>
+    <child location='1.3.0-SNAPSHOT'/>
   </children>
 </repository>
 
