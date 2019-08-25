@@ -5,8 +5,18 @@ import static eu.hohenegger.gister.ui.handler.Constants.TOKEN_PAGE_ID;
 import static eu.hohenegger.gister.ui.handler.Constants.TOKEN_PREF_KEY;
 import static java.util.Collections.emptyMap;
 import static java.util.Collections.singletonMap;
+import static org.apache.commons.io.IOUtils.copy;
+import static org.eclipse.core.runtime.Adapters.adapt;
+import static org.eclipse.core.runtime.preferences.InstanceScope.INSTANCE;
 import static org.eclipse.jface.dialogs.MessageDialog.openError;
 import static org.eclipse.jface.viewers.StructuredSelection.EMPTY;
+import static org.eclipse.jface.window.Window.CANCEL;
+import static org.eclipse.ui.PlatformUI.getWorkbench;
+import static org.eclipse.ui.dialogs.PreferencesUtil.createPreferenceDialogOn;
+import static org.eclipse.ui.handlers.HandlerUtil.getActiveEditorInput;
+import static org.eclipse.ui.handlers.HandlerUtil.getActiveShell;
+import static org.eclipse.ui.handlers.HandlerUtil.getCurrentSelection;
+import static org.eclipse.ui.handlers.HandlerUtil.getCurrentStructuredSelection;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,25 +28,21 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Optional;
 
-import org.apache.commons.io.IOUtils;
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IResource;
-import org.eclipse.core.runtime.Adapters;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.core.runtime.jobs.Job;
-import org.eclipse.core.runtime.preferences.InstanceScope;
+import org.eclipse.jface.preference.PreferenceDialog;
 import org.eclipse.jface.text.TextSelection;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.handlers.HandlerUtil;
 import org.eclipse.ui.ide.ResourceUtil;
 import org.osgi.service.prefs.Preferences;
 
@@ -51,14 +57,14 @@ public class SnipGistHandler extends AbstractHandler {
 
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
-		IStructuredSelection currentSelection = HandlerUtil.getCurrentStructuredSelection(event);
-		ISelection selection = HandlerUtil.getCurrentSelection(event);
+		IStructuredSelection currentSelection = getCurrentStructuredSelection(event);
+		ISelection selection = getCurrentSelection(event);
 		Map<String, String> fileContents;
 		if (currentSelection != EMPTY) {
 			fileContents = getFileSelectionContent(currentSelection);
 		} else if (selection instanceof TextSelection) {
 			TextSelection textSelection = (TextSelection) selection;
-			IFile file = ResourceUtil.getFile(HandlerUtil.getActiveEditorInput(event));
+			IFile file = ResourceUtil.getFile(getActiveEditorInput(event));
 			fileContents = getTextSelectionContent(textSelection, file.getName());
 		} else {
 			return null;
@@ -75,9 +81,12 @@ public class SnipGistHandler extends AbstractHandler {
 		
 		ApiClient client = Configuration.getDefaultApiClient();
 		Optional<String> opToken = getToken();
-		if (!opToken.isPresent()) {
-			openError(null, "Token is empty", "A token must be set in the preferences, in order to use this feature.");
-			return null;
+		while(!opToken.isPresent() || opToken.get().isEmpty() ) {
+			PreferenceDialog dialog = createPreferenceDialogOn(getActiveShell(event), TOKEN_PAGE_ID, new String[] {TOKEN_PAGE_ID}, null);
+			if (dialog.open() == CANCEL) {
+				return null;
+			}
+			opToken = getToken();
 		}
 		client.setAccessToken(opToken.get());
 		api.setApiClient(client);
@@ -99,7 +108,7 @@ public class SnipGistHandler extends AbstractHandler {
 		Map<String, String> filesContents = new HashMap<>();
 		Iterator<?> iterator = currentSelection.iterator();
 		while (iterator.hasNext()) {
-			IResource resource = Adapters.adapt(iterator.next(), IResource.class);
+			IResource resource = adapt(iterator.next(), IResource.class);
 			
 			if (!(resource instanceof IFile)) {
 				continue;
@@ -145,7 +154,7 @@ public class SnipGistHandler extends AbstractHandler {
 			public IStatus run(IProgressMonitor monitor) {
 				try {
 					Gist response = api.create(body);
-					PlatformUI.getWorkbench().getBrowserSupport().getExternalBrowser().openURL(new URL(response.getHtmlUrl()));
+					getWorkbench().getBrowserSupport().getExternalBrowser().openURL(new URL(response.getHtmlUrl()));
 				} catch (ApiException e) {
 					return new Status(IStatus.ERROR, PLUGIN_ID, "Error creating Gist", e);
 				} catch (PartInitException | MalformedURLException e) {
@@ -159,7 +168,7 @@ public class SnipGistHandler extends AbstractHandler {
 	}
 
 	private Optional<String> getToken() {
-		Preferences preferences = InstanceScope.INSTANCE.getNode(TOKEN_PAGE_ID);
+		Preferences preferences = INSTANCE.getNode(TOKEN_PAGE_ID);
 		String token = preferences.get(TOKEN_PREF_KEY, "");
 		return Optional.of(token);
 	}
@@ -167,7 +176,7 @@ public class SnipGistHandler extends AbstractHandler {
 	private String convert(InputStream inputStream, String charset) throws ExecutionException {
 		StringWriter writer = new StringWriter();
 		try {
-			IOUtils.copy(inputStream, writer, charset);
+			copy(inputStream, writer, charset);
 		} catch (IOException e) {
 			throw new ExecutionException("Error getting file content", e);
 		}
