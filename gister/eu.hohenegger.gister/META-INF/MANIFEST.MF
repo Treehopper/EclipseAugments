@@ -14,10 +14,13 @@ Require-Bundle: io.swagger.core.v3.swagger-annotations,
  org.glassfish.jersey.media.jersey-media-json-jackson,
  org.glassfish.jersey.media.jersey-media-multipart,
  com.fasterxml.jackson.datatype.jackson-datatype-jsr310,
- org.glassfish.hk2.osgi-resource-locator;bundle-version="1.0.1",
- javax.ws.rs-api
+ org.glassfish.hk2.osgi-resource-locator;bundle-version="1.0.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Export-Package: eu.hohenegger.gister.api,
  eu.hohenegger.gister.model
-Import-Package: javax.annotation;version="1.2.0"
+Import-Package: javax.annotation;version="1.2.0",
+ javax.ws.rs;version="2.0.1",
+ javax.ws.rs.client;version="2.0.1",
+ javax.ws.rs.core;version="2.0.1",
+ javax.ws.rs.ext;version="2.0.1"

@@ -296,7 +296,7 @@ version(s), and exceptions or additional permissions here}.&quot;
    </url>
 
    <requires>
-      <import feature="eu.hohenegger.swagger.feature" version="1.0.0.bnd-wqbu4Q"/>
+      <import feature="eu.hohenegger.swagger.feature"/>
    </requires>
 
    <plugin
