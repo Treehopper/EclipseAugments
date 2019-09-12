@@ -1,7 +1,7 @@
 target "eu.hohenegger.augs.targetplatform" with source configurePhase requirements
 
 include "4.13_2019-09.tpd"
-include "orbit-S20190726194335.tpd"
+include "orbit-R20190827152740-2019-09.tpd"
 include "projects/modulebuilder.tpd"
 include "projects/gitmine.tpd"
 include "projects/partdetacher.tpd"

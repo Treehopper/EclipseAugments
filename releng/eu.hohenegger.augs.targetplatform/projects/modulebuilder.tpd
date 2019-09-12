@@ -40,10 +40,7 @@ location "http://download.eclipse.org/ecp/releases/releases_122/" {
 	org.eclipse.emf.ecp.view.viewproxy.feature.feature.group lazy
 	org.eclipse.emf.ecp.feature.feature.group lazy
 	org.eclipse.emf.ecp.ecore.feature.feature.group lazy
-	org.eclipse.emf.ecp.workspace.feature.feature.group lazy
 	org.eclipse.emf.ecp.e4.feature.feature.group lazy
-	org.eclipse.emf.ecp.e3.feature.feature.group lazy
-
-
+	
 	org.eclipse.emf.ecp.viewmodel.feature.feature.group lazy
 }
