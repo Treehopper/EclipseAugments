@@ -58,6 +58,7 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 ## XSD EMF Tools
 ### Features
 * Generate ECore from XSD (right-click menu)
+* Register XSD ECore with provided file extension (right-click menu) to enable editing in EMF editors
 
 ## m2-connectors
 ### jandex-maven-plugin m2e connector

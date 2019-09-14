@@ -7,12 +7,20 @@
             name="XSD 2 ECore"
             id="eu.hohenegger.xsdemftools.xsd2ecore">
       </command>
+      <command
+            name="Register Extension"
+            id="eu.hohenegger.xsdemftools.registerExtension">
+      </command>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
       <handler
             commandId="eu.hohenegger.xsdemftools.xsd2ecore"
             class="eu.hohenegger.xsdemftools.ui.handler.Xsd2EcoreHandler">
+      </handler>
+      <handler
+            commandId="eu.hohenegger.xsdemftools.registerExtension"
+            class="eu.hohenegger.xsdemftools.ui.handler.RegisterEcoreWithExtensionHandler">
       </handler>
    </extension>
    <extension point="org.eclipse.ui.menus">
@@ -36,6 +44,25 @@
 	                  </adapt>
                   </or>
                </iterate>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+      <menuContribution locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="eu.hohenegger.xsdemftools.registerExtension"
+               icon="icons/sample.gif"
+               id="RegisterExtension"
+               label="Register Extension"
+               style="push">
+            <visibleWhen checkEnabled="false">
+			   <with variable="activeMenuSelection">
+			      <iterate
+			           ifEmpty="false">
+			         <adapt type="org.eclipse.core.resources.IResource">
+			              <test property="org.eclipse.core.resources.extension" value="ecore" />
+			         </adapt>
+			      </iterate>
+			   </with>
             </visibleWhen>
          </command>
       </menuContribution>
