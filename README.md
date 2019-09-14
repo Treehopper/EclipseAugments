@@ -55,6 +55,10 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
     - text selection in editors
 * Configure personal GitHub token in preferences
 
+## XSD EMF Tools
+### Features
+* Generate ECore from XSD (right-click menu)
+
 ## m2-connectors
 ### jandex-maven-plugin m2e connector
 m2e connector for the jandex maven plugin. Currently only handles the _jandex_ goal of the [jandex-maven-plugin](https://github.com/wildfly/jandex-maven-plugin).

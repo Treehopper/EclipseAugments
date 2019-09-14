@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1568386659">
+<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1568461464">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.apache.commons.codec" version="1.10.0.v20180409-1845"/>
@@ -75,6 +75,11 @@
       <repository location="http://download.eclipse.org/nebula/releases/2.2.0"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+      <unit id="eu.hohenegger.swagger.feature.feature.group" version="1.0.2.bnd-fQPjQ"/>
+      <repository location="https://treehopper.github.io/EclipseAugmentsOrbit/"/>
+    </location>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+      <unit id="org.eclipse.xsd.ecore.converter.feature.group" version="0.0.0"/>
       <unit id="javax.annotation" version="1.2.0.v201602091430"/>
       <unit id="org.eclipse.sdk.ide" version="0.0.0"/>
       <unit id="org.eclipse.m2e.sdk.feature.feature.group" version="0.0.0"/>
@@ -92,10 +97,6 @@
       <unit id="javax.xml.stream" version="0.0.0"/>
       <unit id="com.google.guava" version="0.0.0"/>
       <repository location="http://download.eclipse.org/releases/2019-09"/>
-    </location>
-    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
-      <unit id="eu.hohenegger.swagger.feature.feature.group" version="1.0.2.bnd-fQPjQ"/>
-      <repository location="https://treehopper.github.io/EclipseAugmentsOrbit/"/>
     </location>
   </locations>
 </target>

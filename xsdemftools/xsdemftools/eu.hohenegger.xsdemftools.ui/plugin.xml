@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            name="XSD 2 ECore"
+            id="eu.hohenegger.xsdemftools.xsd2ecore">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="eu.hohenegger.xsdemftools.xsd2ecore"
+            class="eu.hohenegger.xsdemftools.ui.handler.Xsd2EcoreHandler">
+      </handler>
+   </extension>
+   <extension point="org.eclipse.ui.menus">
+      <menuContribution locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="eu.hohenegger.xsdemftools.xsd2ecore"
+               icon="icons/sample.gif"
+               id="Xsd2Ecore"
+               label="XSD 2 ECore"
+               style="push">
+            <visibleWhen checkEnabled="true">
+               <iterate
+                     ifEmpty="false"
+                     operator="and">
+                  <or>
+	                  <adapt
+	                        type="org.eclipse.core.resources.IResource">
+	                     <instanceof
+	                           value="org.eclipse.core.resources.IFile">
+	                     </instanceof>
+	                  </adapt>
+                  </or>
+               </iterate>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+</plugin>

@@ -20,6 +20,7 @@
 		<module>wizard</module>
 		<module>m2e-connectors</module>
 		<module>gister</module>
+		<module>xsdemftools</module>
 	</modules>
 
 	<properties>
