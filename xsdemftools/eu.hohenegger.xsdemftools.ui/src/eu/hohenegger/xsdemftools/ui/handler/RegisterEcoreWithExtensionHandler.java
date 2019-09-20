@@ -103,6 +103,8 @@ public class RegisterEcoreWithExtensionHandler extends AbstractHandler {
 			return null;
 		}
 		
+		extension = dialog.getValue();
+		
 		EList<EObject> packages;
 		try {
 			packages = loadEcore(Util.convert(ecoreFile.getRawLocationURI()));
