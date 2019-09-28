@@ -3,3 +3,9 @@ target "xsd2ecore" with source configurePhase
 location "http://download.eclipse.org/releases/2019-09" {
 	org.eclipse.xsd.ecore.converter.feature.group lazy
 }
+
+location "http://download.eclipse.org/modeling/emf/compare/updates/releases" {
+//	org.eclipse.emf.compare.rcp.ui.feature.group lazy
+//	org.eclipse.emf.compare.sdk.feature.group lazy
+	org.eclipse.emf.compare.ide.ui.feature.group lazy
+}

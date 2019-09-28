@@ -14,6 +14,10 @@ import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IFile;
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.Platform;
+import org.eclipse.core.runtime.content.IContentType;
+import org.eclipse.core.runtime.content.IContentTypeManager;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
@@ -42,6 +46,8 @@ import org.eclipse.jface.viewers.IStructuredSelection;
  *
  */
 public class RegisterEcoreWithExtensionHandler extends AbstractHandler {
+
+	private static final String EMFCOMPARE_CONTENTTYPE_ID = "org.eclipse.emf.compare.content.type";
 
 	private final static class CustomizedOptionsXmlResourceImpl extends XMLResourceImpl {
 		
@@ -125,7 +131,18 @@ public class RegisterEcoreWithExtensionHandler extends AbstractHandler {
 		};
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(extension, xmlResourceFactory);
 
+		try {
+			registerComparsionContentType(extension);
+		} catch (CoreException e) {
+			throw new ExecutionException("Unable to register extension with EMFCompare: " + extension, e);
+		}
+		
 		return null;
+	}
+
+	private void registerComparsionContentType(String extension) throws CoreException {
+		IContentTypeManager contentTypeManager = Platform.getContentTypeManager();
+		contentTypeManager.getContentType(EMFCOMPARE_CONTENTTYPE_ID).addFileSpec(extension, IContentType.FILE_EXTENSION_SPEC);
 	}
 
 	public EList<EObject> loadEcore(URI fileURI) throws IOException {
