@@ -67,4 +67,14 @@
          </command>
       </menuContribution>
    </extension>
+   <extension
+         point="org.eclipse.emf.compare.rcp.diffEngine">
+      <descriptor
+            description="Ignore order on XML Attributes and Tags"
+            id="eu.hohenegger.xsdemftools.ui.xmlDiffEngine"
+            impl="eu.hohenegger.xsdemftools.ui.handler.XmlDiffEngine"
+            label="Unordered XML DiffEngine"
+            ranking="100">
+      </descriptor>
+   </extension>
 </plugin>

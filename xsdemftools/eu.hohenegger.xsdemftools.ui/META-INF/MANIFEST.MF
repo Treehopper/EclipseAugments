@@ -23,7 +23,9 @@ Require-Bundle: eu.hohenegger.xsdemftools,
  org.eclipse.e4.tools.compat,
  org.eclipse.emf.ecore,
  org.eclipse.emf.ecore.xmi,
- org.eclipse.xsd
+ org.eclipse.xsd,
+ org.eclipse.emf.compare,
+ org.eclipse.emf.compare.rcp
 Import-Package: javax.inject;version="1.0.0",javax.annotation; version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
