@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1569004844">
+<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1569698435">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.apache.commons.codec" version="1.10.0.v20180409-1845"/>
@@ -80,6 +80,10 @@
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.eclipse.xsd.ecore.converter.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.xsd.mapping.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.xsd.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.xsd.edit.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.xsd.editor.feature.group" version="0.0.0"/>
       <unit id="javax.annotation" version="1.2.0.v201602091430"/>
       <unit id="org.eclipse.sdk.ide" version="0.0.0"/>
       <unit id="org.eclipse.m2e.sdk.feature.feature.group" version="0.0.0"/>

@@ -2,6 +2,10 @@ target "xsd2ecore" with source configurePhase
 
 location "http://download.eclipse.org/releases/2019-09" {
 	org.eclipse.xsd.ecore.converter.feature.group lazy
+	org.eclipse.xsd.mapping.feature.group lazy
+	org.eclipse.xsd.feature.group lazy
+	org.eclipse.xsd.edit.feature.group lazy
+	org.eclipse.xsd.editor.feature.group lazy
 }
 
 location "http://download.eclipse.org/modeling/emf/compare/updates/releases" {
