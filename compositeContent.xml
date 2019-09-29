@@ -2,7 +2,7 @@
 <repository name='EclipseAugments Composite p2 Repository' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='true'/>
-    <property name='p2.timestamp' value='1568475510104'/>
+    <property name='p2.timestamp' value='1569776138130'/>
   </properties>
   <children size='4'>
     <child location='1.0.0'/>
