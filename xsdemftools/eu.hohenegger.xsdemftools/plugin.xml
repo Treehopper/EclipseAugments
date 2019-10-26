@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.emf.compare.rcp.diffEngine">
+      <descriptor
+            description="Ignore order on XML Attributes and Tags, and redundant mixed type including text nodes."
+            id="eu.hohenegger.xsdemftools.ui.xmlDiffEngine"
+            impl="eu.hohenegger.xsdemftools.XmlDiffEngine"
+            label="XML DiffEngine"
+            ranking="100">
+      </descriptor>
+   </extension>
+</plugin>

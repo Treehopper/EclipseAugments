@@ -1,4 +1,4 @@
-package eu.hohenegger.xsdemftools.ui.handler;
+package eu.hohenegger.xsdemftools;
 
 import org.eclipse.emf.compare.diff.DefaultDiffEngine;
 import org.eclipse.emf.compare.diff.FeatureFilter;

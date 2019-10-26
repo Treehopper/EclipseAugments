@@ -1,14 +1,10 @@
 package eu.hohenegger.xsdemftools.ui.handler;
 
-import static eu.hohenegger.xsdemftools.ui.handler.Util.convert;
+import static eu.hohenegger.xsdemftools.UriConverterUtil.convert;
 import static eu.hohenegger.xsdemftools.ui.handler.Util.getFileSelectionContent;
 import static org.eclipse.jface.viewers.StructuredSelection.EMPTY;
 import static org.eclipse.ui.handlers.HandlerUtil.getCurrentStructuredSelection;
 
-import java.io.IOException;
-import java.net.URI;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 
 import org.eclipse.core.commands.AbstractHandler;
@@ -17,14 +13,11 @@ import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.jface.viewers.IStructuredSelection;
-import org.eclipse.xsd.ecore.XSDEcoreBuilder;
+
+import eu.hohenegger.xsdemftools.UriConverterUtil;
+import eu.hohenegger.xsdemftools.Xsd2EcoreConverterException;
+import eu.hohenegger.xsdemftools.Xsd2EcoreUtil;
 
 /**
  * See:
@@ -33,6 +26,12 @@ import org.eclipse.xsd.ecore.XSDEcoreBuilder;
  *
  */
 public class Xsd2EcoreHandler extends AbstractHandler {
+	
+	private Xsd2EcoreUtil xsd2EcoreUtil;
+
+	public Xsd2EcoreHandler() {
+		xsd2EcoreUtil = new Xsd2EcoreUtil();
+	}
 
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
@@ -46,31 +45,12 @@ public class Xsd2EcoreHandler extends AbstractHandler {
 		}
 
 		for (IFile iFile : selectionContent) {
-			URI locationURI = iFile.getRawLocationURI();
-
-			XSDEcoreBuilder xsdEcoreBuilder = new XSDEcoreBuilder();
-			ResourceSet resourceSet = new ResourceSetImpl();
-			Collection<EObject> eCorePackages = xsdEcoreBuilder.generate(convert(locationURI));
-
-			resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xmi",
-					new XMIResourceFactoryImpl());
-			Resource resource = resourceSet.createResource(convert(locationURI.resolve(iFile.getName() + ".ecore")));
-
-			for (Iterator<EObject> iter = eCorePackages.iterator(); iter.hasNext();) {
-				EObject eObject = iter.next();
-				if (!(eObject instanceof EPackage)) {
-					throw new ExecutionException("Unexpected type " + eObject + ". Expected EPackage.");
-				}
-				EPackage element = (EPackage) eObject;
-				resource.getContents().add(element);
-			}
-
 			try {
-				resource.save(null);
-			} catch (IOException e) {
-				throw new ExecutionException("Error saving resource " + resource, e);
+				xsd2EcoreUtil.convert(UriConverterUtil.convert(iFile.getRawLocationURI()), convert(iFile.getRawLocationURI().resolve(iFile.getName() + ".ecore")));
+			} catch (Xsd2EcoreConverterException e) {
+				throw new ExecutionException("Failed while registering " + iFile, e);
 			}
-
+			
 			try {
 				iFile.getParent().refreshLocal(1, new NullProgressMonitor());
 			} catch (CoreException e) {
@@ -80,5 +60,6 @@ public class Xsd2EcoreHandler extends AbstractHandler {
 
 		return null;
 	}
+	
 
 }

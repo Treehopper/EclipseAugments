@@ -36,12 +36,12 @@
                      ifEmpty="false"
                      operator="and">
                   <or>
-	                  <adapt
-	                        type="org.eclipse.core.resources.IResource">
-	                     <instanceof
-	                           value="org.eclipse.core.resources.IFile">
-	                     </instanceof>
-	                  </adapt>
+                      <adapt
+                            type="org.eclipse.core.resources.IResource">
+                         <instanceof
+                               value="org.eclipse.core.resources.IFile">
+                         </instanceof>
+                      </adapt>
                   </or>
                </iterate>
             </visibleWhen>
@@ -55,26 +55,35 @@
                label="Register Extension"
                style="push">
             <visibleWhen checkEnabled="false">
-			   <with variable="activeMenuSelection">
-			      <iterate
-			           ifEmpty="false">
-			         <adapt type="org.eclipse.core.resources.IResource">
-			              <test property="org.eclipse.core.resources.extension" value="ecore" />
-			         </adapt>
-			      </iterate>
-			   </with>
+               <with variable="activeMenuSelection">
+                  <iterate
+                       ifEmpty="false">
+                     <adapt type="org.eclipse.core.resources.IResource">
+                          <test property="org.eclipse.core.resources.extension" value="ecore" />
+                     </adapt>
+                  </iterate>
+               </with>
             </visibleWhen>
          </command>
       </menuContribution>
    </extension>
    <extension
-         point="org.eclipse.emf.compare.rcp.diffEngine">
-      <descriptor
-            description="Ignore order on XML Attributes and Tags, and redundant mixed type including text nodes."
-            id="eu.hohenegger.xsdemftools.ui.xmlDiffEngine"
-            impl="eu.hohenegger.xsdemftools.ui.handler.XmlDiffEngine"
-            label="XML DiffEngine"
-            ranking="100">
-      </descriptor>
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type  
+          id="eu.hohenegger.xsdemftools.ui.contenttype.genericxml" 
+          name="XSD Comparable XML" 
+          base-type="org.eclipse.core.runtime.xml"
+          file-extensions="xml"> 
+          <describer 
+              class="eu.hohenegger.xsdemftools.ui.contenttype.contentDescriber.ComparableXMLContentDescriber">
+          </describer> 
+      </content-type>
+   </extension>
+   <extension
+         point="org.eclipse.compare.structureMergeViewers">
+      <contentTypeBinding
+            contentTypeId="eu.hohenegger.xsdemftools.ui.contenttype.genericxml"
+            structureMergeViewerId="org.eclipse.emf.compare.ide.ui.internal.structureMergeViewer">
+      </contentTypeBinding>
    </extension>
 </plugin>

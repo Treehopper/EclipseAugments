@@ -30,7 +30,4 @@ public class Util {
 		return result;
 	}
 
-	public static org.eclipse.emf.common.util.URI convert(URI targetResourceUri) {
-		return org.eclipse.emf.common.util.URI.createFileURI(targetResourceUri.getRawPath());
-	}
 }
