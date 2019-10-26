@@ -64,6 +64,10 @@ Collection of tools meant to improve efficiency and effectiveness of Eclipse as 
 ### jandex-maven-plugin m2e connector
 m2e connector for the jandex maven plugin. Currently only handles the _jandex_ goal of the [jandex-maven-plugin](https://github.com/wildfly/jandex-maven-plugin).
 
+## Liquibase EMF Model and Comparsion
+### Features
+* Use generic EMF Tools to edit Liquibase DB changelogs
+* Use EMF Compare to compare Liquibase DB changelogs, ignoring whitespace and ordering changes
 
 Install from p2 update site
 ===================

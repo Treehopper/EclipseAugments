@@ -15,6 +15,12 @@ public class XmlDiffEngine extends DefaultDiffEngine {
 			@Override
 			public boolean checkForOrderingChanges(EStructuralFeature feature) {
 				return false;
+//				return feature.equals(XMLTypePackage.Literals.ANY_TYPE.getEAllStructuralFeatures()) ||
+//						feature.equals(XMLTypePackage.Literals.ANY_SIMPLE_TYPE.getEAllStructuralFeatures()) ||
+//						feature.equals(XMLTypePackage.Literals.ANY_TYPE__ANY.getEAllStructuralFeatures()) ||
+//						feature.equals(XMLTypePackage.Literals.ANY_TYPE.getEAllStructuralFeatures()) ||
+//						feature.equals(XMLTypePackage.Literals.ANY_TYPE.getEAllStructuralFeatures()) ||
+//						;
 			}
 
 			@Override
@@ -22,6 +28,8 @@ public class XmlDiffEngine extends DefaultDiffEngine {
 				return attribute == XMLTypePackage.eINSTANCE.getAnyType_Mixed() ||
 						attribute == XMLTypePackage.eINSTANCE.getXMLTypeDocumentRoot_Mixed() ||
 						attribute == XMLTypePackage.eINSTANCE.getXMLTypeDocumentRoot_Text() ||
+						// this would work for any registred EMF model
+//						attribute.getName().equals("mixed") ||
 						super.isIgnoredAttribute(attribute);
 			}
 		};

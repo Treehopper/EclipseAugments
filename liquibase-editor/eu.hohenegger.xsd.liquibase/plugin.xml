@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated dbchangelog-3.6 -->
+      <package
+            uri="http://www.liquibase.org/xml/ns/dbchangelog"
+            class="org.liquibase.xml.ns.dbchangelog.DbchangelogPackage"
+            genModel="model/dbchangelog-3.6.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated dbchangelog-3.6 -->
+      <parser
+            type="xml"
+            class="org.liquibase.xml.ns.dbchangelog.util.DbchangelogResourceFactoryImpl"/>
+   </extension>
+
+   <extension
+         point="org.eclipse.emf.compare.rcp.diffEngine">
+      <descriptor
+            description="Ignore order on Liquibase Attributes and Tags, and redundant mixed type including text nodes."
+            id="eu.hohenegger.xsdemftools.ui.liquibaseDiffEngine"
+            impl="eu.hohenegger.xsd.liquibase.LiquibaseDiffEngine"
+            label="Liquibase DiffEngine"
+            ranking="101">
+      </descriptor>
+   </extension>
+</plugin>

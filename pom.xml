@@ -21,6 +21,7 @@
 		<module>m2e-connectors</module>
 		<module>gister</module>
 		<module>xsdemftools</module>
+		<module>liquibase-editor</module>
 	</modules>
 
 	<properties>
