@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/eu.hohenegger.xsd.pom/src-gen" editDirectory="/eu.hohenegger.xsd.pom.ui/src-gen"
+    editorDirectory="/eu.hohenegger.xsd.pom.ui/src-gen-editor" modelPluginID="eu.hohenegger.xsd.pom"
+    modelName="MavenPom-4" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    editPluginID="eu.hohenegger.xsd.pom.ui" editorPluginID="eu.hohenegger.xsd.pom.ui"
+    testsPluginID="eu.hohenegger.xsd.pom.tests" operationReflection="true" importOrganizing="true">
+  <foreignModel>maven-4.0.0.xsd.ecore</foreignModel>
+  <genPackages prefix="Pom" basePackage="eu.hohenegger.xsd" resource="XML" disposableProviderFactory="true"
+      ecorePackage="maven-4.0.0.xsd.ecore#/">
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Activation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Activation/activeByDefault"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Activation/jdk"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Activation/os"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Activation/property"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Activation/file"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ActivationFile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationFile/missing"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationFile/exists"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ActivationOS">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationOS/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationOS/family"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationOS/arch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationOS/version"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ActivationProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationProperty/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationProperty/value"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Build">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/sourceDirectory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/scriptSourceDirectory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/testSourceDirectory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/outputDirectory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/testOutputDirectory"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/extensions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/defaultGoal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/resources"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/testResources"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/directory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/finalName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/filters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/pluginManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/plugins"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//BuildBase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//BuildBase/defaultGoal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//BuildBase/resources"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//BuildBase/testResources"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//BuildBase/directory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//BuildBase/finalName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//BuildBase/filters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//BuildBase/pluginManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//BuildBase/plugins"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//CiManagement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//CiManagement/system"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//CiManagement/url"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//CiManagement/notifiers"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ConfigurationType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ConfigurationType/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ConfigurationType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ConfigurationType1/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ConfigurationType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ConfigurationType2/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ConfigurationType3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ConfigurationType3/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ConfigurationType4">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ConfigurationType4/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Contributor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/organization"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/organizationUrl"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Contributor/roles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/timezone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Contributor/properties"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ContributorsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ContributorsType/contributor"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DependenciesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DependenciesType/dependency"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DependenciesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DependenciesType1/dependency"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DependenciesType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DependenciesType2/dependency"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DependenciesType3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DependenciesType3/dependency"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Dependency">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/classifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/scope"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/systemPath"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Dependency/exclusions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/optional"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DependencyManagement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DependencyManagement/dependencies"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DeploymentRepository">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DeploymentRepository/uniqueVersion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DeploymentRepository/releases"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DeploymentRepository/snapshots"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DeploymentRepository/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DeploymentRepository/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DeploymentRepository/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DeploymentRepository/layout"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Developer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/organization"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/organizationUrl"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Developer/roles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/timezone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Developer/properties"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DevelopersType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DevelopersType/developer"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DistributionManagement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DistributionManagement/repository"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DistributionManagement/snapshotRepository"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DistributionManagement/site"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DistributionManagement/downloadUrl"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DistributionManagement/relocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DistributionManagement/status"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DocumentRoot/project"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ExcludesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ExcludesType/exclude"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Exclusion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Exclusion/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Exclusion/groupId"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ExclusionsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ExclusionsType/exclusion"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ExecutionsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ExecutionsType/execution"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Extension">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Extension/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Extension/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Extension/version"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ExtensionsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ExtensionsType/extension"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//FiltersType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//FiltersType/filter"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//FiltersType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//FiltersType1/filter"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//GoalsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//GoalsType/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//GoalsType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//GoalsType1/goal"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//IncludesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//IncludesType/include"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//IssueManagement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//IssueManagement/system"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//IssueManagement/url"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//License">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//License/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//License/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//License/distribution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//License/comments"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//LicensesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//LicensesType/license"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//MailingList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//MailingList/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//MailingList/subscribe"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//MailingList/unsubscribe"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//MailingList/post"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//MailingList/archive"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//MailingList/otherArchives"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//MailingListsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//MailingListsType/mailingList"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Model">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/modelVersion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/parent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/packaging"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/inceptionYear"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/organization"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/licenses"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/developers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/contributors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/mailingLists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/prerequisites"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/modules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/scm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/issueManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/ciManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/distributionManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/dependencyManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/dependencies"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/repositories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/pluginRepositories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/build"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/reports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/reporting"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/profiles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/childProjectUrlInheritAppendPath"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ModulesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ModulesType/module"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ModulesType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ModulesType1/module"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Notifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/sendOnError"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/sendOnFailure"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/sendOnSuccess"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/sendOnWarning"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/address"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Notifier/configuration"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//NotifiersType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//NotifiersType/notifier"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Organization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Organization/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Organization/url"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//OtherArchivesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//OtherArchivesType/otherArchive"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Parent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Parent/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Parent/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Parent/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Parent/relativePath"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Plugin">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Plugin/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Plugin/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Plugin/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Plugin/extensions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Plugin/executions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Plugin/dependencies"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Plugin/goals"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Plugin/inherited"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Plugin/configuration"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginExecution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PluginExecution/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PluginExecution/phase"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginExecution/goals"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PluginExecution/inherited"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginExecution/configuration"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginManagement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginManagement/plugins"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginRepositoriesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginRepositoriesType/pluginRepository"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginRepositoriesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginRepositoriesType1/pluginRepository"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginsType/plugin"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginsType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginsType1/plugin"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginsType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginsType2/plugin"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginsType3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginsType3/plugin"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Prerequisites">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Prerequisites/maven"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Profile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Profile/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/activation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/build"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/modules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/distributionManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/dependencyManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/dependencies"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/repositories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/pluginRepositories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/reports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/reporting"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ProfilesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ProfilesType/profile"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PropertiesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PropertiesType/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PropertiesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PropertiesType1/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PropertiesType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PropertiesType2/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PropertiesType3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PropertiesType3/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Relocation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Relocation/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Relocation/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Relocation/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Relocation/message"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Reporting">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Reporting/excludeDefaults"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Reporting/outputDirectory"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Reporting/plugins"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportPlugin">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportPlugin/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportPlugin/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportPlugin/version"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ReportPlugin/reportSets"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportPlugin/inherited"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ReportPlugin/configuration"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportSet/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ReportSet/reports"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportSet/inherited"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ReportSet/configuration"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportSetsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ReportSetsType/reportSet"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportsType/report"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportsType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportsType1/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportsType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportsType2/any"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//RepositoriesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//RepositoriesType/repository"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//RepositoriesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//RepositoriesType1/repository"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Repository">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Repository/releases"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Repository/snapshots"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Repository/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Repository/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Repository/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Repository/layout"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//RepositoryPolicy">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//RepositoryPolicy/enabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//RepositoryPolicy/updatePolicy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//RepositoryPolicy/checksumPolicy"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Resource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Resource/targetPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Resource/filtering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Resource/directory"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Resource/includes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Resource/excludes"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ResourcesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ResourcesType/resource"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ResourcesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ResourcesType1/resource"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//RolesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//RolesType/role"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//RolesType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//RolesType1/role"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Scm">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/connection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/developerConnection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/tag"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/childScmConnectionInheritAppendPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/childScmDeveloperConnectionInheritAppendPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/childScmUrlInheritAppendPath"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Site">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Site/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Site/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Site/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Site/childSiteUrlInheritAppendPath"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//TestResourcesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//TestResourcesType/testResource"/>
+    </genClasses>
+    <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//TestResourcesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//TestResourcesType1/testResource"/>
+    </genClasses>
+    <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Activation/jdk"/>
+    <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Activation/os"/>
+    <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Activation/property"/>
+    <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Activation/file"/>
+  </genPackages>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ActivationFile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationFile/missing"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationFile/exists"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ActivationOS">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationOS/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationOS/family"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationOS/arch"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationOS/version"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ActivationProperty">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationProperty/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ActivationProperty/value"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Build">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/sourceDirectory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/scriptSourceDirectory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/testSourceDirectory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/outputDirectory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/testOutputDirectory"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/extensions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/defaultGoal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/resources"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/testResources"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/directory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Build/finalName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/filters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/pluginManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Build/plugins"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//BuildBase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//BuildBase/defaultGoal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//BuildBase/resources"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//BuildBase/testResources"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//BuildBase/directory"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//BuildBase/finalName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//BuildBase/filters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//BuildBase/pluginManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//BuildBase/plugins"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//CiManagement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//CiManagement/system"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//CiManagement/url"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//CiManagement/notifiers"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ConfigurationType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ConfigurationType/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ConfigurationType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ConfigurationType1/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ConfigurationType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ConfigurationType2/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ConfigurationType3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ConfigurationType3/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ConfigurationType4">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ConfigurationType4/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Contributor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/organization"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/organizationUrl"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Contributor/roles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Contributor/timezone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Contributor/properties"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ContributorsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ContributorsType/contributor"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DependenciesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DependenciesType/dependency"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DependenciesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DependenciesType1/dependency"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DependenciesType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DependenciesType2/dependency"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DependenciesType3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DependenciesType3/dependency"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Dependency">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/classifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/scope"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/systemPath"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Dependency/exclusions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Dependency/optional"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DependencyManagement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DependencyManagement/dependencies"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DeploymentRepository">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DeploymentRepository/uniqueVersion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DeploymentRepository/releases"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DeploymentRepository/snapshots"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DeploymentRepository/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DeploymentRepository/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DeploymentRepository/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DeploymentRepository/layout"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Developer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/email"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/organization"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/organizationUrl"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Developer/roles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Developer/timezone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Developer/properties"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DevelopersType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DevelopersType/developer"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DistributionManagement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DistributionManagement/repository"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DistributionManagement/snapshotRepository"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DistributionManagement/site"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DistributionManagement/downloadUrl"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DistributionManagement/relocation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DistributionManagement/status"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//DocumentRoot/project"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ExcludesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ExcludesType/exclude"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Exclusion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Exclusion/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Exclusion/groupId"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ExclusionsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ExclusionsType/exclusion"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ExecutionsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ExecutionsType/execution"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Extension">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Extension/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Extension/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Extension/version"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ExtensionsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ExtensionsType/extension"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//FiltersType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//FiltersType/filter"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//FiltersType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//FiltersType1/filter"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//GoalsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//GoalsType/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//GoalsType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//GoalsType1/goal"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//IncludesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//IncludesType/include"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//IssueManagement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//IssueManagement/system"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//IssueManagement/url"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//License">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//License/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//License/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//License/distribution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//License/comments"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//LicensesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//LicensesType/license"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//MailingList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//MailingList/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//MailingList/subscribe"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//MailingList/unsubscribe"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//MailingList/post"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//MailingList/archive"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//MailingList/otherArchives"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//MailingListsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//MailingListsType/mailingList"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Model">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/modelVersion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/parent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/packaging"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/inceptionYear"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/organization"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/licenses"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/developers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/contributors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/mailingLists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/prerequisites"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/modules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/scm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/issueManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/ciManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/distributionManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/dependencyManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/dependencies"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/repositories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/pluginRepositories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/build"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/reports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/reporting"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Model/profiles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Model/childProjectUrlInheritAppendPath"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ModulesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ModulesType/module"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ModulesType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ModulesType1/module"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Notifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/sendOnError"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/sendOnFailure"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/sendOnSuccess"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/sendOnWarning"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Notifier/address"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Notifier/configuration"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//NotifiersType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//NotifiersType/notifier"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Organization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Organization/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Organization/url"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//OtherArchivesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//OtherArchivesType/otherArchive"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Parent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Parent/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Parent/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Parent/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Parent/relativePath"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Plugin">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Plugin/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Plugin/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Plugin/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Plugin/extensions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Plugin/executions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Plugin/dependencies"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Plugin/goals"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Plugin/inherited"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Plugin/configuration"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginExecution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PluginExecution/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PluginExecution/phase"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginExecution/goals"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PluginExecution/inherited"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginExecution/configuration"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginManagement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginManagement/plugins"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginRepositoriesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginRepositoriesType/pluginRepository"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginRepositoriesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginRepositoriesType1/pluginRepository"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginsType/plugin"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginsType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginsType1/plugin"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginsType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginsType2/plugin"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PluginsType3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//PluginsType3/plugin"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Prerequisites">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Prerequisites/maven"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Profile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Profile/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/activation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/build"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/modules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/distributionManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/dependencyManagement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/dependencies"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/repositories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/pluginRepositories"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/reports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Profile/reporting"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ProfilesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ProfilesType/profile"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PropertiesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PropertiesType/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PropertiesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PropertiesType1/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PropertiesType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PropertiesType2/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//PropertiesType3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//PropertiesType3/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Relocation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Relocation/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Relocation/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Relocation/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Relocation/message"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Reporting">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Reporting/excludeDefaults"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Reporting/outputDirectory"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Reporting/plugins"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportPlugin">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportPlugin/groupId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportPlugin/artifactId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportPlugin/version"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ReportPlugin/reportSets"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportPlugin/inherited"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ReportPlugin/configuration"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportSet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportSet/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ReportSet/reports"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportSet/inherited"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ReportSet/configuration"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportSetsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ReportSetsType/reportSet"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportsType/report"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportsType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportsType1/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ReportsType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//ReportsType2/any"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//RepositoriesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//RepositoriesType/repository"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//RepositoriesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//RepositoriesType1/repository"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Repository">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Repository/releases"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Repository/snapshots"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Repository/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Repository/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Repository/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Repository/layout"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//RepositoryPolicy">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//RepositoryPolicy/enabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//RepositoryPolicy/updatePolicy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//RepositoryPolicy/checksumPolicy"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Resource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Resource/targetPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Resource/filtering"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Resource/directory"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Resource/includes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//Resource/excludes"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ResourcesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ResourcesType/resource"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//ResourcesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//ResourcesType1/resource"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//RolesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//RolesType/role"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//RolesType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//RolesType1/role"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Scm">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/connection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/developerConnection"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/tag"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/childScmConnectionInheritAppendPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/childScmDeveloperConnectionInheritAppendPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Scm/childScmUrlInheritAppendPath"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//Site">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Site/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Site/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Site/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute maven-4.0.0.xsd.ecore#//Site/childSiteUrlInheritAppendPath"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//TestResourcesType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//TestResourcesType/testResource"/>
+    </genClasses>
+  <genClasses ecoreClass="maven-4.0.0.xsd.ecore#//TestResourcesType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference maven-4.0.0.xsd.ecore#//TestResourcesType1/testResource"/>
+    </genClasses>
+</genmodel:GenModel>

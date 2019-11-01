@@ -6,14 +6,11 @@ import java.io.Reader;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.QualifiedName;
 import org.eclipse.core.runtime.content.IContentDescription;
 import org.eclipse.core.runtime.content.XMLContentDescriber;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-
-import eu.hohenegger.xsdemftools.XsdProvider;
 
 public class ComparableXMLContentDescriber extends XMLContentDescriber {
 	private static final QualifiedName[] SUPPORTED_OPTIONS = new QualifiedName[] {

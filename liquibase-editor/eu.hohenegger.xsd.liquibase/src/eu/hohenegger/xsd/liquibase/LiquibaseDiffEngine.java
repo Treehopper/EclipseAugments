@@ -1,12 +1,13 @@
 package eu.hohenegger.xsd.liquibase;
 
-import org.eclipse.emf.compare.diff.DefaultDiffEngine;
 import org.eclipse.emf.compare.diff.FeatureFilter;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.liquibase.xml.ns.dbchangelog.DbchangelogPackage;
 
-public class LiquibaseDiffEngine extends DefaultDiffEngine {
+import eu.hohenegger.xsdemftools.XmlDiffEngine;
+
+public class LiquibaseDiffEngine extends XmlDiffEngine {
 
 	@Override
 	protected FeatureFilter createFeatureFilter() {

@@ -22,6 +22,7 @@
 		<module>gister</module>
 		<module>xsdemftools</module>
 		<module>liquibase-editor</module>
+		<module>pom-editor</module>
 	</modules>
 
 	<properties>

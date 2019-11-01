@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.emf.compare.rcp.diffEngine">
+      <descriptor
+            description="Ignore order on POM Attributes and Tags, and redundant mixed type including text nodes."
+            id="eu.hohenegger.xsd.pom.pomDiffEngine"
+            impl="eu.hohenegger.xsd.pom.PomDiffEngine"
+            label="POM DiffEngine"
+            ranking="1010000">
+      </descriptor>
+   </extension>
+   <extension
+         point="org.eclipse.core.contenttype.contentTypes">
+      <content-type
+            base-type="org.eclipse.core.runtime.xml"
+            default-charset="UTF-8"
+            file-extensions="xml"
+            file-names="pom.xml"
+            id="eu.hohenegger.xsdemftools.ui.contenttype.pomxml"
+            name="XSD Comparable POM"
+            priority="high"> 
+          <describer
+                class="eu.hohenegger.xsdemftools.ui.contenttype.contentDescriber.ComparableXMLContentDescriber"
+                plugin="eu.hohenegger.xsdemftools.ui">
+          </describer> 
+      </content-type>
+   </extension>
+   <extension
+         point="org.eclipse.compare.structureMergeViewers">
+      <contentTypeBinding
+            contentTypeId="eu.hohenegger.xsdemftools.ui.contenttype.pomxml"
+            structureMergeViewerId="org.eclipse.emf.compare.ide.ui.internal.structureMergeViewer">
+      </contentTypeBinding>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated maven-4.0.0.xsd -->
+      <package
+            uri="http://maven.apache.org/POM/4.0.0"
+            class="eu.hohenegger.xsd.pom.PomPackage"
+            genModel="model/maven-4.0.0.xsd.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated maven-4.0.0.xsd -->
+      <parser
+            type="xml"
+            class="eu.hohenegger.xsd.pom.util.PomResourceFactoryImpl"/>
+   </extension>
+</plugin>

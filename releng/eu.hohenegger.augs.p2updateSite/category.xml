@@ -48,6 +48,9 @@
    <feature id="eu.hohenegger.xsd.liquibase.feature" version="0.0.0">
       <category name="eu.hohenegger.xsd.liquibase"/>
    </feature>
+   <feature id="eu.hohenegger.xsd.pom.feature" version="0.0.0">
+      <category name="eu.hohenegger.xsd.pom"/>
+   </feature>
    <category-def name="eu.hohenegger.common" label="Common (Required by the other features)"/>
    <category-def name="eu.hohenegger.stacks" label="Stack Trace Editor (experimental)"/>
    <category-def name="eu.hohenegger.partdetacher" label="Part Detacher (experimental)"/>
@@ -60,6 +63,7 @@
    <category-def name="eu.hohenegger.m2e.connectors" label="m2e Connectors"/>
    <category-def name="eu.hohenegger.gister" label="Gister (experimental)"/>
    <category-def name="eu.hohenegger.xsd.liquibase" label="Liquibase EMF Editing Support (experimental)"/>
+   <category-def name="eu.hohenegger.xsd.pom" label="Maven POM file EMF Editing Support (experimental)"/>
    <category-def name="eu.hohenegger.xsdemftools" label="XSD EMF Tools (experimental)"/>
    <repository-reference location="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/" enabled="true" />
    <repository-reference location="http://https://treehopper.github.io/EclipseAugmentsOrbit" enabled="true" />
