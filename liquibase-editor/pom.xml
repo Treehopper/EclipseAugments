@@ -13,6 +13,10 @@
 		<module>eu.hohenegger.xsd.liquibase</module>
 		<module>eu.hohenegger.xsd.liquibase.feature</module>
 		<module>eu.hohenegger.xsd.liquibase.ui</module>
+
+		<module>eu.hohenegger.liquibase</module>
+		<module>eu.hohenegger.liquibase.feature</module>
+		<module>eu.hohenegger.liquibase.ui</module>
 	</modules>
 	
 	<packaging>pom</packaging>

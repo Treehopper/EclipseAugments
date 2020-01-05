@@ -69,10 +69,12 @@ m2e connector for the jandex maven plugin. Currently only handles the _jandex_ g
 * Use generic EMF Tools to edit Maven POM files
 * Use EMF Compare to compare Maven POM files, ignoring whitespace and ordering changes
 
-## Liquibase EMF Model and Comparsion
+## Liquibase
 ### Features
+* EMF Model and Comparsion
 * Use generic EMF Tools to edit Liquibase DB changelogs
 * Use EMF Compare to compare Liquibase DB changelogs, ignoring whitespace and ordering changes
+* Run Liquibase scripts against embedded H2 and inspect result in H2 console
 
 Install from p2 update site
 ===================

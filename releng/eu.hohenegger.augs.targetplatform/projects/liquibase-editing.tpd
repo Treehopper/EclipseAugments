@@ -1,0 +1,16 @@
+target "liquibase-editing" with source configurePhase
+
+location "https://treehopper.github.io/EclipseAugmentsOrbit/" {
+//location "https://localhost:8080/" {
+	eu.hohenegger.liquibase.dependencies.feature.group [1.0.0,1.1.0)
+}
+
+location "https://download.eclipse.org/tools/orbit/downloads/drops/R20191126223242/repository" {
+	org.h2 lazy
+	
+	// liquibase dependencies
+	org.slf4j.api lazy
+	org.slf4j.binding.nop lazy
+	org.yaml.snakeyaml lazy
+	javax.xml.bind lazy
+}

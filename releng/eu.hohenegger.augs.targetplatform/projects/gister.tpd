@@ -8,5 +8,5 @@ location "http://download.eclipse.org/releases/2019-09" {
 
 location "https://treehopper.github.io/EclipseAugmentsOrbit/" {
 //location "https://localhost:8080/" {
-	eu.hohenegger.swagger.feature.feature.group [1.0.2,1.1.0)
+	eu.hohenegger.swagger.dependencies.feature.group [1.0.2,1.1.0)
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1572093481">
+<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1578341571">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.apache.commons.codec" version="1.10.0.v20180409-1845"/>
@@ -75,10 +75,6 @@
       <repository location="http://download.eclipse.org/nebula/releases/2.2.0"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
-      <unit id="eu.hohenegger.swagger.feature.feature.group" version="1.0.2.bnd-fQPjQ"/>
-      <repository location="https://treehopper.github.io/EclipseAugmentsOrbit/"/>
-    </location>
-    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.eclipse.xsd.ecore.converter.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.xsd.mapping.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.xsd.feature.group" version="0.0.0"/>
@@ -107,6 +103,19 @@
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="0.0.0"/>
       <repository location="http://download.eclipse.org/modeling/emf/compare/updates/releases"/>
+    </location>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+      <unit id="eu.hohenegger.liquibase.dependencies.feature.group" version="1.0.0.bnd-u1gUWQ"/>
+      <unit id="eu.hohenegger.swagger.dependencies.feature.group" version="1.0.2.bnd-7whWQ"/>
+      <repository location="https://treehopper.github.io/EclipseAugmentsOrbit/"/>
+    </location>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+      <unit id="org.h2" version="0.0.0"/>
+      <unit id="org.slf4j.api" version="0.0.0"/>
+      <unit id="org.slf4j.binding.nop" version="0.0.0"/>
+      <unit id="org.yaml.snakeyaml" version="0.0.0"/>
+      <unit id="javax.xml.bind" version="0.0.0"/>
+      <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20191126223242/repository"/>
     </location>
   </locations>
 </target>

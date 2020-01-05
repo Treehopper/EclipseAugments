@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="eu.hohenegger.gister.feature"
-      label="Gister"
+      id="eu.hohenegger.liquibase.feature"
+      label="Liquibase Support"
       version="1.3.0.qualifier"
       provider-name="http://www.hohenegger.eu">
 
@@ -291,26 +291,54 @@ version(s), and exceptions or additional permissions here}.&quot;
    </license>
 
    <url>
-      <update url="http://www.example.org"/>
-      <discovery label="EclipseAugmentsOrbit" url="https://treehopper.github.io/EclipseAugmentsOrbit"/>
+      <update url="http://www.hohenegger.eu"/>
    </url>
 
    <requires>
-      <import feature="eu.hohenegger.swagger.dependencies" version="1.0.2.bnd-7whWQ"/>
+      <import feature="eu.hohenegger.liquibase.dependencies" version="1.0.0.bnd-u1gUWQ"/>
    </requires>
 
    <plugin
-         id="eu.hohenegger.gister"
+         id="eu.hohenegger.liquibase"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="eu.hohenegger.gister.ui"
+         id="eu.hohenegger.liquibase.ui"
          download-size="0"
          install-size="0"
          version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.h2"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.yaml.snakeyaml"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.slf4j.api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.slf4j.binding.nop"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
          unpack="false"/>
 
 </feature>
