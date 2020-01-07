@@ -1,15 +1,23 @@
 package eu.hohenegger.liquibase.ui.handler;
 
-import static eu.hohenegger.liquibase.ui.handler.Constants.*;
+import static eu.hohenegger.liquibase.ui.handler.Constants.DB_USER_PREF_KEY;
+import static eu.hohenegger.liquibase.ui.handler.Constants.H2_CONSOLE_PORT_PREF_KEY;
+import static eu.hohenegger.liquibase.ui.handler.Constants.H2_PAGE_ID;
+import static eu.hohenegger.liquibase.ui.handler.Constants.H2_TCP_PORT_PREF_KEY;
+import static eu.hohenegger.liquibase.ui.handler.Constants.JDBC_URL_PREF_KEY;
+import static eu.hohenegger.liquibase.ui.handler.Constants.START_H2_CONSOLE_PREF_KEY;
+import static eu.hohenegger.liquibase.ui.handler.Constants.USE_EMBEDDED_H2_PREF_KEY;
 import static org.eclipse.core.runtime.Adapters.adapt;
 import static org.eclipse.core.runtime.preferences.InstanceScope.INSTANCE;
 import static org.eclipse.ui.handlers.HandlerUtil.getCurrentSelection;
 
+import java.io.Writer;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
@@ -23,6 +31,7 @@ import org.eclipse.core.runtime.jobs.JobChangeAdapter;
 import org.eclipse.jface.dialogs.ErrorDialog;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.ui.console.MessageConsole;
 import org.osgi.service.prefs.Preferences;
 
 import eu.hohenegger.liquibase.Problem;
@@ -66,9 +75,6 @@ public class RunLiquibaseHandler extends AbstractH2Handler {
 			}
 		}
 
-//		MessageConsole console = ConsoleUtil.findConsole(Constants.PLUGIN_ID);
-//		ConsoleUtil.show(console);
-		
 		MarkerUtil markerUtil = new MarkerUtil();
 		for (IFile file : files) {
 			markerUtil.removeAll(file);
@@ -77,8 +83,13 @@ public class RunLiquibaseHandler extends AbstractH2Handler {
 		String jdbcUrl = preferences.get(JDBC_URL_PREF_KEY, "");
 		String dbUser = preferences.get(DB_USER_PREF_KEY, "");
 		
+//		MessageConsole console = ConsoleUtil.findConsole(Constants.PLUGIN_ID);
+//		ConsoleUtil.show(console);
+//		Writer writer = ConsoleUtil.createConsoleWriter(console);
 		
-		RunLiquibaseJobFunction function = new RunLiquibaseJobFunction(files, jdbcUrl, dbUser);
+		RunLiquibaseJobFunction function = 
+//				new RunLiquibaseJobFunction(files, jdbcUrl, dbUser, Optional.of(writer));
+				new RunLiquibaseJobFunction(files, jdbcUrl, dbUser, Optional.empty());
 		Job job = Job.create("Running Liquibase...", function);
 		job.setUser(true);
 		job.addJobChangeListener(new JobChangeAdapter() {

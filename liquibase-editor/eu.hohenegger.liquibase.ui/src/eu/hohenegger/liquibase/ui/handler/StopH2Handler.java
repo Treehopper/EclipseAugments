@@ -6,7 +6,10 @@ import static org.eclipse.core.runtime.preferences.InstanceScope.INSTANCE;
 
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.Status;
 import org.eclipse.core.runtime.preferences.IEclipsePreferences;
+import org.eclipse.jface.dialogs.ErrorDialog;
 
 public class StopH2Handler extends AbstractH2Handler {
 
@@ -19,7 +22,10 @@ public class StopH2Handler extends AbstractH2Handler {
 			dbManager.stopDB(dbPort);
 			browserUtil.close();
 		} catch (Exception e) {
-			throw new ExecutionException("failed to start DB", e);
+			ErrorDialog.openError(null, "Error", e.getLocalizedMessage(),
+					new Status(IStatus.ERROR, Constants.PLUGIN_ID,
+							e.getCause() != null? e.getCause().getLocalizedMessage() : ""));
+			throw new ExecutionException("failed to stop DB", e);
 		}
 		
 		return null;

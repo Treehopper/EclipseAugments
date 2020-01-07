@@ -15,6 +15,6 @@ Require-Bundle: org.eclipse.core.runtime,
  org.h2,
  org.liquibase.core;bundle-version="3.8.4"
 Import-Package: org.slf4j
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-ActivationPolicy: lazy
 Export-Package: eu.hohenegger.liquibase
