@@ -55,25 +55,25 @@ public class RunLiquibaseHandler extends AbstractH2Handler {
 			return null;
 		}
 
-		if (is(USE_EMBEDDED_H2_PREF_KEY)) {
-			String dbPort = preferences.get(H2_TCP_PORT_PREF_KEY, "");
-			String consolePort = preferences.get(H2_CONSOLE_PORT_PREF_KEY, "");
-			try {
-				URL h2ConsoleUrl = dbManager.startDB(dbPort, consolePort);
-				if (is(START_H2_CONSOLE_PREF_KEY)) {
-					browserUtil.open(h2ConsoleUrl);
-				}
-			} catch (Exception e) {
-				try {
-					dbManager.stopDB(dbPort);
-				} catch (SQLException ignored) {
-				}
-				ErrorDialog.openError(null, "Error", e.getLocalizedMessage(),
-						new Status(IStatus.ERROR, Constants.PLUGIN_ID,
-								e.getCause() != null? e.getCause().getLocalizedMessage() : ""));
-				throw new ExecutionException("failed to start DB", e);
-			}
-		}
+//		if (is(USE_EMBEDDED_H2_PREF_KEY)) {
+//			String dbPort = preferences.get(H2_TCP_PORT_PREF_KEY, "");
+//			String consolePort = preferences.get(H2_CONSOLE_PORT_PREF_KEY, "");
+//			try {
+//				URL h2ConsoleUrl = dbManager.startDB(dbPort, consolePort);
+//				if (is(START_H2_CONSOLE_PREF_KEY)) {
+//					browserUtil.open(h2ConsoleUrl);
+//				}
+//			} catch (Exception e) {
+//				try {
+//					dbManager.stopDB(dbPort);
+//				} catch (SQLException ignored) {
+//				}
+//				ErrorDialog.openError(null, "Error", e.getLocalizedMessage(),
+//						new Status(IStatus.ERROR, Constants.PLUGIN_ID,
+//								e.getCause() != null? e.getCause().getLocalizedMessage() : ""));
+//				throw new ExecutionException("failed to start DB", e);
+//			}
+//		}
 
 		MarkerUtil markerUtil = new MarkerUtil();
 		for (IFile file : files) {
@@ -111,10 +111,6 @@ public class RunLiquibaseHandler extends AbstractH2Handler {
 		
 		
 		return null;
-	}
-
-	private boolean is(String prefKey) {
-		return Boolean.parseBoolean(preferences.get(prefKey, "false"));
 	}
 
 	public List<IFile> getFiles(IStructuredSelection currentSelection) throws ExecutionException {

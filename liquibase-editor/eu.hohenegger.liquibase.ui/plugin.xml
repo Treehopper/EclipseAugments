@@ -11,6 +11,10 @@
             name="Stop H2"
             id="eu.hohenegger.liquibase.commands.stopH2">
       </command>
+      <command
+            name="Start H2"
+            id="eu.hohenegger.liquibase.commands.startH2">
+      </command>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
@@ -22,6 +26,10 @@
             commandId="eu.hohenegger.liquibase.commands.stopH2"
             class="eu.hohenegger.liquibase.ui.handler.StopH2Handler">
       </handler>
+      <handler
+            commandId="eu.hohenegger.liquibase.commands.startH2"
+            class="eu.hohenegger.liquibase.ui.handler.StartH2Handler">
+      </handler>
    </extension>
    <extension point="org.eclipse.ui.menus">
       <menuContribution locationURI="popup:org.eclipse.ui.popup.any?after=additions">
@@ -29,6 +37,31 @@
                commandId="eu.hohenegger.liquibase.commands.runLiquibase"
                icon="icons/sample.gif"
                label="Run Liquibase"
+               style="push">
+            <visibleWhen checkEnabled="true">
+               <iterate
+                     ifEmpty="false"
+                     operator="and">
+                  <or>
+	                  <adapt
+	                        type="org.eclipse.core.resources.IResource">
+	                     <instanceof
+	                           value="org.eclipse.core.resources.IFile">
+	                     </instanceof>
+	                  </adapt>
+	                  <instanceof
+	                       value="org.eclipse.jface.text.ITextSelection">
+	                  </instanceof>
+                  </or>
+               </iterate>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+      <menuContribution locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="eu.hohenegger.liquibase.commands.startH2"
+               icon="icons/sample.gif"
+               label="Start H2"
                style="push">
             <visibleWhen checkEnabled="true">
                <iterate
