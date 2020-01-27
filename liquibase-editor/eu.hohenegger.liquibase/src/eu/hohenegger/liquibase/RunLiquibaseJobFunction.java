@@ -32,6 +32,7 @@ import liquibase.exception.LiquibaseException;
 import liquibase.exception.LiquibaseParseException;
 import liquibase.exception.MigrationFailedException;
 import liquibase.exception.SetupException;
+import liquibase.exception.ValidationFailedException;
 import liquibase.parser.ChangeLogParser;
 import liquibase.parser.ChangeLogParserFactory;
 import liquibase.resource.FileSystemResourceAccessor;
@@ -107,6 +108,8 @@ public class RunLiquibaseJobFunction implements IJobFunction {
 					SAXParseException exc = optThrowable.get();
 					problems.add(new Problem(file, exc.getLocalizedMessage(), exc.getLineNumber()));
 				}
+			} catch (ValidationFailedException e) {
+				return new Status(IStatus.ERROR, Constants.PLUGIN_ID, "Unhandled parse exception", e);
 			} catch (MigrationFailedException e) {
 				if (e.getCause() instanceof DatabaseException) {
 					DatabaseException exc = (DatabaseException) e.getCause();
@@ -123,11 +126,11 @@ public class RunLiquibaseJobFunction implements IJobFunction {
 					//find sequence in changelogs and mark line
 					problems.add(new Problem(file, exc.getLocalizedMessage(), null));
 				}
-				return new Status(IStatus.ERROR, Constants.PLUGIN_ID, "Unhandled parse exception");
+				return new Status(IStatus.ERROR, Constants.PLUGIN_ID, "Unhandled parse exception", e);
 			} catch (LiquibaseException e) {
-				return new Status(IStatus.ERROR, Constants.PLUGIN_ID, "Unhandled parse exception");
+				return new Status(IStatus.ERROR, Constants.PLUGIN_ID, "Unhandled parse exception", e);
 			} catch (SQLException e) {
-				return new Status(IStatus.ERROR, Constants.PLUGIN_ID, "Unhandled SQL exception");
+				return new Status(IStatus.ERROR, Constants.PLUGIN_ID, "Unhandled SQL exception", e);
 			}
 		}
 		
