@@ -83,13 +83,13 @@ public class RunLiquibaseHandler extends AbstractH2Handler {
 		String jdbcUrl = preferences.get(JDBC_URL_PREF_KEY, "");
 		String dbUser = preferences.get(DB_USER_PREF_KEY, "");
 		
-//		MessageConsole console = ConsoleUtil.findConsole(Constants.PLUGIN_ID);
-//		ConsoleUtil.show(console);
-//		Writer writer = ConsoleUtil.createConsoleWriter(console);
+		MessageConsole console = ConsoleUtil.findConsole(Constants.PLUGIN_ID);
+		ConsoleUtil.show(console);
+		Writer writer = ConsoleUtil.createConsoleWriter(console);
 		
 		RunLiquibaseJobFunction function = 
-//				new RunLiquibaseJobFunction(files, jdbcUrl, dbUser, Optional.of(writer));
-				new RunLiquibaseJobFunction(files, jdbcUrl, dbUser, Optional.empty());
+				new RunLiquibaseJobFunction(files, jdbcUrl, dbUser, Optional.of(writer));
+//				new RunLiquibaseJobFunction(files, jdbcUrl, dbUser, Optional.empty());
 		Job job = Job.create("Running Liquibase...", function);
 		job.setUser(true);
 		job.addJobChangeListener(new JobChangeAdapter() {

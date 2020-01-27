@@ -99,9 +99,8 @@ public class RunLiquibaseJobFunction implements IJobFunction {
 
 				if (writer.isPresent()) {
 					liquibase.update(CONTEXTS, writer.get());
-				} else {
-					liquibase.update(CONTEXTS);
 				}
+				liquibase.update(CONTEXTS);
 			} catch (LiquibaseParseException e) {
 				Optional<SAXParseException> optThrowable = findThrowable(e, SAXParseException.class);
 				if (optThrowable.isPresent()) {
@@ -109,6 +108,9 @@ public class RunLiquibaseJobFunction implements IJobFunction {
 					problems.add(new Problem(file, exc.getLocalizedMessage(), exc.getLineNumber()));
 				}
 			} catch (ValidationFailedException e) {
+				if (!e.getInvalidMD5Sums().isEmpty()) {
+					return new Status(IStatus.ERROR, Constants.PLUGIN_ID, "Invalid checksum: " + e.getInvalidMD5Sums().get(0), e);
+				}
 				return new Status(IStatus.ERROR, Constants.PLUGIN_ID, "Unhandled parse exception", e);
 			} catch (MigrationFailedException e) {
 				if (e.getCause() instanceof DatabaseException) {
