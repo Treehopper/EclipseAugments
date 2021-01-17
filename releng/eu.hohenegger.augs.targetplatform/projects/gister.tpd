@@ -1,7 +1,7 @@
 target "gister" with source configurePhase
 
-location "http://download.eclipse.org/releases/2019-09" {
-	javax.annotation [1.2.0,1.2.1)
+location "http://download.eclipse.org/releases/2020-09" {
+	javax.annotation [1.3.5,1.4.0)
 	javax.xml.bind [2.2.0,2.3.0)
 	javax.activation [1.1.0,1.2.0)
 }

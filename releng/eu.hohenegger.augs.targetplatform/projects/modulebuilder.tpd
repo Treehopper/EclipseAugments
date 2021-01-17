@@ -1,6 +1,6 @@
 target "modulebuilder" with source configurePhase requirements
 
-location "http://download.eclipse.org/releases/2019-09" {
+location "http://download.eclipse.org/releases/2020-09" {
 	org.eclipse.draw2d.feature.group lazy
 	org.eclipse.pde.feature.group lazy
 	javax.xml.stream lazy
@@ -11,12 +11,12 @@ location "http://download.eclipse.org/modeling/tmf/xtext/updates/composite/relea
 	org.eclipse.emf.ecore.xcore.lib.feature.group lazy
 }
 
-location "https://download.eclipse.org/eclipse/updates/4.12/" {
+location "https://download.eclipse.org/eclipse/updates/4.17/" {
 	org.eclipse.equinox.ds lazy
 }
 
 
-location "http://download.eclipse.org/ecp/releases/releases_122/" {
+location "http://download.eclipse.org/ecp/releases/releases_125/" {
 	org.eclipse.emf.ecp.emfforms.runtime.feature.feature.group lazy
 	org.eclipse.emf.ecp.emfforms.sdk.feature.feature.group lazy
 	org.eclipse.emf.ecp.view.categorization.feature.feature.group lazy
@@ -40,7 +40,10 @@ location "http://download.eclipse.org/ecp/releases/releases_122/" {
 	org.eclipse.emf.ecp.view.viewproxy.feature.feature.group lazy
 	org.eclipse.emf.ecp.feature.feature.group lazy
 	org.eclipse.emf.ecp.ecore.feature.feature.group lazy
-	org.eclipse.emf.ecp.e4.feature.feature.group lazy
+//	org.eclipse.emf.ecp.e4.feature.feature.group lazy
+//	org.eclipse.emf.ecp.emfstore.feature.feature.group lazy
+//	org.eclipse.emf.ecp.emfstore.ui.e4 lazy
 	
 	org.eclipse.emf.ecp.viewmodel.feature.feature.group lazy
+	
 }

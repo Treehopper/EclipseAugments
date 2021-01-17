@@ -1,6 +1,6 @@
 target "m2-connectors" with source configurePhase
 
-location "http://download.eclipse.org/releases/2019-09" {
+location "http://download.eclipse.org/releases/2020-09" {
 	// Eclipse platform
 	org.eclipse.sdk.ide lazy
 

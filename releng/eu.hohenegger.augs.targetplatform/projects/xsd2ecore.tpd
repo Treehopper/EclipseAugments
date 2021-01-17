@@ -1,6 +1,6 @@
 target "xsd2ecore" with source configurePhase
 
-location "http://download.eclipse.org/releases/2019-09" {
+location "http://download.eclipse.org/releases/2020-09" {
 	org.eclipse.xsd.ecore.converter.feature.group lazy
 	org.eclipse.xsd.mapping.feature.group lazy
 	org.eclipse.xsd.feature.group lazy
