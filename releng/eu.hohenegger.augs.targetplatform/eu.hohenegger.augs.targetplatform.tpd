@@ -2,11 +2,12 @@ target "eu.hohenegger.augs.targetplatform" with source configurePhase requiremen
 
 include "4.17_2020-09.tpd"
 include "orbit-R20190827152740-2019-09.tpd"
+//include "orbit-R20201130205003-2020-20.tpd"
 include "projects/modulebuilder.tpd"
 include "projects/gitmine.tpd"
 include "projects/partdetacher.tpd"
 include "projects/scratchpad.tpd"
 include "projects/m2-connectors.tpd"
-include "projects/gister.tpd"
+//include "projects/gister.tpd"
 include "projects/xsd2ecore.tpd"
 include "projects/liquibase-editing.tpd"

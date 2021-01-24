@@ -39,9 +39,6 @@
    <feature id="eu.hohenegger.m2e.gencodefolder.feature" version="0.0.0">
       <category name="eu.hohenegger.m2e.connectors"/>
    </feature>
-   <feature id="eu.hohenegger.gister.feature" version="0.0.0">
-      <category name="eu.hohenegger.gister"/>
-   </feature>
    <feature id="eu.hohenegger.xsdemftools.feature" version="0.0.0">
       <category name="eu.hohenegger.xsdemftools"/>
    </feature>
@@ -64,7 +61,6 @@
    <category-def name="eu.hohenegger.scratchpad" label="Scratchpad"/>
    <category-def name="org.eclipse.nebula.visualization" label="Nebula Visualization Dependency (Required)"/>
    <category-def name="eu.hohenegger.m2e.connectors" label="m2e Connectors"/>
-   <category-def name="eu.hohenegger.gister" label="Gister (experimental)"/>
    <category-def name="eu.hohenegger.xsd.liquibase" label="Liquibase EMF Editing Support (experimental)"/>
    <category-def name="eu.hohenegger.liquibase" label="Liquibase Support (experimental)"/>
    <category-def name="eu.hohenegger.xsd.pom" label="Maven POM file EMF Editing Support (experimental)"/>

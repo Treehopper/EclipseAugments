@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1610878011">
+<target name="eu.hohenegger.augs.targetplatform" sequenceNumber="1611481154">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="org.apache.commons.codec" version="1.10.0.v20180409-1845"/>
@@ -79,9 +79,6 @@
       <unit id="org.eclipse.xsd.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.xsd.edit.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.xsd.editor.feature.group" version="0.0.0"/>
-      <unit id="javax.annotation" version="1.3.5.v20200504-1837"/>
-      <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
-      <unit id="javax.activation" version="1.1.0.v201211130549"/>
       <unit id="org.eclipse.sdk.ide" version="0.0.0"/>
       <unit id="org.eclipse.m2e.sdk.feature.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.m2e.feature.feature.group" version="0.0.0"/>
@@ -105,7 +102,6 @@
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
       <unit id="eu.hohenegger.liquibase.dependencies.feature.group" version="1.0.0.bnd-u1gUWQ"/>
-      <unit id="eu.hohenegger.swagger.dependencies.feature.group" version="1.0.2.bnd-7whWQ"/>
       <repository location="https://treehopper.github.io/EclipseAugmentsOrbit/"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">

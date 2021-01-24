@@ -19,7 +19,7 @@
 		<module>scratchpad</module>
 		<module>wizard</module>
 		<module>m2e-connectors</module>
-		<module>gister</module>
+		<!-- module>gister</module-->
 		<module>xsdemftools</module>
 		<module>liquibase-editor</module>
 		<module>pom-editor</module>
